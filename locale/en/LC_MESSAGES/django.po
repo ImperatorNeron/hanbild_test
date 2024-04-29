@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 23:10+0300\n"
+"POT-Creation-Date: 2024-04-30 00:36+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -918,6 +918,10 @@ msgstr "View other items."
 #: .\order\utils.py:42
 msgid "Дякуємо за Ваше замовлення!"
 msgstr "Thank you for your order!"
+
+#: .\order\utils.py:81
+msgid "Помилка в формі. Спробуйте знову."
+msgstr "Error in form. Try again."
 
 #: .\order\views.py:18
 msgid "Оформлення замовлення | HanBild.com.ua"

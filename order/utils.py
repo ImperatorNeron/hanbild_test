@@ -78,4 +78,4 @@ def order_fields_errors(form, **kwargs):
         ("#user_surname", form.errors.get("surname")),
         ("#user_phone_number", form.errors.get("phone_number")),
     )
-    return JsonResponse({"success": False, "form_errors": form_errors})
+    return JsonResponse({"success": False, "form_errors": form_errors, "error_message": _("Помилка в формі. Спробуйте знову.")})

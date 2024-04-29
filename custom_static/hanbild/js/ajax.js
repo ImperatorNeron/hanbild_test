@@ -4,9 +4,6 @@ $(document).ready(function () {
     var successMessage = $("#jq-notification");
     var goodsInCartCount = $("#cartCount");
     var cartCount = parseInt(goodsInCartCount.text() || 0);
-    var cookies = document.cookie.toLowerCase()
-    var is_uk_language = cookies.includes("django_language=uk")
-
 
     // Checking cart quantity initially
     check_carts_quantity();
@@ -253,11 +250,7 @@ $(document).ready(function () {
             if (data.success) {
                 window.location.href = data.url
             } else {
-                if (is_uk_language) {
-                    sendMessageToScreen("Похибка у формі. Спробуйте ще раз.")
-                } else {
-                    sendMessageToScreen("Error in form. Try again.")
-                }
+                sendMessageToScreen(data.error_message)
                 data.form_errors.forEach(element => {
                     $(element[0]).text(element[1]);
                 });
