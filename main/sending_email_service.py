@@ -17,7 +17,7 @@ def send_email(context, letter_template, send_to="www.vladik49@gmail.com"):
 
         # save message to db
         email = EmailMessage(
-            subject=f"Нове повідомлення від {context['name']}",
+            subject=f"Повідомлення від Hanbild",
             body=html_content,
             from_email="km2022tm@gmail.com",
             to=[send_to],

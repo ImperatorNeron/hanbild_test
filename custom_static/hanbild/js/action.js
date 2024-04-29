@@ -10,6 +10,17 @@ window.addEventListener('keydown', (e) => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    var serviceLinks = document.querySelectorAll('.service-link');
+    if (serviceLinks) {
+        serviceLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                document.querySelector(".wrapper").classList.remove("open")
+                return
+            });
+        });
+    }
+});
 
 document.getElementById("menu").addEventListener('click', event => {
     event._isClickWithInMenu = true;
@@ -91,7 +102,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Function to handle accepting cookies by setting a cookie and hiding the cookie notice
 function handleAcceptCookies() {
-    document.cookie = "allow-cookie-usage=true; path=/";
+    var now = new Date();
+    var expires = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000); // дата через 30 днів
+
+    document.cookie = "allow-cookie-usage=true; path=/; expires=" + expires.toUTCString();
     document.querySelector(".cookies").style.display = "none";
     var button = document.querySelector('.additional-elements');
     button.style.bottom = '40px';

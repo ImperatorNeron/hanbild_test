@@ -129,7 +129,7 @@
                 {% get_services as services %}
                 {% for service in services %}
                   <li>
-                    <a href="{% url 'main:services' %}#{{ service.index_on_page }}">{{ service.service_name }}</a>
+                    <a class="service-link" href="{% url 'main:services' %}#{{ service.index_on_page }}">{{ service.service_name }}</a>
                   </li>
                 {% endfor %}
               </ul>

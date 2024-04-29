@@ -94,6 +94,7 @@ header input {
     padding-left: 10px;
     padding: 10px 15px;
     border-radius: 5px;
+    font-size: 15px;
     background: #fff;
     color: #9e9c9c;
     font-family: "Raleway", Sans-serif
@@ -701,6 +702,10 @@ main .catalog-bar {
     width: 78%
 }
 
+#margin_bt{
+    margin-bottom: 20px;
+}
+
 main .placing {
     width: 100%;
     background-color: #fff;
@@ -1008,6 +1013,12 @@ select {
     font-weight: bold;
     font-size: 18px;
     height: 50px
+}
+
+.card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cards .card .card-buttons {
@@ -1575,6 +1586,7 @@ input {
     background: #fff;
     border-radius: 4px;
     padding: 10px;
+    font-size: 15px;
     font-family: "Raleway";
     width: 220px;
     width: 100%
@@ -1708,7 +1720,7 @@ textarea {
 
 .form-contact-block .connection-block svg {
     height: 20px;
-    fill: #676c7a
+    fill: #8b8e95
 }
 
 .form-contact-block .connection-block a {
@@ -2193,11 +2205,12 @@ footer .contact-heading p::selection {
     gap: 5px;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    gap: 10px;
 }
 
 .additional-order-info svg {
-    width: 3%
+    width: 20px
 }
 
 .cart-heading {
@@ -2405,11 +2418,16 @@ thead tr th:last-child svg {
 }
 
 .order-box h3 {
-    font-size: 24px
+    font-size: 22px;
+    display: flex;
+    gap: 10px;
 }
 
 .order-box h3::before {
-    content: "▶ "
+    display: block;
+    content: url("../icons/point-trig.svg");
+    width: 15px;
+    height: 15px;
 }
 
 .order-box .order-form {
@@ -2420,7 +2438,8 @@ thead tr th:last-child svg {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 20px
+    gap: 20px;
+    flex: 1;
 }
 
 .order-box .info-container {
@@ -2478,7 +2497,7 @@ thead tr th:last-child svg {
 }
 
 .order-box .cart-table {
-    width: 50%;
+    flex: 1;
     margin: 0;
     font-size: 14px
 }
@@ -4206,7 +4225,7 @@ thead tr th:last-child svg {
 
     .form-end label,
     .form-end span {
-        font-size: 11px
+        font-size: 12px
     }
 
     .form-end {
@@ -4632,7 +4651,8 @@ thead tr th:last-child svg {
     }
 
     main .catalog-bar {
-        width: 100%
+        width: 98%;
+        margin: 0 auto;
     }
 
     main aside {
@@ -6426,6 +6446,23 @@ main .breadcrumbs ul li:before {
     .vacancy {
         width: 95%;
     }
+
+    #page-contact-form .form-buttons{
+        width: 100%;
+    }
+
+    .contact-submit-button-wrapper{
+        flex: 1;
+    }
+    
+    .cart-heading h2 {
+        font-size: 23px;
+    }
+
+    .cart-heading svg{
+        width: 33px;
+    }
+
 }
 
 @media(max-width: 450px) {
@@ -6521,6 +6558,8 @@ main .breadcrumbs ul li:before {
         flex-direction: column;
         gap: 20px;
         margin-top: 20px;
+        margin-bottom: 15px;
+
     }
 
     .form-buttons a {

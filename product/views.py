@@ -53,6 +53,7 @@ class ProductDetailView(BaseApplicationFormView):
             request,
             self.template_name,
             {
+                "title": self.title,
                 "product": product,
                 "product_characteristics": product_characteristics,
                 "product_photos": product_photos,

@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
     <!-- <![endif] -->
 
-    <!--                      [if mso]>
+    <!--                       [if mso]>
   <xml>
     <o:OfficeDocumentSettings>
       <o:PixelsPerInch>96</o:PixelsPerInch>
@@ -22,7 +22,7 @@
     table {border-collapse: collapse;}
     td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
   </style>
-  <![endif]                      -->
+  <![endif]                       -->
     <style>
       .hover-bg-dealshop-blue-dark:hover {
         background-color: #f0600a !important;
@@ -157,7 +157,7 @@
                       <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
                         <tr>
                           <td align="center" class="all-font-montserrat" style="padding: 32px;" width="50%">
-                            <h4 style="margin: 0; margin-bottom: 2px; color: #2d3748; font-size: 20px;">{% translate 'Замовлення' %} № {{ order_id }}</h4>
+                            <h4 style="margin: 0; margin-bottom: 2px; color: #2d3748; font-size: 20px;">{% translate 'Замовлення' %}№ {{ order_id }}</h4>
                             <p align="left" style="margin: 0; margin-top: 15px; margin-bottom: 7px; color: #000000; font-size: 15px; font-weight: bold;">
                               {% translate 'Дата повідомлення:' %} <span style="font-weight: normal;">{% now 'd/m/Y H:i' %}</span>
                             </p>
@@ -233,15 +233,15 @@
                         <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
                             <td align="center" class="all-font-montserrat" style="padding: 32px;" width="50%">
-                              <h4 style="margin: 0; margin-bottom: 2px; color: #2d3748; font-size: 18px;">{{ item.item.name }}<span class="sm-block" style="font-weight: 400; color: #718096; font-size: 14px;"> x {{ item.quantity }}</span></h4>
+                              <h4 style="margin: 0; margin-bottom: 2px; color: #2d3748; font-size: 18px;">{{ item.item.name }}<span class="sm-block" style="font-weight: 400; color: #718096; font-size: 14px;">x {{ item.quantity }}</span></h4>
                               <p style="margin: 0; margin-top: 15px; margin-bottom: 7px; color: #718096; font-size: 14px;">
                                 {% translate 'Загальна сума покупки:' %}
                               </p>
                               <p style="font-weight: 700; margin: 0; color: #2d3748; font-size: 20px;text-decoration: underline;">
                                 {% if item.goods_price == 0 %}
-                                {% translate "Ціна договірна" %}
+                                  {% translate 'Ціна договірна' %}
                                 {% else %}
-                                {{ item.goods_price }} {% translate 'грн.' %}
+                                  {{ item.goods_price }} {% translate 'грн.' %}
                                 {% endif %}
                               </p>
                             </td>
@@ -269,7 +269,13 @@
       <tr>
         <td align="center" width="100%">
           <p class="all-font-montserrat" style="font-size: 18px; font-weight: bold;">
-            {% translate 'Загальна сума:' %}<span style="font-weight: normal; text-decoration: underline;margin-left: 30px;">{{ total_price }} {% translate 'грн.' %}</span>
+            {% translate 'Загальна сума:' %}<span style="font-weight: normal; text-decoration: underline;margin-left: 30px;">
+              {% if total_price == 0 %}
+                {% translate 'Договірна' %}
+              {% else %}
+                {{ total_price }} {% translate 'грн.' %}
+              {% endif %}
+            </span>
           </p>
         </td>
       </tr>

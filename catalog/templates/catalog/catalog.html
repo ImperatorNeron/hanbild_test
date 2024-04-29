@@ -135,7 +135,7 @@
     </form>
   </div>
 
-  <main class="main">
+  <main class="main" id="margin_bt">
     <div class="up-main-section">
       <div class="breadcrumbs" id="breadcrumbs-main">
         <ul>
@@ -371,6 +371,7 @@
           </div>
         {% endif %}
         {% comment %}PAGINATION{% endcomment %}
+        {% if goods %}
         <div class="pagination">
           {% if goods.has_previous %}
             <a href="?{% change_params page=goods.previous_page_number %}">
@@ -457,6 +458,7 @@
             </a>
           {% endif %}
         </div>
+        {% endif %}
         {% comment %}END PAGINATION{% endcomment %}
       </div>
     </div>

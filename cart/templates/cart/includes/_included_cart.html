@@ -41,7 +41,7 @@
           {% endif %}
         </td>
         <td>
-          <a href="">{{ cart.item.name }}</a>
+          <a href="{% url "catalog:item" cart.item.slug %}">{{ cart.item.name }}</a>
         </td>
         <td>{{ cart.item.pk|stringformat:'05d' }}</td>
         <td>
@@ -72,7 +72,11 @@
             {% translate 'Всього:' %}
           </p>
           <p>
-            <span>{{ carts.total_price }} {% translate 'грн.' %}</span>
+            {% if carts.total_price == 0 %}
+              <span>{% translate 'Договірна' %}</span>
+            {% else %}
+              <span>{{ carts.total_price }} {% translate 'грн.' %}</span>
+            {% endif %}
           </p>
         </div>
       </td>
@@ -93,7 +97,7 @@
         {% translate 'Ціна' %}
       </th>
       <th>
-        <img src="{% static 'hanbild/icons/waste.svg' %}" alt="">
+        <img src="{% static 'hanbild/icons/waste.svg' %}" alt="" />
       </th>
     </tr>
   </thead>

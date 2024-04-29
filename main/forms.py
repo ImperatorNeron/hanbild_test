@@ -14,7 +14,7 @@ class OnlineApplicationForm(forms.ModelForm):
         data = self.cleaned_data["name"]
         if not re.match(r"^[a-zA-Zа-яА-ЯіІїЇєЄґҐ.,\s`\'’-]+$", data):
             raise forms.ValidationError(
-                "Поле не може містити цифри та заборонені знаки!"
+                _("Поле не може містити цифри та заборонені знаки!")
             )
         return data
 
@@ -25,6 +25,6 @@ class OnlineApplicationForm(forms.ModelForm):
             r"^\+?1?\d{9,15}$", data
         ):
             raise forms.ValidationError(
-                "Введіть дійсний номер телефону або електронну пошту"
+                _("Введіть дійсний номер телефону або електронну пошту")
             )
         return data

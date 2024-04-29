@@ -5,6 +5,7 @@ from main.models import ClientMessages
 from main.sending_email_service import send_email
 from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
+from django.utils.translation import gettext_lazy as _
 
 
 def create_user_message(form, **kwargs):
@@ -20,9 +21,9 @@ def create_user_message(form, **kwargs):
     try:
         validate_email(form.cleaned_data["number_or_email"])
         # Messages for user
-        form.cleaned_data["successful_message_1"] = f"Дякуємо за Ваше повідомлення!"
-        form.cleaned_data["successful_message_2"] = (
-            f"Найближчим часом з вами зв'яжеться наш менеджер."
+        form.cleaned_data["successful_message_1"] = _("Дякуємо за Ваше повідомлення!")
+        form.cleaned_data["successful_message_2"] = _(
+            "Найближчим часом з вами зв'яжеться наш менеджер."
         )
         send_email(
             form.cleaned_data,
@@ -40,7 +41,7 @@ def create_user_message(form, **kwargs):
         f"Зв'яжіться з клієнтом за даними, які наведені нижче."
     )
     send_email(form.cleaned_data, "email_letters/success_message.html")
-    return JsonResponse({"success": True, "message": "Повідомлення надійшло успішно!"})
+    return JsonResponse({"success": True, "message": _("Повідомлення надійшло успішно!")})
 
 
 def contact_form_errors(form, **kwargs):

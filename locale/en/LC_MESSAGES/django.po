@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 03:01+0300\n"
+"POT-Creation-Date: 2024-04-29 23:10+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,8 +29,8 @@ msgstr "Cart"
 
 #: .\cart\templates\cart\cart.html:28
 #: .\main\templates\email_letters\cart_message.html:116
-#: .\main\templates\email_letters\cart_message.html:287
-#: .\product\templates\product\product_page.html:30
+#: .\main\templates\email_letters\cart_message.html:293
+#: .\product\templates\product\product_page.html:34
 msgid "До каталогу"
 msgstr "To catalog"
 
@@ -39,7 +39,7 @@ msgid "Оформити замовлення"
 msgstr "To order"
 
 #: .\cart\templates\cart\includes\_included_cart.html:9
-#: .\cart\templates\cart\includes\_included_cart.html:87
+#: .\cart\templates\cart\includes\_included_cart.html:91
 msgid "Фото"
 msgstr "Photo"
 
@@ -58,34 +58,36 @@ msgid "К-сть"
 msgstr "Total"
 
 #: .\cart\templates\cart\includes\_included_cart.html:21
-#: .\cart\templates\cart\includes\_included_cart.html:93
+#: .\cart\templates\cart\includes\_included_cart.html:97
 #: .\catalog\templates\catalog\item.html:146
 msgid "Ціна"
 msgstr "Price"
 
 #: .\cart\templates\cart\includes\_included_cart.html:58
-#: .\cart\templates\cart\includes\_included_cart.html:117
+#: .\cart\templates\cart\includes\_included_cart.html:76
+#: .\cart\templates\cart\includes\_included_cart.html:121
+#: .\main\templates\email_letters\cart_message.html:274
 msgid "Договірна"
 msgstr "Negotiated"
 
 #: .\cart\templates\cart\includes\_included_cart.html:60
-#: .\cart\templates\cart\includes\_included_cart.html:75
-#: .\cart\templates\cart\includes\_included_cart.html:119
-#: .\cart\templates\cart\includes\_included_cart.html:140
+#: .\cart\templates\cart\includes\_included_cart.html:78
+#: .\cart\templates\cart\includes\_included_cart.html:123
+#: .\cart\templates\cart\includes\_included_cart.html:144
 #: .\catalog\templates\catalog\catalog.html:330
 #: .\catalog\templates\catalog\item.html:112
 #: .\catalog\templates\catalog\item.html:150
 #: .\main\templates\email_letters\cart_message.html:244
-#: .\main\templates\email_letters\cart_message.html:272
+#: .\main\templates\email_letters\cart_message.html:276
 msgid "грн."
 msgstr "UAH"
 
 #: .\cart\templates\cart\includes\_included_cart.html:72
-#: .\cart\templates\cart\includes\_included_cart.html:137
+#: .\cart\templates\cart\includes\_included_cart.html:141
 msgid "Всього:"
 msgstr "Total:"
 
-#: .\cart\templates\cart\includes\_included_cart.html:90
+#: .\cart\templates\cart\includes\_included_cart.html:94
 msgid "Товар"
 msgstr "Item"
 
@@ -160,8 +162,8 @@ msgstr "Apply"
 #: .\main\templates\main\privacy_policy.html:14
 #: .\main\templates\main\services.html:18
 #: .\product\templates\product\product.html:18
-#: .\product\templates\product\product_page.html:17
-#: .\vacancy\templates\vacancy\vacancy_page.html:12
+#: .\product\templates\product\product_page.html:21
+#: .\vacancy\templates\vacancy\vacancy_page.html:16
 msgid "Головна сторінка"
 msgstr "Main page"
 
@@ -210,12 +212,12 @@ msgid "Додати у кошик"
 msgstr "Add to cart"
 
 #: .\catalog\templates\catalog\item.html:132
-#: .\product\templates\product\product_page.html:120
+#: .\product\templates\product\product_page.html:124
 msgid "Опис"
 msgstr "Description"
 
 #: .\catalog\templates\catalog\item.html:134
-#: .\product\templates\product\product_page.html:128
+#: .\product\templates\product\product_page.html:132
 msgid "Характеристики"
 msgstr "Characteristics"
 
@@ -224,8 +226,8 @@ msgid "Артикул"
 msgstr "Item no."
 
 #: .\catalog\templates\catalog\item.html:164
-#: .\product\templates\product\product_page.html:133
-#: .\product\templates\product\product_page.html:168
+#: .\product\templates\product\product_page.html:137
+#: .\product\templates\product\product_page.html:172
 msgid "Категорія"
 msgstr "Category"
 
@@ -233,13 +235,21 @@ msgstr "Category"
 msgid "Каталог компанії | HanBild.com.ua"
 msgstr "Company catalog | HanBild.com.ua"
 
-#: .\hanbild\settings.py:100
+#: .\hanbild\settings.py:98
 msgid "Ukrainian"
 msgstr "Ukrainian"
 
-#: .\hanbild\settings.py:101
+#: .\hanbild\settings.py:99
 msgid "English"
 msgstr "English"
+
+#: .\main\forms.py:17 .\order\forms.py:9
+msgid "Поле не може містити цифри та заборонені знаки!"
+msgstr "Field cannot contain numbers or forbidden characters!"
+
+#: .\main\forms.py:28
+msgid "Введіть дійсний номер телефону або електронну пошту"
+msgstr "Please enter a valid phone number or email"
 
 #: .\main\templates\email_letters\cart_message.html:97
 #: .\main\templates\email_letters\success_message.html:98
@@ -251,7 +261,7 @@ msgstr "Site"
 #: .\main\templates\main\index.html:140
 #: .\product\templates\product\product.html:21
 #: .\product\templates\product\product.html:30
-#: .\product\templates\product\product_page.html:20
+#: .\product\templates\product\product_page.html:24
 #: .\templates\includes\_footer.html:201 .\templates\includes\_footer.html:221
 #: .\templates\includes\_header.html:140 .\templates\includes\_header.html:246
 msgid "Продукція"
@@ -261,8 +271,8 @@ msgstr "Product"
 #: .\main\templates\email_letters\success_message.html:100
 #: .\templates\includes\_footer.html:210 .\templates\includes\_footer.html:230
 #: .\templates\includes\_header.html:166 .\templates\includes\_header.html:267
-#: .\vacancy\templates\vacancy\vacancy_page.html:15
-#: .\vacancy\templates\vacancy\vacancy_page.html:23
+#: .\vacancy\templates\vacancy\vacancy_page.html:19
+#: .\vacancy\templates\vacancy\vacancy_page.html:27
 msgid "Вакансії"
 msgstr "Vacancies"
 
@@ -398,37 +408,37 @@ msgid "м. Дніпро, вул. Орловська, 21"
 msgstr "Dnipro, ul. Orlovskaya, 21"
 
 #: .\main\templates\main\contact_us.html:111
-#: .\vacancy\templates\vacancy\vacancy_page.html:153
+#: .\vacancy\templates\vacancy\vacancy_page.html:157
 msgid "Форма зворотнього зв'язку"
 msgstr "Feedback form"
 
 #: .\main\templates\main\contact_us.html:114
 #: .\templates\includes\_feedback_form.html:23
-#: .\vacancy\templates\vacancy\vacancy_page.html:156
+#: .\vacancy\templates\vacancy\vacancy_page.html:160
 msgid "Як до вас звертатися:"
 msgstr "How to contact you"
 
 #: .\main\templates\main\contact_us.html:115
 #: .\templates\includes\_feedback_form.html:24
-#: .\vacancy\templates\vacancy\vacancy_page.html:157
+#: .\vacancy\templates\vacancy\vacancy_page.html:161
 msgid "Ваше ім`я"
 msgstr "Your name"
 
 #: .\main\templates\main\contact_us.html:119
 #: .\templates\includes\_feedback_form.html:28
-#: .\vacancy\templates\vacancy\vacancy_page.html:161
+#: .\vacancy\templates\vacancy\vacancy_page.html:165
 msgid "Номер телефону або e-mail:"
 msgstr "Phone number or email"
 
 #: .\main\templates\main\contact_us.html:120
 #: .\templates\includes\_feedback_form.html:29
-#: .\vacancy\templates\vacancy\vacancy_page.html:162
+#: .\vacancy\templates\vacancy\vacancy_page.html:166
 msgid "Залиште контакт для зв`язку"
 msgstr "Leave a contact for communication"
 
 #: .\main\templates\main\contact_us.html:124
 #: .\templates\includes\_feedback_form.html:33
-#: .\vacancy\templates\vacancy\vacancy_page.html:166
+#: .\vacancy\templates\vacancy\vacancy_page.html:170
 msgid "Повідомлення:"
 msgstr "Message:"
 
@@ -439,19 +449,19 @@ msgstr "Write what interests you"
 
 #: .\main\templates\main\contact_us.html:129
 #: .\templates\includes\_feedback_form.html:38
-#: .\vacancy\templates\vacancy\vacancy_page.html:171
+#: .\vacancy\templates\vacancy\vacancy_page.html:175
 msgid "Натискаючи кнопку \"Надіслати\" я погоджуюсь з умовами"
 msgstr "By clicking \"Submit\" I agree to the terms"
 
 #: .\main\templates\main\contact_us.html:129
 #: .\templates\includes\_feedback_form.html:38
-#: .\vacancy\templates\vacancy\vacancy_page.html:171
+#: .\vacancy\templates\vacancy\vacancy_page.html:175
 msgid "політики конфіденційності"
 msgstr "privacy policy"
 
 #: .\main\templates\main\contact_us.html:132
 #: .\templates\includes\_feedback_form.html:41
-#: .\vacancy\templates\vacancy\vacancy_page.html:174
+#: .\vacancy\templates\vacancy\vacancy_page.html:178
 msgid "Надіслати"
 msgstr "Submit"
 
@@ -463,11 +473,11 @@ msgid ""
 "розміру. Завдяки нашому досвіду та професіоналізму ми забезпечуємо високу "
 "якість продукції та індивідуальний підхід до кожного клієнта."
 msgstr ""
-"Hanbild is your reliable partner in the production of trailers and "
-"semi-trailers. Our company specializes in creating reliable, "
-"safe and functional solutions for the transportation of goods of any type and "
-"size. Thanks to our experience and professionalism, we provide high "
-"product quality and individual approach to each customer."
+"Hanbild is your reliable partner in the production of trailers and semi-"
+"trailers. Our company specializes in creating reliable, safe and functional "
+"solutions for the transportation of goods of any type and size. Thanks to "
+"our experience and professionalism, we provide high product quality and "
+"individual approach to each customer."
 
 #: .\main\templates\main\index.html:30
 msgid "Вас вітає,"
@@ -790,6 +800,18 @@ msgstr ""
 "If you want more information or ask a question you can call or write to us. "
 "We will be happy to help you!"
 
+#: .\main\utils.py:24
+msgid "Дякуємо за Ваше повідомлення!"
+msgstr "Thank you for your message!"
+
+#: .\main\utils.py:26 .\order\utils.py:44
+msgid "Найближчим часом з вами зв'яжеться наш менеджер."
+msgstr "Our manager will contact you shortly."
+
+#: .\main\utils.py:44
+msgid "Повідомлення надійшло успішно!"
+msgstr "The message was successful!"
+
 #: .\main\views.py:37
 msgid "HanBild - виробник самоскидних та бортових кузовів"
 msgstr "HanBild - manufacturer of dump trucks and side bodies"
@@ -805,6 +827,18 @@ msgstr "Repair, Trade in and Leasing | HanBild.com.ua"
 #: .\main\views.py:72
 msgid "Політика конфіденційності | HanBild.com.ua"
 msgstr "Privacy Policy | HanBild.com.ua"
+
+#: .\order\forms.py:19
+msgid "Номер телефону повинен бути в форматі +380960001122 або 0960001122"
+msgstr "The phone number must be in +380960001122 or 0960001122 format"
+
+#: .\order\forms.py:27
+msgid "Введіть коректну електронну пошту"
+msgstr "Please enter a valid email"
+
+#: .\order\forms.py:36
+msgid "Адреса не може містити заборонені знаки!"
+msgstr "Field cannot contain forbidden characters!"
 
 #: .\order\templates\order\order.html:17
 msgid "Оформлення замовлення"
@@ -849,8 +883,8 @@ msgid "вул. Дніпрянська 7"
 msgstr "st. Dnipryanskaya 7"
 
 #: .\order\templates\order\order.html:102
-msgid "Доставка розраховується менеджером вручну"
-msgstr "Delivery is calculated manually by the manager"
+msgid "Доставка узгоджується з менеджером"
+msgstr "Delivery agreed with manager"
 
 #: .\order\templates\order\order.html:108
 msgid "Коментар"
@@ -885,10 +919,6 @@ msgstr "View other items."
 msgid "Дякуємо за Ваше замовлення!"
 msgstr "Thank you for your order!"
 
-#: .\order\utils.py:44
-msgid "Найближчим часом з вами зв'яжеться наш менеджер."
-msgstr "Our manager will contact you shortly."
-
 #: .\order\views.py:18
 msgid "Оформлення замовлення | HanBild.com.ua"
 msgstr "Checkout | HanBild.com.ua"
@@ -909,13 +939,13 @@ msgstr ""
 "needs of the clien. Our products meet the highest standards quality and is "
 "reliable in operation."
 
-#: .\product\templates\product\product_page.html:137
-#: .\product\templates\product\product_page.html:174
+#: .\product\templates\product\product_page.html:141
+#: .\product\templates\product\product_page.html:178
 msgid "Виготовлення під замовлення"
 msgstr "Custom-made"
 
-#: .\product\templates\product\product_page.html:140
-#: .\product\templates\product\product_page.html:177
+#: .\product\templates\product\product_page.html:144
+#: .\product\templates\product\product_page.html:181
 msgid "Так"
 msgstr "Yes"
 
@@ -958,8 +988,6 @@ msgstr "Email"
 
 #: .\templates\includes\_footer.html:83 .\templates\includes\_footer.html:91
 #: .\templates\includes\_footer.html:131
-#, fuzzy
-#| msgid "Дніпро"
 msgid "м. Дніпро,"
 msgstr "Dnipro"
 
@@ -1001,7 +1029,7 @@ msgstr "All product"
 msgid "Зачекайте секунду..."
 msgstr "Wait a second..."
 
-#: .\vacancy\models.py:35 .\vacancy\templates\vacancy\vacancy_page.html:66
+#: .\vacancy\models.py:35 .\vacancy\templates\vacancy\vacancy_page.html:70
 msgid "Вимоги"
 msgstr "Requirements"
 
@@ -1009,15 +1037,15 @@ msgstr "Requirements"
 msgid "Обов'язки"
 msgstr "Duties"
 
-#: .\vacancy\models.py:37 .\vacancy\templates\vacancy\vacancy_page.html:98
+#: .\vacancy\models.py:37 .\vacancy\templates\vacancy\vacancy_page.html:102
 msgid "Умови"
 msgstr "Conditions"
 
-#: .\vacancy\models.py:38 .\vacancy\templates\vacancy\vacancy_page.html:114
+#: .\vacancy\models.py:38 .\vacancy\templates\vacancy\vacancy_page.html:118
 msgid "Від нас"
 msgstr "From us"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:25
+#: .\vacancy\templates\vacancy\vacancy_page.html:29
 msgid ""
 "Обирай роботу до вподоби та приєднуйся до нашої команди! У компанії Hanbild "
 "ти отримаєш не лише роботу, але й можливість для особистого зростання та "
@@ -1031,28 +1059,28 @@ msgstr ""
 "from talented colleagues. Join us today and do it first. step to your "
 "success!"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:39
+#: .\vacancy\templates\vacancy\vacancy_page.html:43
 msgid "Список наявних вакансій"
 msgstr "List of available vacancies"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:48
-#: .\vacancy\templates\vacancy\vacancy_page.html:50
+#: .\vacancy\templates\vacancy\vacancy_page.html:52
+#: .\vacancy\templates\vacancy\vacancy_page.html:54
 msgid "грн"
 msgstr "UAH"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:82
+#: .\vacancy\templates\vacancy\vacancy_page.html:86
 msgid "Обов`язки"
 msgstr "Duties"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:125
+#: .\vacancy\templates\vacancy\vacancy_page.html:129
 msgid "Написати нам"
 msgstr "Contact us"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:144
+#: .\vacancy\templates\vacancy\vacancy_page.html:148
 msgid "Інфомація відсутня"
 msgstr "Information is not available"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:167
+#: .\vacancy\templates\vacancy\vacancy_page.html:171
 msgid "Напишіть, яка вакансія вас цікавить"
 msgstr "Write what vacancy you are interested in"
 
