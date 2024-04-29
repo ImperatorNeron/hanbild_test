@@ -112,7 +112,7 @@
           {% endif %}
         </td>
         <td>
-          <a href="">{{ cart.item.name }}</a>
+          <a href="{% url "catalog:item" cart.item.slug %}">{{ cart.item.name }}</a>
         </td>
         <td>
           <div class="quantity">

@@ -5478,7 +5478,15 @@ thead tr th:last-child svg {
     .form-buttons,
     .popup-contact-form .right-container img {
         -ms-flex-item-align: start;
-        align-self: flex-start
+        align-self: flex-start;
+    }
+
+    .popup-contact-form .form-buttons{
+        width: 100%;
+    }
+    
+    .popup-contact-form .form-buttons a:first-child{
+        flex: 1;
     }
 
     .reviews-block .swiper-pagination-bullet {

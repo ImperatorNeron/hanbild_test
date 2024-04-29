@@ -4,7 +4,8 @@ $(document).ready(function () {
     var successMessage = $("#jq-notification");
     var goodsInCartCount = $("#cartCount");
     var cartCount = parseInt(goodsInCartCount.text() || 0);
-    var is_uk_language = document.cookie.includes("django_language=uk")
+    var cookies = document.cookie.toLowerCase()
+    var is_uk_language = cookies.includes("django_language=uk")
 
 
     // Checking cart quantity initially
