@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+  <main class="main">
+    <div class="error-container">
+      <img src="{% static 'hanbild/images/error-img.svg' %}" alt="" />
+      <p>
+        {% translate 'Упс... Здається щось пішло не так. Сторінку, яку ви шукали, не знайдено. Проте не засмучуйтесь, у нас є багато цікавого для вас.' %}
+        <a class="special-link" href="{% url 'main:index' %}">{% translate 'Перейти на головну' %}</a>.
+      </p>
+    </div>
+  </main>
+{% endblock %}

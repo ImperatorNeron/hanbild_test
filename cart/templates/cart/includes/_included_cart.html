@@ -1,0 +1,146 @@
+{% load static %}
+{% load i18n %}
+
+<table class="comp-table">
+  <thead>
+    <tr>
+      <th>№</th>
+      <th>
+        {% translate 'Фото' %}
+      </th>
+      <th>
+        {% translate 'Назва' %}
+      </th>
+      <th>
+        {% translate 'Арт.' %}
+      </th>
+      <th>
+        {% translate 'К-сть' %}
+      </th>
+      <th>
+        {% translate 'Ціна' %}
+      </th>
+      <th>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+          <g>
+            <path d="M28 4h-7V2a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v2H4a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h1v18c0 2.206 1.794 4 4 4h14c2.206 0 4-1.794 4-4V9h1a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zM13 3h6v1h-6zm12 24c0 1.103-.897 2-2 2H9c-1.103 0-2-.897-2-2V9h18zm2-20H5V6h22zM15 26V12a1 1 0 0 1 2 0v14a1 1 0 0 1-2 0zm-5 0V12a1 1 0 0 1 2 0v14a1 1 0 0 1-2 0zm10 0V12a1 1 0 1 1 2 0v14a1 1 0 1 1-2 0z" opacity="1" data-original="#000000" class=""></path>
+          </g>
+        </svg>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for cart in carts %}
+      <tr class="cart-item">
+        <td>{{ forloop.counter }}</td>
+        <td>
+          {% if cart.item.preview_image %}
+            <img class="cart-image" src="{{ cart.item.preview_image.url }}" alt="" />
+          {% else %}
+            <img class="cart-image" src="{% static 'hanbild/images/image_not_found.png' %}" alt="" />
+          {% endif %}
+        </td>
+        <td>
+          <a href="">{{ cart.item.name }}</a>
+        </td>
+        <td>{{ cart.item.pk|stringformat:'05d' }}</td>
+        <td>
+          <div class="quantity">
+            <p class="quantity_displayer">{{ cart.quantity }}</p>
+            <div class="num-but">
+              <a class="plus-btn" data-cart-id="{{ cart.id }}" href="{% url 'cart:cart_change' %}">▲</a>
+              <a class="minus-btn" data-cart-id="{{ cart.id }}" href="{% url 'cart:cart_change' %}">▼</a>
+            </div>
+          </div>
+        </td>
+        <td>
+          {% if cart.goods_price == 0 %}
+            {% translate 'Договірна' %}
+          {% else %}
+            {{ cart.goods_price|floatformat:'0' }} {% translate 'грн.' %}
+          {% endif %}
+        </td>
+        <td>
+          <a class="remove-btn" data-cart-id="{{ cart.id }}" href="{% url 'cart:cart_remove' %}"><img src="{% static 'hanbild/icons/cross.svg' %}" alt="" /></a>
+        </td>
+      </tr>
+    {% endfor %}
+    <tr>
+      <td colspan="7">
+        <div class="final-price">
+          <p>
+            {% translate 'Всього:' %}
+          </p>
+          <p>
+            <span>{{ carts.total_price }} {% translate 'грн.' %}</span>
+          </p>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="phone-table">
+  <thead>
+    <tr>
+      <th>
+        {% translate 'Фото' %}
+      </th>
+      <th>
+        {% translate 'Товар' %}
+      </th>
+      <th>
+        {% translate 'Ціна' %}
+      </th>
+      <th>
+        <img src="{% static 'hanbild/icons/waste.svg' %}" alt="">
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for cart in carts %}
+      <tr class="cart-item">
+        <td>
+          {% if cart.item.preview_image %}
+            <img class="cart-image" src="{{ cart.item.preview_image.url }}" alt="" />
+          {% else %}
+            <img class="cart-image" src="{% static 'hanbild/images/image_not_found.png' %}" alt="" />
+          {% endif %}
+        </td>
+        <td>
+          <a href="">{{ cart.item.name }}</a>
+        </td>
+        <td>
+          <div class="quantity">
+            <p>
+              {% if cart.goods_price == 0 %}
+                {% translate 'Договірна' %}
+              {% else %}
+                {{ cart.goods_price|floatformat:'0' }} {% translate 'грн.' %}
+              {% endif %} <b>x</b><b class="quantity_displayer">{{ cart.quantity }}</b>
+            </p>
+            <div class="num-but">
+              <a class="plus-btn" data-cart-id="{{ cart.id }}" href="{% url 'cart:cart_change' %}">▲</a>
+              <a class="minus-btn" data-cart-id="{{ cart.id }}" href="{% url 'cart:cart_change' %}">▼</a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <a class="remove-btn" data-cart-id="{{ cart.id }}" href="{% url 'cart:cart_remove' %}"><img src="{% static 'hanbild/icons/cross.svg' %}" alt="" /></a>
+        </td>
+      </tr>
+    {% endfor %}
+    <tr>
+      <td colspan="4">
+        <div class="final-price">
+          <p>
+            {% translate 'Всього:' %}
+          </p>
+          <p>
+            <span>{{ carts.total_price }} {% translate 'грн.' %}</span>
+          </p>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="{% static 'hanbild/css/style.min.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="{% static 'hanbild/favicon/icon.svg' %}" type="image/icon type" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <title>
+      {% block title %}
+
+      {% endblock %}
+    </title>
+    {% block css %}
+
+    {% endblock %}
+  </head>
+  <body id="scroll-body">
+    {% include 'includes/_feedback_button.html' %}
+    {% include 'includes/_feedback_form.html' %}
+    {% include 'includes/_cookies_agreement.html' %}
+    {% include 'includes/_load_indicator.html' %}
+    <div class="wrapper">
+      {% include 'includes/_header.html' %}
+      <div class="body-overlay"></div>
+      {% block content %}
+
+      {% endblock %}
+      {% include 'includes/_footer.html' %}
+    </div>
+  </body>
+  <script src="{% static 'hanbild/js/jquery/jquery.js' %}"></script>
+  <script src="{% static 'hanbild/js/action.js' %}"></script>
+  <script src="{% static 'hanbild/js/ajax.js' %}"></script>
+  {% block js %}
+
+  {% endblock %}
+</html>

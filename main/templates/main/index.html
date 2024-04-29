@@ -1,0 +1,391 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+  {{ title }}
+{% endblock %}
+
+{% block css %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+{% endblock %}
+
+{% block content %}
+  <main class="main" id="main-margin">
+    <div class="home-page">
+      <div class="photo-block">
+        <div class="left-container">
+          <div class="info">
+            <img class="logotype" src="{% static 'hanbild/icons/logo_dv.svg' %}" alt="logo" />
+            <p>
+              {% translate 'Hanbild - ваш надійний партнер у сфері виробництва причепів та напівпричепів. Наша компанія спеціалізується на створенні надійних, безпечних і функціональних рішень для перевезення вантажів будь-якого типу і розміру. Завдяки нашому досвіду та професіоналізму ми забезпечуємо високу якість продукції та індивідуальний підхід до кожного клієнта.' %}
+            </p>
+          </div>
+        </div>
+        <div class="right-container"></div>
+      </div>
+      <div class="first-block">
+        <img src="{% static 'hanbild/icons/man1-1.svg' %}" alt="" />
+        <div class="greatings">
+          <h2>{% translate 'Вас вітає,' %}</h2>
+          <h2>Hanbild!</h2>
+        </div>
+        <div class="point-container">
+          <div class="point">
+            <div class="circle"></div>
+            <p>
+              {% translate 'Якість, швидкість, надійність – саме ці слова асоціюються у наших клієнтів з компанією Hanbild. Ми спеціалізуємося на створенні спеціалізованих причепів та напівпричепів, що відповідають найвищим стандартам якості.' %}
+            </p>
+          </div>
+          <div class="point">
+            <div class="circle"></div>
+            <p>
+              {% translate 'У нашій роботі ми використовуємо тільки високоякісні матеріали та комплектуючі, що гарантує довговічність і надійність виготовленого продукту.' %}
+            </p>
+          </div>
+          <div class="point">
+            <div class="circle"></div>
+            <p>
+              {% translate 'Наша компанія працює на ринку понад 10 років, і за цей час ми зарекомендували себе як професіонали, що здатні вирішувати завдання будь-якої складності в стислі терміни.' %}
+            </p>
+          </div>
+          <div class="point">
+            <div class="circle"></div>
+            <p>
+              {% translate 'Ми пишаємося тим, що наші клієнти довіряють нам, оцінюючи нашу гнучкість, якість та індивідуальний підхід до кожного проєкту.' %}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="home-page-wrapper">
+        <h3 id="adv-w">{% translate 'Переваги роботи з нами' %}</h3>
+        <div class="adv-cont">
+          <div class="adv">
+            <p class="adv-header">
+              {% translate 'Оперативність' %}
+            </p>
+            <p>
+              {% translate 'Швидке виконання замовлень у стислі терміни' %}
+            </p>
+            <div class="bookmark-wrap">
+              <div class="bookmark">
+                <p>1</p>
+              </div>
+            </div>
+          </div>
+          <div class="adv">
+            <p class="adv-header">
+              {% translate 'Якість' %}
+            </p>
+            <p>
+              {% translate 'Використання тільки якісних матеріалів' %}
+            </p>
+            <div class="bookmark-wrap">
+              <div class="bookmark">
+                <p>2</p>
+              </div>
+            </div>
+          </div>
+          <div class="adv">
+            <p class="adv-header">
+              {% translate 'Комунікація' %}
+            </p>
+            <p>
+              {% translate 'Постійний зв`язок з менеджером, що координує проєкт' %}
+            </p>
+            <div class="bookmark-wrap">
+              <div class="bookmark">
+                <p>3</p>
+              </div>
+            </div>
+          </div>
+          <div class="adv">
+            <p class="adv-header">
+              {% translate 'Контроль' %}
+            </p>
+            <p>
+              {% translate 'Контролюється кожен етап виробництва' %}
+            </p>
+            <div class="bookmark-wrap">
+              <div class="bookmark">
+                <p>4</p>
+              </div>
+            </div>
+          </div>
+          <div class="adv">
+            <p class="adv-header">
+              {% translate 'Бонуси' %}
+            </p>
+            <p>
+              {% translate 'Постійним клієнтам надаємо персональні знижки' %}
+            </p>
+            <div class="bookmark-wrap">
+              <div class="bookmark">
+                <p>5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          {% translate ' ... і це лише невелика частина переваг співпраці з нами. Доєднуйтесь, щоб отримати якісний товар та професійний сервіс!' %}
+        </p>
+        <h3>{% translate 'Наші товари та послуги' %}</h3>
+        <p>
+          {% translate 'Запрошуємо вас ознайомитись з широким спектром товарів та послуг для вашого бізнесу. Від розробки індивідуальних рішень до постачання стандартних напівпричепів - ми готові задовольнити всі ваші потреби. Наша команда експертів завжди готова відповісти на ваші запитання та розглянути будь-які пропозиції.' %}
+        </p>
+        <div class="our-product">
+          <div class="button-block">
+            <a href="{% url 'product:product' %}">
+              <p>
+                {% translate 'Продукція' %}
+              </p>
+              <div class="arr">
+                <img src="{% static 'hanbild/icons/point-trig.svg' %}" alt="" width="15" height="15">
+              </div>
+            </a>
+            <a href="{% url 'main:services' %}">
+              <p>
+                {% translate 'Послуги' %}
+              </p>
+              <div class="arr">
+                <img src="{% static 'hanbild/icons/point-trig.svg' %}" alt="" width="15" height="15">
+              </div>
+            </a>
+            <a href="{% url 'main:contacts' %}">
+              <p>
+                {% translate 'Контакти' %}
+              </p>
+              <div class="arr">
+                <img src="{% static 'hanbild/icons/point-trig.svg' %}" alt="" width="15" height="15">
+              </div>
+            </a>
+          </div>
+          <img src="{% static 'hanbild/icons/man3.svg' %}" alt="" />
+        </div>
+        <h3 id="why">{% translate 'Чому нас обирають' %}</h3>
+      </div>
+      <div class="numbers-block">
+        <div class="numbers">
+          <div class="point">
+            <img src="{% static 'hanbild/icons/clock.svg' %}" alt="" />
+            <div class="number-text">
+              <p class="super-number">10</p>
+              <p>
+                {% translate 'років досвіду' %}
+              </p>
+            </div>
+          </div>
+          <div class="point">
+            <img src="{% static 'hanbild/icons/client-icon.svg' %}" alt="" />
+            <div class="number-text">
+              <p class="super-number" data-digits-counter>250 +</p>
+              <p>
+                {% translate 'задоволених клієнтів' %}
+              </p>
+            </div>
+          </div>
+          <div class="point">
+            <img src="{% static 'hanbild/icons/delivery.svg' %}" alt="" />
+            <div class="number-text">
+              <p class="super-number" data-digits-counter>1000 +</p>
+              <p>
+                {% translate 'виконаних проєктів' %}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="road">
+          <div class="road-svg" style="opacity: 0;">
+            <?xml version="1.0" encoding="UTF-8"?><svg id="svg2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1833.12 361.29">
+              <defs>
+                <style>
+                  .cls-5 {
+                    fill: none;
+                    stroke: #131313;
+                    stroke-miterlimit: 10;
+                    stroke-width: 26px;
+                  }
+                </style>
+              </defs>
+              <g id="_Слой_3" data-name="Слой 3">
+                <path class="cls-5" d="M.15,16.29c73.03-.83,942.28-10.38,1032.99,7.52,8.62,1.7,35.66,7.04,50.98,29.53,14.34,21.06,16.17,53.9,2.04,77.29-5.89,9.76-16.18,20.56-50.04,32.82-35.48,12.85-62.47,14.84-102.99,18.25-63.51,5.34-97.03,8.52-137.28,17.92-24.8,5.79-50.45,13.61-68.61,32.05-17.11,17.38-21.37,49.41-10.32,71.5,15.64,31.26,61.84,37.3,82.26,39.71,138.01,16.25,962.94-9.03,1033.53-11.23">
+                  <animate id="an_stroke2" attributeName="stroke-dasharray" dur="3s" values="0, 6488; 6488,0" fill="freeze" />
+                </path>
+              </g>
+            </svg>
+            <svg id="svg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1833.12 361.29">
+              <defs>
+                <mask id="msk1">
+                  <path class="path-dash" fill="none" stroke="white" stroke-dasharray="0, 6488" stroke-dashoffset="0" stroke-width="4" d="M.15,16.29c73.03-.83,942.28-10.38,1032.99,7.52,8.62,1.7,35.66,7.04,50.98,29.53,14.34,21.06,16.17,53.9,2.04,77.29-5.89,9.76-16.18,20.56-50.04,32.82-35.48,12.85-62.47,14.84-102.99,18.25-63.51,5.34-97.03,8.52-137.28,17.92-24.8,5.79-50.45,13.61-68.61,32.05-17.11,17.38-21.37,49.41-10.32,71.5,15.64,31.26,61.84,37.3,82.26,39.71,138.01,16.25,962.94-9.03,1033.53-11.23">
+                    <animate id="an_stroke" attributeName="stroke-dasharray" dur="3s" values="0, 6488; 6488,0" fill="freeze" />
+                  </path>
+                </mask>
+              </defs>
+              <path class="path-dash" fill="none" mask="url(#msk1)" stroke-dasharray="15 8" stroke-dashoffset="0" stroke="#000000" stroke-width="4" d="M.15,16.29c73.03-.83,942.28-10.38,1032.99,7.52,8.62,1.7,35.66,7.04,50.98,29.53,14.34,21.06,16.17,53.9,2.04,77.29-5.89,9.76-16.18,20.56-50.04,32.82-35.48,12.85-62.47,14.84-102.99,18.25-63.51,5.34-97.03,8.52-137.28,17.92-24.8,5.79-50.45,13.61-68.61,32.05-17.11,17.38-21.37,49.41-10.32,71.5,15.64,31.26,61.84,37.3,82.26,39.71,138.01,16.25,962.94-9.03,1033.53-11.23" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="home-page-wrapper">
+        <h3>{% translate 'Про нас говорять клієнти' %}</h3>
+      </div>
+      <div class="reviews-block reviews-swiper-container">
+        <div class="swiper-wrapper">
+          <div class="reviews-card swiper-slide">
+            <h4>{% translate 'Олександр Довбуш' %}</h4>
+            <div class="who-stars">
+              <p>
+                {% translate 'Клієнт' %}
+              </p>
+              <div class="stars-block">
+                <p>5.0</p>
+                <img src="{% static 'hanbild/icons/star-img.svg' %}" alt="" />
+              </div>
+            </div>
+            <p>
+              {% translate 'Співпраця з компанією Хенбілд була надзвичайно вигідною. Вони забезпечили ефективну комунікацію, точність у виконанні наших вимог та приємні бонуси. Результат відповідає очікуванням, рекомендую!' %}
+            </p>
+
+            <div class="truck-circle">
+              <img src="{% static 'hanbild/icons/delivery.svg' %}" alt="" />
+            </div>
+            <div class="reviews-trig">
+              <img src="{% static 'hanbild/icons/trrr.svg' %}" alt="" />
+            </div>
+          </div>
+          <div class="reviews-card swiper-slide">
+            <h4>{% translate 'Михайло Скляр' %}</h4>
+            <div class="who-stars">
+              <p>
+                {% translate 'Клієнт' %}
+              </p>
+              <div class="stars-block">
+                <p>5.0</p>
+                <img src="{% static 'hanbild/icons/star-img.svg' %}" alt="" />
+              </div>
+            </div>
+            <p>
+              {% translate 'Як клієнт, я відчував себе повністю задоволеним процедурою співпраці. Високий рівень професіоналізму та прагнення до вдосконалення поєднуються в цій компанії.' %}
+            </p>
+
+            <div class="truck-circle">
+              <img src="{% static 'hanbild/icons/gears.svg' %}" alt="" />
+            </div>
+            <div class="reviews-trig">
+              <img src="{% static 'hanbild/icons/trrr.svg' %}" alt="" />
+            </div>
+          </div>
+          <div class="reviews-card swiper-slide">
+            <h4>{% translate 'Генадій Коломієць' %}</h4>
+            <div class="who-stars">
+              <p>
+                {% translate 'Клієнт' %}
+              </p>
+              <div class="stars-block">
+                <p>5.0</p>
+                <img src="{% static 'hanbild/icons/star-img.svg' %}" alt="" />
+              </div>
+            </div>
+            <p>
+              {% translate 'Якість напівпричепів цієї компанії перевершує очікування. Вражає відданість команди і постійне прагнення до інновацій.' %}
+            </p>
+
+            <div class="truck-circle">
+              <img src="{% static 'hanbild/icons/wrench.svg' %}" alt="" />
+            </div>
+            <div class="reviews-trig">
+              <img src="{% static 'hanbild/icons/trrr.svg' %}" alt="" />
+            </div>
+          </div>
+
+          <div class="reviews-card swiper-slide">
+            <h4>{% translate 'Микола Мовчан' %}</h4>
+            <div class="who-stars">
+              <p>
+                {% translate 'Клієнт' %}
+              </p>
+              <div class="stars-block">
+                <p>5.0</p>
+                <img src="{% static 'hanbild/icons/star-img.svg' %}" alt="" />
+              </div>
+            </div>
+            <p>
+              {% translate 'Замовляю не перший раз. Компанія завжди дотримується угодених термінів, що для мене є дуже важливим. Рекомендую!' %}
+            </p>
+
+            <div class="truck-circle">
+              <img src="{% static 'hanbild/icons/delivery.svg' %}" alt="" />
+            </div>
+            <div class="reviews-trig">
+              <img src="{% static 'hanbild/icons/trrr.svg' %}" alt="" />
+            </div>
+          </div>
+          <div class="reviews-card swiper-slide">
+            <h4>{% translate 'Олексій Клименко' %}</h4>
+            <div class="who-stars">
+              <p>
+                {% translate 'Клієнт' %}
+              </p>
+              <div class="stars-block">
+                <p>5.0</p>
+                <img src="{% static 'hanbild/icons/star-img.svg' %}" alt="" />
+              </div>
+            </div>
+            <p>
+              {% translate 'Компанія врахувала кожну нашу вимогу та побажання. Ми отримали саме те, що було потрібно. Окреме дякую за знижку та консультації!' %}
+            </p>
+
+            <div class="truck-circle">
+              <img src="{% static 'hanbild/icons/gears.svg' %}" alt="" />
+            </div>
+            <div class="reviews-trig">
+              <img src="{% static 'hanbild/icons/trrr.svg' %}" alt="" />
+            </div>
+          </div>
+          <div class="reviews-card swiper-slide">
+            <h4>{% translate 'Святослав Матвійчук' %}</h4>
+            <div class="who-stars">
+              <p>
+                {% translate 'Клієнт' %}
+              </p>
+              <div class="stars-block">
+                <p>5.0</p>
+                <img src="{% static 'hanbild/icons/star-img.svg' %}" alt="" />
+              </div>
+            </div>
+            <p>
+              {% translate 'Все пройшло чудово починаючи з самого початку. Менеджери привітні та доброзичливі. Приємно мати справу.' %}
+            </p>
+
+            <div class="truck-circle">
+              <img src="{% static 'hanbild/icons/wrench.svg' %}" alt="" />
+            </div>
+            <div class="reviews-trig">
+              <img src="{% static 'hanbild/icons/trrr.svg' %}" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="button-next">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.85 9.25">
+            <g>
+              <path d="M15.79,.93c-.13-.41-.44-.73-.83-.86h0c-.52-.16-1.01-.03-1.42,.38l-1.91,1.91c-1.23,1.23-2.46,2.46-3.69,3.69L2.37,.49c-.07-.07-.14-.13-.23-.21-.47-.38-1.15-.38-1.63,0C.19,.53,.07,.87,0,1.11v.03s0,.38,0,.38c.09,.42,.34,.7,.58,.94l2.04,2.04c1.43,1.43,2.85,2.85,4.28,4.28,.1,.1,.21,.21,.35,.28,.21,.13,.44,.19,.67,.19,.35,0,.71-.15,1-.45L15.41,2.32c.06-.07,.12-.13,.18-.2,.25-.33,.33-.77,.2-1.18Z" />
+            </g>
+          </svg>
+        </div>
+        <div class="button-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.85 9.25">
+            <g>
+              <path d="M15.79,.93c-.13-.41-.44-.73-.83-.86h0c-.52-.16-1.01-.03-1.42,.38l-1.91,1.91c-1.23,1.23-2.46,2.46-3.69,3.69L2.37,.49c-.07-.07-.14-.13-.23-.21-.47-.38-1.15-.38-1.63,0C.19,.53,.07,.87,0,1.11v.03s0,.38,0,.38c.09,.42,.34,.7,.58,.94l2.04,2.04c1.43,1.43,2.85,2.85,4.28,4.28,.1,.1,.21,.21,.35,.28,.21,.13,.44,.19,.67,.19,.35,0,.71-.15,1-.45L15.41,2.32c.06-.07,.12-.13,.18-.2,.25-.33,.33-.77,.2-1.18Z" />
+            </g>
+          </svg>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </main>
+{% endblock %}
+
+{% block js %}
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="{% static 'hanbild/js/slide.js' %}"></script>
+{% endblock %}

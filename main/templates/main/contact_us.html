@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}
+  {{ title }}
+{% endblock %}
+
+{% block content %}
+  <main class="background-off main">
+    <div class="up-main-section">
+      <div class="breadcrumbs" id="breadcrumbs-main">
+        <ul>
+          <li>
+            <a href="{% url 'main:index' %}">{% translate 'Головна сторінка' %}</a>
+          </li>
+          <li>
+            {% translate 'Контакти' %}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="photo-block">
+      <div class="left-container">
+        <div class="info">
+          <h2>{% translate 'Контакти' %}</h2>
+          <p>
+            {% translate "На цій сторінці ви можете дізнатися наші контактні дані та місцезнаходження. Зв'яжіться з нами, щоб дізнатися більше про наші послуги та продукцію. Ми завжди раді відповісти на ваші питання і надати необхідну інформацію." %}
+          </p>
+        </div>
+      </div>
+      <div class="right-container"></div>
+    </div>
+
+    <div class="contacts-info">
+      <div class="all-info">
+        <div class="right-section">
+          <div class="contact-block">
+            <div class="contact-heading">
+              <svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.02 184.02">
+                <g id="_Слой_2-2" data-name="Слой 2">
+                  <path d="M179,139.31c-8.05-8.09-16.14-16.14-24.23-24.19-6.65-6.56-14.95-6.56-21.56,0-5.04,5-10.08,10-15.04,15.08-1.35,1.4-2.5,1.69-4.15,.76-3.26-1.78-6.74-3.22-9.87-5.17-14.62-9.19-26.86-21.01-37.7-34.31-5.38-6.61-10.17-13.68-13.51-21.65-.68-1.61-.55-2.67,.76-3.98,5.04-4.87,9.95-9.87,14.91-14.87,6.91-6.95,6.91-15.08-.04-22.07-3.94-3.98-7.88-7.88-11.82-11.86-4.07-4.07-8.09-8.18-12.2-12.2-6.65-6.48-14.95-6.48-21.56,.04-5.08,5-9.95,10.12-15.12,15.04C3.07,24.47,.66,30.02,.15,36.5c-.81,10.55,1.78,20.5,5.42,30.2,7.45,20.08,18.81,37.91,32.58,54.26,18.6,22.11,40.79,39.61,66.76,52.23,11.69,5.68,23.8,10.04,36.98,10.76,9.07,.51,16.95-1.78,23.26-8.85,4.32-4.83,9.19-9.24,13.77-13.85,6.78-6.86,6.82-15.17,.08-21.94Z" />
+                </g>
+              </svg>
+              <h3>{% translate 'Номери телефонів' %}</h3>
+            </div>
+
+            <ul>
+              <li>
+                <a href="tel:+380951515315">+38 095 151 5315</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-block">
+            <div class="contact-heading">
+              <svg id="contact-mail" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155.76 107.08">
+                <g id="_Слой_2-2" data-name="Слой 2">
+                  <g>
+                    <path d="M103.25,54.34l-8.92,5.88-13.78,9.07c-.79,.52-1.72,.8-2.67,.8s-1.86-.27-2.68-.8l-13.77-9.08-8.92-5.87L0,19.74V87.53l.31,11.33c.75,4.63,4.59,8.22,9.43,8.22H146.02c4.84,0,8.67-3.59,9.42-8.22l.32-11.33V19.74l-52.51,34.6Z" />
+                    <path d="M155.46,8.28c-.73-4.66-4.58-8.28-9.44-8.28H9.74C4.88,0,1.02,3.62,.29,8.28L77.88,59.4,155.46,8.28Z" />
+                  </g>
+                </g>
+              </svg>
+              <h3>{% translate 'Електронна адреса' %}</h3>
+            </div>
+            <a id="contact-mail" href="mailto:hanbild@ukr.net">hanbild@ukr.net</a>
+          </div>
+          <div class="contact-block">
+            <div class="contact-heading">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                <g>
+                  <path d="M256 88.008c-93.734 0-169.992 76.258-169.992 169.992S162.266 427.992 256 427.992 425.992 351.734 425.992 258 349.734 88.008 256 88.008zm78.086 188.683h-77.899c-5.8 0-10.82-3.293-13.316-8.109a14.95 14.95 0 0 1-1.871-7.25V143.434c0-8.286 6.715-15 15-15s15 6.714 15 15V246.69h63.086c8.281 0 15 6.72 15 15 0 8.286-6.719 15-15 15zm0 0" opacity="1" data-original="#000000" class=""></path>
+                  <path d="M437.02 74.98C388.668 26.63 324.379 0 256 0S123.332 26.629 74.98 74.98C26.63 123.332 0 187.621 0 256s26.629 132.668 74.98 181.02C123.332 485.37 187.621 512 256 512s132.668-26.629 181.02-74.98C485.37 388.668 512 324.379 512 256s-26.629-132.668-74.98-181.02zM256 457.992c-110.273 0-199.992-89.715-199.992-199.992S145.727 58.008 256 58.008 455.992 147.727 455.992 258 366.273 457.992 256 457.992zm0 0" opacity="1" data-original="#000000" class=""></path>
+                </g>
+              </svg>
+              <h3>{% translate 'Графік роботи' %}</h3>
+            </div>
+            <ul>
+              <li>
+                <p>
+                  <span>{% translate 'Пн-Пт:' %}</span> {% translate 'з 9.00 по 20.00' %}
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span>{% translate 'Сб-Нд:' %}</span> {% translate 'вихідний' %}
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="location">
+          <div class="contact-block">
+            <div class="contact-heading">
+              <svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.26 204.35">
+                <g id="_Слой_2-2" data-name="Слой 2">
+                  <path d="M76.63,0C34.37,0,0,34.37,0,76.63c0,53.12,69.17,122.91,72.11,125.86,2.5,2.49,6.54,2.49,9.04,0,2.94-2.95,72.11-72.74,72.11-125.86C153.26,34.37,118.89,0,76.63,0Zm0,114.95c-21.16,0-38.32-17.15-38.32-38.32s17.15-38.32,38.32-38.32,38.32,17.15,38.32,38.32-17.15,38.32-38.32,38.32Z" />
+                </g>
+              </svg>
+              <h3>{% translate 'Адреса' %}</h3>
+            </div>
+            <a href="">{% translate 'м. Дніпро, вул. Орловська, 21' %}</a>
+            <div class="map">
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7482.482902032453!2d34.980356634301124!3d48.4669433540116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe3ae293de9a5%3A0x7383d13eacdca40!2sOrlovs&#39;ka%20St%2C%2021%2C%20Dnipro%2C%20Dnipropetrovs&#39;ka%20oblast%2C%2049000!5e0!3m2!1sen!2sua!4v1711323025259!5m2!1sen!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="feedback-form" method="post" id="page-contact-form">
+        {% csrf_token %}
+        <h3>{% translate "Форма зворотнього зв'язку" %}</h3>
+        <div class="form-container">
+          <div class="point">
+            <label for="id_name">{% translate 'Як до вас звертатися:' %}</label>
+            <input type="text" name="name" id="id_name" required placeholder="{% translate 'Ваше ім`я' %}" />
+            <div id="page_name" class="page-validation-error"></div>
+          </div>
+          <div class="point">
+            <label for="id_number_or_email">{% translate 'Номер телефону або e-mail:' %}</label>
+            <input type="text" name="number_or_email" id="id_number_or_email" required placeholder="{% translate 'Залиште контакт для зв`язку' %}" />
+            <div id="page_number_or_email" class="page-validation-error"></div>
+          </div>
+          <div class="point">
+            <label for="id_message">{% translate 'Повідомлення:' %}</label>
+            <textarea name="message" id="id_message" placeholder="{% translate 'Напишіть, що саме вас цікавить' %}"></textarea>
+          </div>
+        </div>
+        <div class="form-end">
+          <input type="checkbox" id="contact-agreement" value="" checked /><label for="contact-agreement">{% translate 'Натискаючи кнопку "Надіслати" я погоджуюсь з умовами' %} <a href="{% url 'main:privacy_policy' %}"><span>{% translate 'політики конфіденційності' %}</span></a></label>
+
+          <div class="form-buttons">
+            <a class="contact-submit-button-wrapper"><button class="contact-submit-button" type="submit">{% translate 'Надіслати' %}</button></a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+{% endblock %}

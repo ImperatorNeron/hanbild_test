@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+{% block content %}
+  <main class="main">
+    <div class="empty-cart">
+      <h4><span>{% translate 'Замовлення' %}</span> {% translate ' оформлене!' %}</h4>
+      <img id="order-placed" src="{% static 'hanbild/icons/order-placed.svg' %}" alt="" />
+      <p>
+        {% translate 'Дякуємо за покупку! Ваше замовлення успішно оформлене і прийняте до обробки. Найближчим часом з вами зв`яжеться менеджер. Бажаємо гарного дня!' %}
+        <a href="{% url 'catalog:catalog' %}" class="special-link">{% translate 'Переглянути інші товари.' %}</a>
+      </p>
+    </div>
+  </main>
+{% endblock %}

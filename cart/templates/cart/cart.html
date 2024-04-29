@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% load carts_tags %}
+
+{% block title %}
+  {% translate 'Корзина' %}
+{% endblock %}
+
+{% block content %}
+  <main id="cartTabId" class="main">
+    {% anonymous_user_carts request as carts %}
+    {% if carts %}
+      <div class="shopping_cart">
+        <div class="cart-heading">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 418.919 418.919" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+            <g>
+              <path d="M0 90.019h285.87v160.79H0z" fill="#000000" opacity="1" data-original="#000000" class=""></path>
+              <path d="m418.919 205.005-29.388-65.723H298.69v123.641H34.511v28.108h29.391c-.235 1.598-.397 3.219-.397 4.881 0 18.219 14.65 32.988 32.723 32.988s32.723-14.77 32.723-32.988c0-1.662-.162-3.283-.397-4.881H161.6c-.235 1.598-.397 3.219-.397 4.881 0 18.219 14.65 32.988 32.723 32.988 18.071 0 32.722-14.77 32.722-32.988 0-1.662-.161-3.283-.396-4.881h78.869c-.235 1.598-.397 3.219-.397 4.881 0 18.219 14.65 32.988 32.723 32.988 18.071 0 32.722-14.77 32.722-32.988 0-1.662-.161-3.283-.396-4.881h49.146v-86.026zM96.227 308.824c-7.074 0-12.809-5.781-12.809-12.912 0-1.729.343-3.374.953-4.881 1.91-4.711 6.495-8.033 11.855-8.033s9.945 3.322 11.855 8.033c.61 1.507.953 3.152.953 4.881.001 7.131-5.733 12.912-12.807 12.912zm97.696 0c-7.074 0-12.809-5.781-12.809-12.912 0-1.729.343-3.374.953-4.881 1.91-4.711 6.495-8.033 11.855-8.033s9.945 3.322 11.854 8.033c.611 1.507.954 3.152.954 4.881.001 7.131-5.733 12.912-12.807 12.912zm143.519 0c-7.074 0-12.809-5.781-12.809-12.912 0-1.729.343-3.374.953-4.881 1.91-4.711 6.495-8.033 11.855-8.033s9.945 3.322 11.854 8.033c.611 1.507.954 3.152.954 4.881.002 7.131-5.732 12.912-12.807 12.912zm-17.123-105.056a.889.889 0 0 1-.889-.889v-44.402c0-.491.397-.889.889-.889h55.921c1.179 0 2.246.698 2.718 1.779l19.4 44.401h-78.039z" fill="#000000" opacity="1" data-original="#000000" class=""></path>
+            </g>
+          </svg>
+          <h2>{% translate 'Кошик' %}</h2>
+        </div>
+        <div class="cart-table" id="cartContainer">
+          {% include 'cart/includes/_included_cart.html' %}
+        </div>
+        <div class="form-buttons">
+          <a href="{% url 'catalog:catalog' %}">{% translate 'До каталогу' %}</a>
+          <a href="{% url 'order:order' %}">{% translate 'Оформити замовлення' %}</a>
+          <a class="remove-all-carts" data-url="{% url 'cart:carts_remove' %}">
+            {% csrf_token %}
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+              <g>
+                <path d="M28 4h-7V2a1 1 0 0 0-1-1h-8a1 1 0 0 0-1 1v2H4a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h1v18c0 2.206 1.794 4 4 4h14c2.206 0 4-1.794 4-4V9h1a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zM13 3h6v1h-6zm12 24c0 1.103-.897 2-2 2H9c-1.103 0-2-.897-2-2V9h18zm2-20H5V6h22zM15 26V12a1 1 0 0 1 2 0v14a1 1 0 0 1-2 0zm-5 0V12a1 1 0 0 1 2 0v14a1 1 0 0 1-2 0zm10 0V12a1 1 0 1 1 2 0v14a1 1 0 1 1-2 0z" opacity="1" data-original="#000000" class=""></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    {% else %}
+      {% include 'cart/includes/_included_empty_cart.html' %}
+    {% endif %}
+  </main>
+{% endblock %}

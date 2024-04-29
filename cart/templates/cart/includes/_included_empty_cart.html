@@ -1,0 +1,10 @@
+{% load static %}
+{% load i18n %}
+<div class="empty-cart" id="emptyCartContainer">
+  <h4><span>{% translate 'Кошик' %}</span> {% translate 'порожній!' %}</h4>
+  <img src="{% static 'hanbild/icons/empty-cart.svg' %}" alt="" />
+  <p>
+    {% translate '... це виглядає трохи сумно. Давайте допоможемо йому наповнитися радістю :) Перегляньте та додайте наші найкращі пропозиції і зробіть його щасливим.' %}
+    <a href="{% url 'catalog:catalog' %}" class="special-link">{% translate 'Перейти до каталогу.' %}</a>
+  </p>
+</div>
