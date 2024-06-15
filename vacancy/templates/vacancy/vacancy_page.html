@@ -43,6 +43,7 @@
         <h2>{% translate 'Список наявних вакансій' %}</h2>
       </div>
       <div class="vacancies-block">
+        {% if vacancies %}
         {% for vacancy in vacancies %}
           <div class="vacancy">
             <div class="vacancy-block">
@@ -150,6 +151,11 @@
             </div>
           </div>
         {% endfor %}
+        {% else %}
+        <div class="empty-vacancies-list">
+          {% translate 'На даний момент у Hanbild відсутні вільні вакансії.' %}
+        </div>
+        {% endif %}
       </div>
       <div id="iform" style="margin-top: -155px; padding-top: 155px; z-index: -1;"></div>
       <form class="feedback-form" method="post" id="page-contact-form">
