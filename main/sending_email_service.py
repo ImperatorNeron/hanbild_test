@@ -3,7 +3,7 @@ from django.forms import ValidationError
 from django.template.loader import render_to_string
 
 
-def send_email(context, letter_template, send_to="www.vladik49@gmail.com"):
+def send_email(context, letter_template, send_to="hanbild@ukr.net"):
     """
     Function for message sending
     :context: parameters from forms or custom messages for user and company
