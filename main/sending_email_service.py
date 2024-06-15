@@ -19,7 +19,7 @@ def send_email(context, letter_template, send_to="www.vladik49@gmail.com"):
         email = EmailMessage(
             subject=f"Повідомлення від Hanbild",
             body=html_content,
-            from_email="km2022tm@gmail.com",
+            from_email="golden.gruz.sender@gmail.com",
             to=[send_to],
         )
         email.content_subtype = "html"
