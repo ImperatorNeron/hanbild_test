@@ -1,0 +1,17 @@
+User-agent: Googlebot-Image
+
+Disallow: /static/hanbild/icons/logo_dv.svg
+Disallow: /static/hanbild/icons/logobg_dv.svg
+Disallow: /static/hanbild/icons/phone.svg
+Disallow: /static/hanbild/icons/email.svg
+Disallow: /static/hanbild/icons/shopping_cart.svg
+Disallow: /static/hanbild/icons/planet.svg
+Disallow: /static/hanbild/icons/man1-1.svg
+Disallow: /static/hanbild/icons/man3.svg
+Disallow: /static/hanbild/icons/delivery.svg
+Disallow: /static/hanbild/icons/client-icon.svg
+Disallow: /static/hanbild/icons/clock.svg
+Disallow: /static/hanbild/icons/gears.svg
+Disallow: /static/hanbild/icons/wrench.svg
+Disallow: /static/hanbild/icons/arrow-up.svg
+Disallow: /static/hanbild/icons/message.svg
