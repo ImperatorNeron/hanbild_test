@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-30 00:36+0300\n"
+"POT-Creation-Date: 2024-06-15 17:38+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -235,11 +235,11 @@ msgstr "Category"
 msgid "Каталог компанії | HanBild.com.ua"
 msgstr "Company catalog | HanBild.com.ua"
 
-#: .\hanbild\settings.py:98
+#: .\hanbild\settings.py:97
 msgid "Ukrainian"
 msgstr "Ukrainian"
 
-#: .\hanbild\settings.py:99
+#: .\hanbild\settings.py:98
 msgid "English"
 msgstr "English"
 
@@ -408,37 +408,37 @@ msgid "м. Дніпро, вул. Орловська, 21"
 msgstr "Dnipro, ul. Orlovskaya, 21"
 
 #: .\main\templates\main\contact_us.html:111
-#: .\vacancy\templates\vacancy\vacancy_page.html:157
+#: .\vacancy\templates\vacancy\vacancy_page.html:163
 msgid "Форма зворотнього зв'язку"
 msgstr "Feedback form"
 
 #: .\main\templates\main\contact_us.html:114
 #: .\templates\includes\_feedback_form.html:23
-#: .\vacancy\templates\vacancy\vacancy_page.html:160
+#: .\vacancy\templates\vacancy\vacancy_page.html:166
 msgid "Як до вас звертатися:"
 msgstr "How to contact you"
 
 #: .\main\templates\main\contact_us.html:115
 #: .\templates\includes\_feedback_form.html:24
-#: .\vacancy\templates\vacancy\vacancy_page.html:161
+#: .\vacancy\templates\vacancy\vacancy_page.html:167
 msgid "Ваше ім`я"
 msgstr "Your name"
 
 #: .\main\templates\main\contact_us.html:119
 #: .\templates\includes\_feedback_form.html:28
-#: .\vacancy\templates\vacancy\vacancy_page.html:165
+#: .\vacancy\templates\vacancy\vacancy_page.html:171
 msgid "Номер телефону або e-mail:"
 msgstr "Phone number or email"
 
 #: .\main\templates\main\contact_us.html:120
 #: .\templates\includes\_feedback_form.html:29
-#: .\vacancy\templates\vacancy\vacancy_page.html:166
+#: .\vacancy\templates\vacancy\vacancy_page.html:172
 msgid "Залиште контакт для зв`язку"
 msgstr "Leave a contact for communication"
 
 #: .\main\templates\main\contact_us.html:124
 #: .\templates\includes\_feedback_form.html:33
-#: .\vacancy\templates\vacancy\vacancy_page.html:170
+#: .\vacancy\templates\vacancy\vacancy_page.html:176
 msgid "Повідомлення:"
 msgstr "Message:"
 
@@ -449,19 +449,19 @@ msgstr "Write what interests you"
 
 #: .\main\templates\main\contact_us.html:129
 #: .\templates\includes\_feedback_form.html:38
-#: .\vacancy\templates\vacancy\vacancy_page.html:175
+#: .\vacancy\templates\vacancy\vacancy_page.html:181
 msgid "Натискаючи кнопку \"Надіслати\" я погоджуюсь з умовами"
 msgstr "By clicking \"Submit\" I agree to the terms"
 
 #: .\main\templates\main\contact_us.html:129
 #: .\templates\includes\_feedback_form.html:38
-#: .\vacancy\templates\vacancy\vacancy_page.html:175
+#: .\vacancy\templates\vacancy\vacancy_page.html:181
 msgid "політики конфіденційності"
 msgstr "privacy policy"
 
 #: .\main\templates\main\contact_us.html:132
 #: .\templates\includes\_feedback_form.html:41
-#: .\vacancy\templates\vacancy\vacancy_page.html:178
+#: .\vacancy\templates\vacancy\vacancy_page.html:184
 msgid "Надіслати"
 msgstr "Submit"
 
@@ -1033,7 +1033,7 @@ msgstr "All product"
 msgid "Зачекайте секунду..."
 msgstr "Wait a second..."
 
-#: .\vacancy\models.py:35 .\vacancy\templates\vacancy\vacancy_page.html:70
+#: .\vacancy\models.py:35 .\vacancy\templates\vacancy\vacancy_page.html:71
 msgid "Вимоги"
 msgstr "Requirements"
 
@@ -1041,11 +1041,11 @@ msgstr "Requirements"
 msgid "Обов'язки"
 msgstr "Duties"
 
-#: .\vacancy\models.py:37 .\vacancy\templates\vacancy\vacancy_page.html:102
+#: .\vacancy\models.py:37 .\vacancy\templates\vacancy\vacancy_page.html:103
 msgid "Умови"
 msgstr "Conditions"
 
-#: .\vacancy\models.py:38 .\vacancy\templates\vacancy\vacancy_page.html:118
+#: .\vacancy\models.py:38 .\vacancy\templates\vacancy\vacancy_page.html:119
 msgid "Від нас"
 msgstr "From us"
 
@@ -1067,24 +1067,28 @@ msgstr ""
 msgid "Список наявних вакансій"
 msgstr "List of available vacancies"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:52
-#: .\vacancy\templates\vacancy\vacancy_page.html:54
+#: .\vacancy\templates\vacancy\vacancy_page.html:53
+#: .\vacancy\templates\vacancy\vacancy_page.html:55
 msgid "грн"
 msgstr "UAH"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:86
+#: .\vacancy\templates\vacancy\vacancy_page.html:87
 msgid "Обов`язки"
 msgstr "Duties"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:129
+#: .\vacancy\templates\vacancy\vacancy_page.html:130
 msgid "Написати нам"
 msgstr "Contact us"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:148
+#: .\vacancy\templates\vacancy\vacancy_page.html:149
 msgid "Інфомація відсутня"
 msgstr "Information is not available"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:171
+#: .\vacancy\templates\vacancy\vacancy_page.html:156
+msgid "На даний момент у Hanbild відсутні вільні вакансії."
+msgstr "At the moment, Hanbild has no vacancies."
+
+#: .\vacancy\templates\vacancy\vacancy_page.html:177
 msgid "Напишіть, яка вакансія вас цікавить"
 msgstr "Write what vacancy you are interested in"
 
