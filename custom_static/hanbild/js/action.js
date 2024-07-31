@@ -144,8 +144,8 @@ function startAnimation() {
 startAnimation();
 
 // Function to toggle submenu visibility and store state in local storage
-function toggleSubmenu(id) {
-    if (window.innerWidth <= 680){
+function toggleSubmenu(id, is_footer_element=false) {
+    if (!is_footer_element || is_footer_element && window.innerWidth <= 680){
         var submenu = document.getElementById(id);
         if (submenu.style.display === "none") {
             submenu.style.display = "flex";
