@@ -6269,6 +6269,11 @@ main .breadcrumbs ul li:before {
     gap: 8px;
 }
 
+.empty-vacancies-list{
+    font-size: 25px;
+     margin: 40px auto 20px auto;
+}
+
 .vacancies-list-title svg {
     width: 44px
 }
@@ -6436,6 +6441,14 @@ main .breadcrumbs ul li:before {
         width: 35px;
     }
 
+    .empty-vacancies-list{
+        font-size: 17px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding: 0 20px;
+        text-align: center;
+    }
+
     .click-arrow {
         width: 20px;
     }
@@ -6526,6 +6539,10 @@ main .breadcrumbs ul li:before {
 
     .vacancies-list-title h2 {
         font-size: 17px;
+    }
+
+    .empty-vacancies-list{
+        font-size: 13px;
     }
 
     .vacancies-list-title svg {
