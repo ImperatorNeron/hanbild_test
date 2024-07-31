@@ -76,17 +76,6 @@ if (button_filter) {
     });
 }
 
-function toggleSubmenu(id) {
-    var submenu = document.getElementById(id);
-    if (submenu.style.display === "none") {
-        submenu.style.display = "flex";
-        localStorage.setItem(id, "open");
-    } else {
-        submenu.style.display = "none";
-        localStorage.setItem(id, "closed");
-    }
-}
-
 document.addEventListener("DOMContentLoaded", function () {
     var submenus = document.querySelectorAll('.burgermenu');
     submenus.forEach(function (submenu) {
@@ -156,13 +145,15 @@ startAnimation();
 
 // Function to toggle submenu visibility and store state in local storage
 function toggleSubmenu(id) {
-    var submenu = document.getElementById(id);
-    if (submenu.style.display === "none") {
-        submenu.style.display = "flex";
-        localStorage.setItem(id, "open");
-    } else {
-        submenu.style.display = "none";
-        localStorage.setItem(id, "closed");
+    if (window.innerWidth <= 680){
+        var submenu = document.getElementById(id);
+        if (submenu.style.display === "none") {
+            submenu.style.display = "flex";
+            localStorage.setItem(id, "open");
+        } else {
+            submenu.style.display = "none";
+            localStorage.setItem(id, "closed");
+        }
     }
 }
 
