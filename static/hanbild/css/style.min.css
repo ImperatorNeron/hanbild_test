@@ -1235,7 +1235,7 @@ select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: url(../images/banner.png) no-repeat;
+    background: url(../images/banner.webp) no-repeat;
     background-size: auto 110%;
     background-position: right;
     border-radius: 5px;
@@ -2937,7 +2937,7 @@ thead tr th:last-child svg {
 }
 
 .product-page .photo-block {
-    background: url(../images/banner.png) no-repeat right/auto 93%
+    background: url(../images/banner.webp) no-repeat right/auto 93%
 }
 
 .services-page {
@@ -2945,7 +2945,7 @@ thead tr th:last-child svg {
 }
 
 .services-page .photo-block {
-    background: url(../images/banner.png) no-repeat right/auto 93%
+    background: url(../images/banner.webp) no-repeat right/auto 93%
 }
 
 .product-page {
@@ -3084,7 +3084,7 @@ thead tr th:last-child svg {
 .product-card .left-container,
 .service-card .left-container {
     width: 50%;
-    background: url(../images/banner.png) no-repeat;
+    background: url(../images/banner.webp) no-repeat;
     background-position: center;
     background-size: cover
 }
@@ -3343,7 +3343,7 @@ thead tr th:last-child svg {
 }
 
 .home-page .photo-block {
-    background: url(../images/banner.png) no-repeat right/auto 93%
+    background: url(../images/banner.webp) no-repeat right/auto 93%
 }
 
 .home-page .home-page-wrapper {
