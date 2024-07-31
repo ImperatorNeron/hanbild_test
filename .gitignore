@@ -6,6 +6,7 @@
 
 media/
 fixtures/
+custom_static/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
