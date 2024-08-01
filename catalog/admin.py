@@ -47,9 +47,18 @@ class GoodsTabulareAdmin(admin.TabularInline):
 @admin.register(Categories)
 class CategoriesAdmin(TranslationAdmin):
     prepopulated_fields = {"slug": ("name",)}
-    fields = (("name_uk", "name_en"), ("index_on_page", "slug"))
-    list_display = ("id", "index_on_page", "name_uk", "name_en", "slug")
-    list_editable = ("index_on_page", "name_uk", "name_en", "slug")
+    fields = (
+        ("index_on_page", "slug"),
+        "name_uk",
+        "name_ru",
+        "name_en",
+    )
+    list_display = ("id", "index_on_page", "name_uk", "slug")
+    list_display_links = (
+        "id",
+        "name_uk",
+    )
+    list_editable = ("index_on_page", "slug")
     inlines = (GoodsTabulareAdmin,)
 
 

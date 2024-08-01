@@ -9,6 +9,7 @@ class VacancyDescriptionTabulareAdmin(admin.TabularInline):
     fields = (
         "choice",
         "text_uk",
+        "text_ru",
         "text_en",
     )
 
@@ -18,19 +19,8 @@ class ProductAdmin(TranslationAdmin):
     list_display = (
         "id",
         "position_uk",
-        "position_en",
         "min_salary",
         "max_salary",
     )
-    list_display_links = ("id",)
-    list_editable = (
-        "position_uk",
-        "position_en",
-        "min_salary",
-        "max_salary",
-    )
-    fields = (
-        ("position_uk", "position_en"),
-        ("min_salary", "max_salary"),
-    )
+    list_display_links = ("id", "position_uk")
     inlines = (VacancyDescriptionTabulareAdmin,)

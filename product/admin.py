@@ -17,8 +17,12 @@ class ServiceAdmin(admin.ModelAdmin):
     list_display_links = ("service_name",)
     fields = (
         "index_on_page",
-        ("service_name_uk", "service_name_en"),
-        ("service_description_uk", "service_description_en"),
+        "service_name_uk",
+        "service_name_ru",
+        "service_name_en",
+        "service_description_uk",
+        "service_description_ru",
+        "service_description_en",
         "service_image",
     )
 
@@ -27,8 +31,10 @@ class ProductCharacteristicsTabulareAdmin(admin.TabularInline):
     model = ProductCharacteristics
     fields = (
         "name_uk",
-        "name_en",
         "description_uk",
+        "name_ru",
+        "description_ru",
+        "name_en",
         "description_en",
     )
 
