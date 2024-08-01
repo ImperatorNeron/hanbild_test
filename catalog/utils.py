@@ -1,38 +1,7 @@
 import uuid
-from deep_translator import GoogleTranslator
 from django.core.paginator import Paginator
 from django.utils.text import slugify
 from django.db.models import Q
-
-
-def translate_to_en(to_field):
-    """
-    Translate field into English
-    :param to_field: text in Ukrainian
-    :return: translated text or None
-    """
-    return GoogleTranslator(source="auto", target="en").translate(to_field)
-
-
-def translate_goods(instance):
-    """
-    Translate goods name and description to English if not already translated
-    :param instance: Goods instance
-    """
-    if not instance.name_en:
-        instance.name_en = translate_to_en(instance.name_uk)
-
-    if not instance.description_en:
-        instance.description_en = translate_to_en(instance.description_uk)
-
-
-def translate_categories(instance):
-    """
-    Translate category name to English if not already translated
-    :param instance: Category instance
-    """
-    if not instance.name_en:
-        instance.name_en = translate_to_en(instance.name_uk)
 
 
 def validate_slug(obj):
