@@ -1015,7 +1015,7 @@ msgstr "Contact"
 
 #: .\templates\includes\_header.html:23
 msgid "— Якість. Швидкість. Надійність."
-msgstr "- Quality. Velocity. Reliability."
+msgstr "— Quality. Velocity. Reliability."
 
 #: .\templates\includes\_header.html:28 .\templates\includes\_header.html:77
 msgid "Знайти..."
