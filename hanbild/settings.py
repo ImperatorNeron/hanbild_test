@@ -96,6 +96,7 @@ LANGUAGE_CODE = "uk"
 LANGUAGES = [
     ("uk", _("Ukrainian")),
     ("en", _("English")),
+    ('ru', 'Russian'),
 ]
 
 MODELTRANSLATION_DEFAULT_LANGUAGE = "uk"
