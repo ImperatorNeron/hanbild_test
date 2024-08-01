@@ -1557,7 +1557,7 @@ select {
     position: relative
 }
 
-.form-container .point label::after {
+.form-container .point:nth-child(2) label::after {
     content: "*";
     color: #f0500a;
     font-size: 27px;
