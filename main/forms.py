@@ -12,7 +12,7 @@ class OnlineApplicationForm(forms.ModelForm):
 
     def clean_name(self):
         data = self.cleaned_data["name"]
-        if not re.match(r"^[a-zA-Zа-яА-ЯіІїЇєЄґҐ.,\s`\'’-]+$", data):
+        if data and not re.match(r"^[a-zA-Zа-яА-ЯіІїЇєЄґҐ.,\s`\'’-]+$", data):
             raise forms.ValidationError(
                 _("Поле не може містити цифри та заборонені знаки!")
             )

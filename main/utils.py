@@ -13,6 +13,18 @@ def create_user_message(form, **kwargs):
     Function needs to send user messages and write it in database.
     Return json response for interaction with ajax
     """
+
+    form.cleaned_data["name"] = (
+        "Ім'я не вказано"
+        if not form.cleaned_data["name"]
+        else form.cleaned_data["name"]
+    )
+    form.cleaned_data["message"] = (
+        "Повідомлення не вказано"
+        if not form.cleaned_data["message"]
+        else form.cleaned_data["message"]
+    )
+
     ClientMessages.objects.create(
         name=form.cleaned_data["name"],
         number_or_email=form.cleaned_data["number_or_email"],
@@ -34,14 +46,16 @@ def create_user_message(form, **kwargs):
         print("Введено номер телефону або неправильну адресу")
 
     # Messages for company
-    form.cleaned_data["successful_message_1"] = (
-        f"Нове повідомлення від '{form.cleaned_data['name']}'"
-    )
-    form.cleaned_data["successful_message_2"] = (
-        f"Зв'яжіться з клієнтом за даними, які наведені нижче."
-    )
+    form.cleaned_data[
+        "successful_message_1"
+    ] = f"Нове повідомлення від '{form.cleaned_data['name']}'"
+    form.cleaned_data[
+        "successful_message_2"
+    ] = f"Зв'яжіться з клієнтом за даними, які наведені нижче."
     send_email(form.cleaned_data, "email_letters/success_message.html")
-    return JsonResponse({"success": True, "message": _("Повідомлення надійшло успішно!")})
+    return JsonResponse(
+        {"success": True, "message": _("Повідомлення надійшло успішно!")}
+    )
 
 
 def contact_form_errors(form, **kwargs):
