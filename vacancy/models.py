@@ -1,8 +1,7 @@
 from django.core.validators import MinValueValidator
 from django.db import models
-
-from vacancy.utils import translate_vacancy, translate_vacancy_description
 from django.utils.translation import gettext_lazy as _
+from hanbild.utils import set_translation_attrs
 
 
 class Vacancy(models.Model):
@@ -15,7 +14,7 @@ class Vacancy(models.Model):
     )
 
     def save(self, *args, **kwargs):
-        translate_vacancy(self)
+        set_translation_attrs(self, ("position",))
         return super().save(*args, **kwargs)
 
     def __str__(self):
@@ -42,7 +41,7 @@ class VacancyDescription(models.Model):
     text = models.TextField(verbose_name="Введіть інформацію")
 
     def save(self, *args, **kwargs):
-        translate_vacancy_description(self)
+        set_translation_attrs(self, ("text",))
         return super().save(*args, **kwargs)
 
     def __str__(self):

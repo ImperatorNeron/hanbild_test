@@ -2,9 +2,9 @@ from django.core.validators import MinValueValidator
 from django.db import models
 
 from catalog.models import Categories
-from catalog.utils import translate_goods
-from product.utils import translate_product_paragraph, translate_service
 from embed_video.fields import EmbedVideoField
+
+from hanbild.utils import set_translation_attrs
 
 
 class Product(models.Model):
@@ -31,7 +31,12 @@ class Product(models.Model):
         verbose_name_plural = "Продукцію"
 
     def save(self, *args, **kwargs):
-        translate_product_paragraph(self)
+        set_translation_attrs(self, ("paragraph",))
+        set_translation_attrs(
+            self,
+            ("addition_paragraph",),
+            self.addition_paragraph_uk,
+        )
         return super().save(*args, **kwargs)
 
     def __str__(self):
@@ -93,7 +98,7 @@ class ProductCharacteristics(models.Model):
         verbose_name_plural = "Характеристики продукції"
 
     def save(self, *args, **kwargs):
-        translate_goods(self)
+        set_translation_attrs(self, ("name", "description"))
         return super().save(*args, **kwargs)
 
 
@@ -113,7 +118,7 @@ class Service(models.Model):
         verbose_name_plural = "Сервіси"
 
     def save(self, *args, **kwargs):
-        translate_service(self)
+        set_translation_attrs(self, ("service_name", "service_description"))
         return super().save(*args, **kwargs)
 
     def __str__(self):

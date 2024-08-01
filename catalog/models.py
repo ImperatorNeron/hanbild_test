@@ -2,8 +2,10 @@ from django.core.validators import MinValueValidator
 from django.db import models
 from django.urls import reverse
 
-from catalog.utils import translate_categories, translate_goods, validate_slug
 from embed_video.fields import EmbedVideoField
+
+from catalog.utils import validate_slug
+from hanbild.utils import set_translation_attrs
 
 
 class Categories(models.Model):
@@ -27,7 +29,7 @@ class Categories(models.Model):
         return f"{self.name}"
 
     def save(self, *args, **kwargs):
-        translate_categories(self)
+        set_translation_attrs(self, ("name",))
         return super().save(*args, **kwargs)
 
 
@@ -55,7 +57,7 @@ class Goods(models.Model):
         verbose_name_plural = "Товар"
 
     def save(self, *args, **kwargs):
-        translate_goods(self)
+        set_translation_attrs(self, ("name", "description"))
         validate_slug(self)
         return super().save(*args, **kwargs)
 
@@ -107,5 +109,5 @@ class GoodsCharacteristic(models.Model):
         verbose_name_plural = "Характеристики товару"
 
     def save(self, *args, **kwargs):
-        translate_goods(self)
+        set_translation_attrs(self, ("name", "description"))
         return super().save(*args, **kwargs)
