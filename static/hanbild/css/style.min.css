@@ -6835,7 +6835,7 @@ main .breadcrumbs ul li:before {
     height: 100px;
 }
 
-#loading-indicator h1 {
+#loading-indicator .wait-second-text {
     width: 100%;
     font-size: 40px;
     color: #f0500a;
@@ -6843,7 +6843,7 @@ main .breadcrumbs ul li:before {
 }
 
 @media(max-width: 830px) {
-    #loading-indicator h1 {
+    #loading-indicator .wait-second-text {
         font-size: 25px;
     }
 
@@ -6854,7 +6854,7 @@ main .breadcrumbs ul li:before {
 }
 
 @media(max-width: 520px) {
-    #loading-indicator h1 {
+    #loading-indicator .wait-second-text {
         font-size: 20px;
     }
 
@@ -6865,7 +6865,7 @@ main .breadcrumbs ul li:before {
 }
 
 @media(max-width: 400px) {
-    #loading-indicator h1 {
+    #loading-indicator .wait-second-text {
         font-size: 16px;
     }
 
@@ -6876,7 +6876,7 @@ main .breadcrumbs ul li:before {
 }
 
 @media(max-width: 330px) {
-    #loading-indicator h1 {
+    #loading-indicator .wait-second-text {
         font-size: 13px;
     }
 
