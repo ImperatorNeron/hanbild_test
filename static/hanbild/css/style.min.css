@@ -2936,15 +2936,17 @@ thead tr th:last-child svg {
     width: 45px
 }
 
-.product-page .photo-block {
-    background: url(../images/banner.webp) no-repeat right/auto 93%
-}
-
 .services-page {
     overflow: hidden
 }
 
-.services-page .photo-block {
+.services-page .photo-block,
+.product-page .photo-block,
+.home-page .photo-block,
+.delivery-page .photo-block,
+.contact-page .photo-block,
+.vacancy-page .photo-block
+{
     background: url(../images/banner.webp) no-repeat right/auto 93%
 }
 
@@ -3340,10 +3342,6 @@ thead tr th:last-child svg {
     font-size: 30px;
     color: #f0500a;
     font-weight: 900
-}
-
-.home-page .photo-block {
-    background: url(../images/banner.webp) no-repeat right/auto 93%
 }
 
 .home-page .home-page-wrapper {
@@ -4568,7 +4566,12 @@ thead tr th:last-child svg {
         width: 61%
     }
 
-    .product-page .photo-block {
+    .services-page .photo-block,
+    .product-page .photo-block,
+    .home-page .photo-block,
+    .delivery-page .photo-block,
+    .contact-page .photo-block,
+    .vacancy-page .photo-block {
         background-position: center right -100px
     }
 
@@ -5026,15 +5029,13 @@ thead tr th:last-child svg {
         width: 100%
     }
 
-    .product-page .photo-block,
     .services-page .photo-block,
-    .home-page .photo-block {
-        background-size: cover
-    }
-
     .product-page .photo-block,
-    .services-page .photo-block {
-        background-position: center
+    .home-page .photo-block,
+    .delivery-page .photo-block,
+    .contact-page .photo-block,
+    .vacancy-page .photo-block {
+        background-size: cover
     }
 
     .product-card .left-container,
