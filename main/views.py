@@ -62,6 +62,12 @@ class ServicesView(BaseApplicationFormView):
         return context
 
 
+class DeliveryView(BaseApplicationFormView):
+    template_name = "main/delivery.html"
+    success_url = reverse_lazy("main:delivery")
+    title = _("Доставка та оплата | HanBild.com.ua")
+
+
 class PrivacyPolicyView(BaseApplicationFormView):
     """
     Privacy page view
