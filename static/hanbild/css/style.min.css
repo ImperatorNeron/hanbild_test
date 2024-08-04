@@ -3086,9 +3086,6 @@ thead tr th:last-child svg {
 .product-card .left-container,
 .service-card .left-container {
     width: 50%;
-    background: url(../images/banner.webp) no-repeat;
-    background-position: center;
-    background-size: cover
 }
 
 .product-card:nth-child(odd) .left-container,
@@ -4156,6 +4153,50 @@ thead tr th:last-child svg {
     border-top-right-radius: 5px
 }
 
+.delivery-container, .delivery-card, .delivery-card-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.delivery-container{
+    margin: 30px 0 40px 0;
+    align-items: center;
+    gap: 20px;
+}
+
+.delivery-card{
+    background-color: white;
+    padding: 30px;
+    min-height: 200px;
+    width: 60%;
+    gap: 12px;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+}
+
+.delivery-card:hover{
+    scale: 1.02;
+}
+
+.delivery-card h2{
+    font-size: 28px;
+    color: #f0500a;
+    margin-bottom: 5px;
+}
+
+.delivery-card ul{
+    list-style: inside;
+}
+
+.delivery-card-content{
+    gap: 8px;
+}
+
 @media(max-width: 1415px) {
     #cart {
         margin-left: 9px
@@ -4572,7 +4613,7 @@ thead tr th:last-child svg {
     .delivery-page .photo-block,
     .contact-page .photo-block,
     .vacancy-page .photo-block {
-        background-position: center right -100px
+        background-position: cover right -100px;
     }
 
     .product-card .right-container .info,
@@ -7146,6 +7187,10 @@ main .breadcrumbs ul li:before {
         width: 7%;
     }
 
+    .delivery-card{
+        width: 90%;
+    }
+
 }
 
 @media(max-width: 800px) {
@@ -7480,6 +7525,9 @@ main .breadcrumbs ul li:before {
         padding: 10px;
     }
 
+    .delivery-card h2{
+        font-size: 22px;
+    }
 }
 
 @media(max-width: 350px) {
@@ -7733,6 +7781,11 @@ main .breadcrumbs ul li:before {
     .catalog-item-card .image-slider,
     .catalog-item-card .image-slider .image-slider__image {
         height: 250px;
+    }
+
+    .delivery-card{
+        padding: 20px 30px;
+        width: 94%;
     }
 
 }
