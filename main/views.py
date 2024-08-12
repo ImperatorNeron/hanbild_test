@@ -34,7 +34,7 @@ class IndexView(BaseApplicationFormView):
 
     template_name = "main/index.html"
     success_url = reverse_lazy("main:index")
-    title = _("HanBild - виробник самоскидних та бортових кузовів")
+    title = _("Виробництво причепів: замовити виготовлення кузовів в Україні - HanBild")
 
 
 class ContactsView(BaseApplicationFormView):
