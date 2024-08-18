@@ -3,6 +3,10 @@
 {% load i18n %}
 {% load catalog_tags %}
 
+{% block meta %}
+<meta name="description" content="{% translate 'Каталог продукції українського виробника ➤ HanBild. Широкий асортимент причепів, кузовів та самоскидів ✓. Висока якість продукції ✓. Індивідуальний підхід ✓. Доставка по всій Україні ✈.' %}">
+{% endblock %}
+
 {% block title %}
   {{ title }}
 {% endblock %}
