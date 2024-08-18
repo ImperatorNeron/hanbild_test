@@ -19,7 +19,7 @@ class CatalogView(BaseApplicationFormView):
 
     template_name = "catalog/catalog.html"
     success_url = reverse_lazy("catalog:catalog")
-    title = _("Каталог компанії | HanBild.com.ua")
+    title = _("Каталог продукції: причепи, кузови та самоскиди від HanBild")
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)

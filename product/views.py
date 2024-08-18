@@ -20,7 +20,7 @@ class ProductView(BaseApplicationFormView):
 
     template_name = "product/product.html"
     success_url = reverse_lazy("product:product")
-    title = _("Продукція від компанії HanBild | HanBild.com.ua")
+    title = _("Продукція HanBild: причепи, кузови самоскидів та деталі по вигідній ціні в Україні")
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)

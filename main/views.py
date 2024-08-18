@@ -44,7 +44,7 @@ class ContactsView(BaseApplicationFormView):
 
     template_name = "main/contact_us.html"
     success_url = reverse_lazy("main:contacts")
-    title = _("Контакти компанії | HanBild.com.ua")
+    title = _("Контактна інформація компанії з виготовлення причепів та напівпричепів | HanBild ")
 
 
 class ServicesView(BaseApplicationFormView):
@@ -54,7 +54,7 @@ class ServicesView(BaseApplicationFormView):
 
     template_name = "main/services.html"
     success_url = reverse_lazy("main:services")
-    title = _("Ремонт, Trade in та Leasing | HanBild.com.ua")
+    title = _("Послуги HanBild: виробництво та обслуговування причепів та напівпричепів")
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
@@ -65,7 +65,7 @@ class ServicesView(BaseApplicationFormView):
 class DeliveryView(BaseApplicationFormView):
     template_name = "main/delivery.html"
     success_url = reverse_lazy("main:delivery")
-    title = _("Доставка та оплата | HanBild.com.ua")
+    title = _("Доставка HanBild: інформація про умови та варіанти доставки причепів та напівпричепів")
 
 
 class PrivacyPolicyView(BaseApplicationFormView):
@@ -75,7 +75,7 @@ class PrivacyPolicyView(BaseApplicationFormView):
 
     template_name = "main/privacy_policy.html"
     success_url = reverse_lazy("main:privacy_policy")
-    title = _("Політика конфіденційності | HanBild.com.ua")
+    title = _("Політика конфіденційності HanBild: надійний захист персональних даних")
 
 
 def page404exception(request, exception):

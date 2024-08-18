@@ -12,7 +12,7 @@ class VacancyView(BaseApplicationFormView):
 
     template_name = "vacancy/vacancy_page.html"
     success_url = reverse_lazy("vacancy:vacancy")
-    title = _("Вакансії в компанії | HanBild.com.ua")
+    title = _("Актуальні вакансії: робота в компанії з виробництва причепів та напівпричепів HanBild")
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
