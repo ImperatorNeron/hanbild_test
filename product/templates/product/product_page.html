@@ -4,12 +4,16 @@
 {% load embed_video_tags %}
 {% load i18n %}
 
+{% block meta %}
+<meta name="description" content="{{ product.description }}">
+{% endblock %}
+
 {% block css %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 {% endblock %}
 
 {% block title %}
-{{ title }}
+{{ product.title }}
 {% endblock title %}
 
 {% block content %}
