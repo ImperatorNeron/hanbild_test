@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-20 00:28+0300\n"
+"POT-Creation-Date: 2024-08-20 00:45+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -524,11 +524,11 @@ msgstr "Delivery methods"
 
 #: .\main\templates\main\delivery.html:46
 msgid "Доставка здійснюється по всій Україні:"
-msgstr "Доставка здійснюється по всій Україні:"
+msgstr "Delivery is carried out throughout Ukraine:"
 
 #: .\main\templates\main\delivery.html:48
-msgid "доставке у відділення"
-msgstr "доставке у відділення"
+msgid "доставка у відділення"
+msgstr "delivery to the department"
 
 #: .\main\templates\main\delivery.html:49
 msgid "доставка за адресою"
@@ -540,7 +540,7 @@ msgstr "pickup"
 
 #: .\main\templates\main\delivery.html:52
 msgid "Ми співпрацюємо з такими транспортними компаніями:"
-msgstr ""
+msgstr "We cooperate with such transport companies:"
 
 #: .\main\templates\main\delivery.html:54
 msgid "Укрпошта"
@@ -564,15 +564,15 @@ msgstr "Night Express"
 
 #: .\main\templates\main\delivery.html:61
 msgid "Вартість та термін доставки"
-msgstr "Вартість та термін доставки"
+msgstr "Cost and delivery time"
 
 #: .\main\templates\main\delivery.html:61
 msgid ""
 "можна обговорити з нашим менеджером, який допоможе підібрати оптимальний "
 "варіант для вас."
 msgstr ""
-"can be discussed with our manager, who will help to choose the best "
-"option for you."
+"can be discussed with our manager, who will help to choose the best option "
+"for you."
 
 #: .\main\templates\main\delivery.html:66
 msgid "Способи оплати"
@@ -625,10 +625,10 @@ msgid ""
 "обладнання без значних витрат. Незалежно від Вашого бізнесу, ми підберемо "
 "найкращий варіант лізингу для Ваших потреб."
 msgstr ""
-"In Hanbild you can <b>lease</b> semi-trailers, trailers and other "
-"technique. We offer convenient leasing conditions so that you can get the necessary "
-"equipment without significant costs. Regardless of your business, we will pick up "
-"the best leasing option for your needs."
+"In Hanbild you can <b>lease</b> semi-trailers, trailers and other technique. "
+"We offer convenient leasing conditions so that you can get the necessary "
+"equipment without significant costs. Regardless of your business, we will "
+"pick up the best leasing option for your needs."
 
 #: .\main\templates\main\delivery.html:91
 msgid ""
@@ -637,8 +637,8 @@ msgid ""
 "найкращий варіант обміну."
 msgstr ""
 "In addition, we offer <b> trade-in </b> services that allow you to exchange "
-"old equipment to new. Our experts will help to evaluate the technique and pick up "
-"the best exchange option."
+"old equipment to new. Our experts will help to evaluate the technique and "
+"pick up the best exchange option."
 
 #: .\main\templates\main\index.html:6 .\main\templates\main\index.html:8
 msgid ""
