@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-19 23:31+0300\n"
+"POT-Creation-Date: 2024-08-20 00:28+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -365,8 +365,8 @@ msgid ""
 "офісу. Контакти для звʼязку з нами для обговорення співпраці чи отримання "
 "інформації про наші продукти. Ми завжди на звʼязку!"
 msgstr ""
-"HanBild company contact information: phone numbers, e-mail address and office "
-"address. Contacts to contact us to discuss cooperation or receive "
+"HanBild company contact information: phone numbers, e-mail address and "
+"office address. Contacts to contact us to discuss cooperation or receive "
 "information about our products. We are always in touch!"
 
 #: .\main\templates\main\contact_us.html:24
@@ -494,9 +494,9 @@ msgid ""
 "вантажна техніка. Швидка та безпечна доставка по всій Україні ✓. Професійний "
 "підхід до кожного замовлення ✓."
 msgstr ""
-"Find out about the terms of delivery of HanBild products: trailers, semi-trailers and "
-"trucks. Fast and safe delivery throughout Ukraine ✓. Professional "
-"approach to each order ✓."
+"Find out about the terms of delivery of HanBild products: trailers, semi-"
+"trailers and trucks. Fast and safe delivery throughout Ukraine ✓. "
+"Professional approach to each order ✓."
 
 #: .\main\templates\main\delivery.html:24
 #: .\templates\includes\_footer.html:210
@@ -514,21 +514,131 @@ msgid ""
 "продукції, а також різні варіанти оплати. Дізнайтеся деталі про процес "
 "доставки та доступні методи оплати на цій сторінці."
 msgstr ""
-"HanBild offers convenient and reliable delivery methods for our "
-"products, as well as various payment options. Learn more about the process "
-"shipping and available payment methods on this page."
+"HanBild offers convenient and reliable delivery methods for our products, as "
+"well as various payment options. Learn more about the process shipping and "
+"available payment methods on this page."
 
 #: .\main\templates\main\delivery.html:44
 msgid "Способи доставки"
 msgstr "Delivery methods"
 
+#: .\main\templates\main\delivery.html:46
+msgid "Доставка здійснюється по всій Україні:"
+msgstr "Доставка здійснюється по всій Україні:"
+
+#: .\main\templates\main\delivery.html:48
+msgid "доставке у відділення"
+msgstr "доставке у відділення"
+
+#: .\main\templates\main\delivery.html:49
+msgid "доставка за адресою"
+msgstr "delivery to the address"
+
+#: .\main\templates\main\delivery.html:50
+msgid "самовивіз"
+msgstr "pickup"
+
+#: .\main\templates\main\delivery.html:52
+msgid "Ми співпрацюємо з такими транспортними компаніями:"
+msgstr ""
+
+#: .\main\templates\main\delivery.html:54
+msgid "Укрпошта"
+msgstr "Ukrposhta"
+
+#: .\main\templates\main\delivery.html:55
+msgid "Нова пошта"
+msgstr "Nova Poshta"
+
+#: .\main\templates\main\delivery.html:56
+msgid "Delivery"
+msgstr "Delivery"
+
+#: .\main\templates\main\delivery.html:57
+msgid "SAT"
+msgstr "SAT"
+
+#: .\main\templates\main\delivery.html:58
+msgid "Нічний експрес"
+msgstr "Night Express"
+
+#: .\main\templates\main\delivery.html:61
+msgid "Вартість та термін доставки"
+msgstr "Вартість та термін доставки"
+
+#: .\main\templates\main\delivery.html:61
+msgid ""
+"можна обговорити з нашим менеджером, який допоможе підібрати оптимальний "
+"варіант для вас."
+msgstr ""
+"can be discussed with our manager, who will help to choose the best "
+"option for you."
+
 #: .\main\templates\main\delivery.html:66
 msgid "Способи оплати"
 msgstr "Payment methods"
 
+#: .\main\templates\main\delivery.html:68
+msgid "Оплата замолення здійснюється такими способіми:"
+msgstr "Payment for salutation is carried out by the following methods:"
+
+#: .\main\templates\main\delivery.html:70
+msgid "готівковий розрахунок"
+msgstr "cash"
+
+#: .\main\templates\main\delivery.html:71
+msgid "безготівковий розрахунок за реквізитами, виданими менеджером"
+msgstr "cashless payment on the details issued by the manager"
+
+#: .\main\templates\main\delivery.html:73
+msgid "Також ви можете обрати найзручніший для вас спосіб оплати:"
+msgstr "You can get the help you need to pay:"
+
+#: .\main\templates\main\delivery.html:75
+msgid "передоплата"
+msgstr "prepayment"
+
+#: .\main\templates\main\delivery.html:76
+msgid "післяплата"
+msgstr "cash on delivery"
+
+#: .\main\templates\main\delivery.html:77
+msgid "відстрочка платежу"
+msgstr "payment string"
+
+#: .\main\templates\main\delivery.html:80
+msgid "Після оформлення замовлення на сайті"
+msgstr "After placing an order on the website"
+
+#: .\main\templates\main\delivery.html:80
+msgid "наш менеджер зателефонує Вам, щоб повідомити всі деталі."
+msgstr "our manager will call you to tell you all the details."
+
 #: .\main\templates\main\delivery.html:85
 msgid "Лізинг та Трейд-ін"
-msgstr "Лізинг та Трейд-ін"
+msgstr "Leasing and Trade-in"
+
+#: .\main\templates\main\delivery.html:88
+msgid ""
+"У Hanbild Ви можете <b>лізингувати</b> напівпричепи, причепи та іншу "
+"техніку. Ми пропонуємо зручні умови лізингу, щоб Ви могли отримати необхідне "
+"обладнання без значних витрат. Незалежно від Вашого бізнесу, ми підберемо "
+"найкращий варіант лізингу для Ваших потреб."
+msgstr ""
+"In Hanbild you can <b>lease</b> semi-trailers, trailers and other "
+"technique. We offer convenient leasing conditions so that you can get the necessary "
+"equipment without significant costs. Regardless of your business, we will pick up "
+"the best leasing option for your needs."
+
+#: .\main\templates\main\delivery.html:91
+msgid ""
+"Крім того, у ми пропонуємо <b>послуги trade-in</b>, що дозволяють обміняти "
+"стару техніку на нову. Наші фахівці допоможуть оцінити техніку та підібрати "
+"найкращий варіант обміну."
+msgstr ""
+"In addition, we offer <b> trade-in </b> services that allow you to exchange "
+"old equipment to new. Our experts will help to evaluate the technique and pick up "
+"the best exchange option."
 
 #: .\main\templates\main\index.html:6 .\main\templates\main\index.html:8
 msgid ""
@@ -536,9 +646,9 @@ msgid ""
 "кузовів самоскидів ✓. Висока якість продукції ✓. Індивідуальний підхід ✓. "
 "Доставка по всій Україні ✈."
 msgstr ""
-"Professional production of trailers and semi-trailers from ➤ HanBild. Production "
-"of dump truck bodies ✓. High quality products ✓. Individual approach ✓. "
-"Delivery throughout Ukraine ✈."
+"Professional production of trailers and semi-trailers from ➤ HanBild. "
+"Production of dump truck bodies ✓. High quality products ✓. Individual "
+"approach ✓. Delivery throughout Ukraine ✈."
 
 #: .\main\templates\main\index.html:27
 msgid ""
@@ -793,8 +903,8 @@ msgid ""
 "персональних даних. Забезпечення безпеки та конфіденційністі інформації під "
 "час взаємодії з сайтом."
 msgstr ""
-"Privacy policy for the website HanBild, which guarantees the protection "
-"of personal data. Ensuring security and confidentiality of information during "
+"Privacy policy for the website HanBild, which guarantees the protection of "
+"personal data. Ensuring security and confidentiality of information during "
 "interaction with the site."
 
 #: .\main\templates\main\privacy_policy.html:25
@@ -872,8 +982,8 @@ msgid ""
 "та вантажної техніки від HanBild. Висока якість продукції ✓. Індивідуальний "
 "підхід ✓. Доставка по всій Україні ✈."
 msgstr ""
-"Professional services for the manufacture and maintenance of trailers, semi-trailers "
-"and trucks from HanBild. High quality products ✓. Individual "
+"Professional services for the manufacture and maintenance of trailers, semi-"
+"trailers and trucks from HanBild. High quality products ✓. Individual "
 "approach ✓. Delivery throughout Ukraine ✈."
 
 #: .\main\templates\main\services.html:38
@@ -910,15 +1020,16 @@ msgstr "The message was successful!"
 
 #: .\main\views.py:37
 msgid "Виробництво причепів: замовити виготовлення кузовів в Україні - HanBild"
-msgstr "Production of trailers: order production of bodies in Ukraine - HanBild"
+msgstr ""
+"Production of trailers: order production of bodies in Ukraine - HanBild"
 
 #: .\main\views.py:47
 msgid ""
 "Контактна інформація компанії з виготовлення причепів та напівпричепів | "
 "HanBild "
 msgstr ""
-"Contact information of the company for the manufacture of trailers and semi-trailers | "
-"HanBild "
+"Contact information of the company for the manufacture of trailers and semi-"
+"trailers | HanBild "
 
 #: .\main\views.py:57
 msgid ""
@@ -931,8 +1042,8 @@ msgid ""
 "Доставка HanBild: інформація про умови та варіанти доставки причепів та "
 "напівпричепів"
 msgstr ""
-"HanBild delivery: information about conditions and delivery options for trailers and "
-"semi-trailers"
+"HanBild delivery: information about conditions and delivery options for "
+"trailers and semi-trailers"
 
 #: .\main\views.py:78
 msgid "Політика конфіденційності HanBild: надійний захист персональних даних"
@@ -1079,8 +1190,8 @@ msgid ""
 "Продукція HanBild: причепи, кузови самоскидів та деталі по вигідній ціні в "
 "Україні"
 msgstr ""
-"Products HanBild: trailers, dump truck bodies and parts at a favorable price in "
-"Ukraine"
+"Products HanBild: trailers, dump truck bodies and parts at a favorable price "
+"in Ukraine"
 
 #: .\product\views.py:38
 msgid "Продукція від компанії HanBild | HanBild.com.ua"
@@ -1185,8 +1296,8 @@ msgid ""
 "кузовів. Актуальні вакансії на роботу в успішній компанії з великими "
 "перспективами."
 msgstr ""
-"Work at the innovative company HanBild in the field of trailer and "
-"body production. Actual job vacancies in a successful company with great "
+"Work at the innovative company HanBild in the field of trailer and body "
+"production. Actual job vacancies in a successful company with great "
 "prospects."
 
 #: .\vacancy\templates\vacancy\vacancy_page.html:36
@@ -1237,5 +1348,5 @@ msgid ""
 "Актуальні вакансії: робота в компанії з виробництва причепів та "
 "напівпричепів HanBild"
 msgstr ""
-"Current vacancies: work at the trailer and "
-"semi-trailer manufacturing company HanBild"
+"Current vacancies: work at the trailer and semi-trailer manufacturing "
+"company HanBild"
