@@ -29,7 +29,7 @@
     </div>
     <div class="product-info-card">
       <div class="product-header">
-        <h2>{{ product.category.name }}</h2>
+        <h1>{{ product.category.name }}</h1>
         <div class="form-buttons">
           <a href="{% url 'catalog:catalog' %}?{{ product.category.slug }}">{% translate 'До каталогу' %}</a>
           <a class="catalog-message">

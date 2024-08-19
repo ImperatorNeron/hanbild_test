@@ -2592,7 +2592,7 @@ thead tr th:last-child svg {
     padding: 0 20px
 }
 
-.product-info-card .product-header h2 {
+.product-info-card .product-header h1 {
     text-align: center;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -7335,7 +7335,7 @@ main .breadcrumbs ul li:before {
     width: 210px;
 }
 
-.product-info-card .product-header h2 {
+.product-info-card .product-header h1 {
     font-weight: 700;
     text-align: center;
     flex: 1;
@@ -7396,13 +7396,13 @@ main .breadcrumbs ul li:before {
 }
 
 @media(max-width: 900px) {
-    .product-info-card .product-header h2 {
+    .product-info-card .product-header h1 {
         font-size: 22px;
     }
 }
 
 @media(max-width: 800px) {
-    .product-info-card .product-header h2 {
+    .product-info-card .product-header h1 {
         font-size: 20px;
     }
 
@@ -7424,7 +7424,7 @@ main .breadcrumbs ul li:before {
         padding: 0 5px 0 10px;
     }
 
-    .product-info-card .product-header h2 {
+    .product-info-card .product-header h1 {
         font-weight: 700;
     }
 
@@ -7476,7 +7476,7 @@ main .breadcrumbs ul li:before {
 
 @media(max-width: 520px) {
 
-    .product-info-card .product-header h2 {
+    .product-info-card .product-header h1 {
         font-size: 17px;
     }
 
@@ -7495,7 +7495,7 @@ main .breadcrumbs ul li:before {
 
 @media(max-width: 400px) {
 
-    .product-info-card .product-header h2 {
+    .product-info-card .product-header h1 {
         font-size: 15px;
     }
 
@@ -7531,7 +7531,7 @@ main .breadcrumbs ul li:before {
 }
 
 @media(max-width: 350px) {
-    .product-info-card .product-header h2 {
+    .product-info-card .product-header h1 {
         font-size: 13px;
     }
 
