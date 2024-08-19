@@ -1268,10 +1268,14 @@ select {
     gap: 20px
 }
 
-.photo-block .left-container .info h2 {
+.photo-block .left-container .info h1 {
     font-size: 60px;
     font-weight: 800;
     color: #f0500a
+}
+
+.photo-block .left-container .info .h1-title{
+    font-size: 16px;
 }
 
 .contacts-info {
@@ -2990,12 +2994,6 @@ thead tr th:last-child svg {
     gap: 20px
 }
 
-.photo-block .left-container .info h2 {
-    font-size: 60px;
-    font-weight: 800;
-    color: #f0500a
-}
-
 .product-cards {
     margin: 50px auto;
     display: -webkit-box;
@@ -4330,7 +4328,7 @@ thead tr th:last-child svg {
         font-size: 14px
     }
 
-    .photo-block .left-container .info h2 {
+    .photo-block .left-container .info h1 {
         font-size: 56px
     }
 
@@ -4934,7 +4932,7 @@ thead tr th:last-child svg {
         padding: 0 35px 0 0
     }
 
-    .photo-block .left-container .info h2 {
+    .photo-block .left-container .info h1 {
         font-size: 50px
     }
 
@@ -5775,7 +5773,7 @@ thead tr th:last-child svg {
         padding: 0 15px
     }
 
-    .photo-block .left-container .info h2 {
+    .photo-block .left-container .info h1 {
         font-size: 45px
     }
 
