@@ -22,7 +22,20 @@ class Product(models.Model):
         upload_to="categories_images", verbose_name="Фото до основного тексту"
     )
     addition_paragraph = models.TextField(
-        blank=True, null=True, verbose_name="Додатковий текст"
+        blank=True,
+        null=True,
+        verbose_name="Додатковий текст",
+    )
+    title = models.CharField(
+        max_length=250,
+        verbose_name="Назва сторінки",
+        blank=True,
+        null=True,
+    )
+    description = models.TextField(
+        verbose_name="Опис для метатегу",
+        blank=True,
+        null=True,
     )
 
     class Meta:

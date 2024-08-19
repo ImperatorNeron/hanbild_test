@@ -4,7 +4,7 @@ from .models import Product, ProductCharacteristics, Service
 
 @register(Product)
 class ProductTranslationOptions(TranslationOptions):
-    fields = ("paragraph", "addition_paragraph")
+    fields = ("paragraph", "addition_paragraph", "title", "description")
 
 
 @register(Service)
