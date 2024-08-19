@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-20 00:45+0300\n"
+"POT-Creation-Date: 2024-08-20 01:28+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -270,9 +270,8 @@ msgstr "Site"
 
 #: .\main\templates\email_letters\cart_message.html:98
 #: .\main\templates\email_letters\success_message.html:99
-#: .\main\templates\main\index.html:146
+#: .\main\templates\main\index.html:147
 #: .\product\templates\product\product.html:27
-#: .\product\templates\product\product.html:36
 #: .\product\templates\product\product_page.html:30
 #: .\templates\includes\_footer.html:201 .\templates\includes\_footer.html:224
 #: .\templates\includes\_header.html:140 .\templates\includes\_header.html:249
@@ -371,7 +370,7 @@ msgstr ""
 
 #: .\main\templates\main\contact_us.html:24
 #: .\main\templates\main\contact_us.html:33
-#: .\main\templates\main\index.html:162 .\templates\includes\_footer.html:207
+#: .\main\templates\main\index.html:163 .\templates\includes\_footer.html:207
 #: .\templates\includes\_footer.html:230 .\templates\includes\_header.html:163
 #: .\templates\includes\_header.html:267
 msgid "Контакти"
@@ -505,8 +504,8 @@ msgid "Доставка"
 msgstr "Delivery"
 
 #: .\main\templates\main\delivery.html:33
-msgid "Доставка та оплата"
-msgstr "Delivery and payment"
+msgid "Доставка HanBild"
+msgstr "Delivery by HanBild"
 
 #: .\main\templates\main\delivery.html:35
 msgid ""
@@ -650,25 +649,27 @@ msgstr ""
 "Production of dump truck bodies ✓. High quality products ✓. Individual "
 "approach ✓. Delivery throughout Ukraine ✈."
 
-#: .\main\templates\main\index.html:27
+#: .\main\templates\main\index.html:26
+msgid "HanBild - Виробництво причепів та напівпричепів"
+msgstr "HanBild - Production of trailers and semi-trailers"
+
+#: .\main\templates\main\index.html:28
 msgid ""
-"Hanbild - ваш надійний партнер у сфері виробництва причепів та "
-"напівпричепів. Наша компанія спеціалізується на створенні надійних, "
-"безпечних і функціональних рішень для перевезення вантажів будь-якого типу і "
-"розміру. Завдяки нашому досвіду та професіоналізму ми забезпечуємо високу "
-"якість продукції та індивідуальний підхід до кожного клієнта."
+"Наша компанія спеціалізується на створенні надійних, безпечних і "
+"функціональних рішень для перевезення вантажів будь-якого типу і розміру. "
+"Завдяки нашому досвіду та професіоналізму ми забезпечуємо високу якість "
+"продукції та індивідуальний підхід до кожного клієнта."
 msgstr ""
-"Hanbild is your reliable partner in the production of trailers and semi-"
-"trailers. Our company specializes in creating reliable, safe and functional "
+"Our company specializes in creating reliable, safe and functional "
 "solutions for the transportation of goods of any type and size. Thanks to "
 "our experience and professionalism, we provide high product quality and "
 "individual approach to each customer."
 
-#: .\main\templates\main\index.html:36
+#: .\main\templates\main\index.html:37
 msgid "Вас вітає,"
 msgstr "Welcome to"
 
-#: .\main\templates\main\index.html:43
+#: .\main\templates\main\index.html:44
 msgid ""
 "Якість, швидкість, надійність – саме ці слова асоціюються у наших клієнтів з "
 "компанією Hanbild. Ми спеціалізуємося на створенні спеціалізованих причепів "
@@ -678,7 +679,7 @@ msgstr ""
 "by Hanbild. We specialize in creating specialized trailers and semi-trailers "
 "that meet the highest quality standards."
 
-#: .\main\templates\main\index.html:49
+#: .\main\templates\main\index.html:50
 msgid ""
 "У нашій роботі ми використовуємо тільки високоякісні матеріали та "
 "комплектуючі, що гарантує довговічність і надійність виготовленого продукту."
@@ -686,7 +687,7 @@ msgstr ""
 "In our work, we use only high-quality materials and components that "
 "guarantee the durability and reliability of the manufactured product."
 
-#: .\main\templates\main\index.html:55
+#: .\main\templates\main\index.html:56
 msgid ""
 "Наша компанія працює на ринку понад 10 років, і за цей час ми "
 "зарекомендували себе як професіонали, що здатні вирішувати завдання будь-"
@@ -696,7 +697,7 @@ msgstr ""
 "during this time we have established themselves as professionals capable of "
 "solving any problem what complexity in a short time."
 
-#: .\main\templates\main\index.html:61
+#: .\main\templates\main\index.html:62
 msgid ""
 "Ми пишаємося тим, що наші клієнти довіряють нам, оцінюючи нашу гнучкість, "
 "якість та індивідуальний підхід до кожного проєкту."
@@ -704,51 +705,51 @@ msgstr ""
 "We pride ourselves on our customers trusting us, appreciating our "
 "flexibility, quality and individual approach to each project."
 
-#: .\main\templates\main\index.html:67
+#: .\main\templates\main\index.html:68
 msgid "Переваги роботи з нами"
 msgstr "Benefits of working with us"
 
-#: .\main\templates\main\index.html:71
+#: .\main\templates\main\index.html:72
 msgid "Оперативність"
 msgstr "Efficiency"
 
-#: .\main\templates\main\index.html:74
+#: .\main\templates\main\index.html:75
 msgid "Швидке виконання замовлень у стислі терміни"
 msgstr "Fast execution of orders in a short time"
 
-#: .\main\templates\main\index.html:84
+#: .\main\templates\main\index.html:85
 msgid "Якість"
 msgstr "Quality"
 
-#: .\main\templates\main\index.html:87
+#: .\main\templates\main\index.html:88
 msgid "Використання тільки якісних матеріалів"
 msgstr "Use of only quality materials"
 
-#: .\main\templates\main\index.html:97
+#: .\main\templates\main\index.html:98
 msgid "Комунікація"
 msgstr "Communication"
 
-#: .\main\templates\main\index.html:100
+#: .\main\templates\main\index.html:101
 msgid "Постійний зв`язок з менеджером, що координує проєкт"
 msgstr "Constant communication with the manager coordinating the project"
 
-#: .\main\templates\main\index.html:110
+#: .\main\templates\main\index.html:111
 msgid "Контроль"
 msgstr "Control"
 
-#: .\main\templates\main\index.html:113
+#: .\main\templates\main\index.html:114
 msgid "Контролюється кожен етап виробництва"
 msgstr "Every stage of production is controlled"
 
-#: .\main\templates\main\index.html:123
+#: .\main\templates\main\index.html:124
 msgid "Бонуси"
 msgstr "Bonuses"
 
-#: .\main\templates\main\index.html:126
+#: .\main\templates\main\index.html:127
 msgid "Постійним клієнтам надаємо персональні знижки"
 msgstr "We provide personal discounts to regular customers"
 
-#: .\main\templates\main\index.html:136
+#: .\main\templates\main\index.html:137
 msgid ""
 " ... і це лише невелика частина переваг співпраці з нами. Доєднуйтесь, щоб "
 "отримати якісний товар та професійний сервіс!"
@@ -756,11 +757,11 @@ msgstr ""
 " ... and this is only a small part of the benefits of working with us. Unite "
 "to get a quality product and professional service!"
 
-#: .\main\templates\main\index.html:138
+#: .\main\templates\main\index.html:139
 msgid "Наші товари та послуги"
 msgstr "Our products and services"
 
-#: .\main\templates\main\index.html:140
+#: .\main\templates\main\index.html:141
 msgid ""
 "Запрошуємо вас ознайомитись з широким спектром товарів та послуг для вашого "
 "бізнесу. Від розробки індивідуальних рішень до постачання стандартних "
@@ -774,44 +775,42 @@ msgstr ""
 "experts are always ready to answer your questions and consider any "
 "suggestions."
 
-#: .\main\templates\main\index.html:154 .\main\templates\main\services.html:27
-#: .\main\templates\main\services.html:36
-#: .\templates\includes\_footer.html:198
-#: .\templates\includes\_header.html:234
+#: .\main\templates\main\index.html:155 .\main\templates\main\services.html:27
+#: .\templates\includes\_footer.html:198 .\templates\includes\_header.html:234
 msgid "Послуги"
 msgstr "Services"
 
-#: .\main\templates\main\index.html:171
+#: .\main\templates\main\index.html:172
 msgid "Чому нас обирають"
 msgstr "Why we are chosen"
 
-#: .\main\templates\main\index.html:180
+#: .\main\templates\main\index.html:181
 msgid "років досвіду"
 msgstr "years experience"
 
-#: .\main\templates\main\index.html:189
+#: .\main\templates\main\index.html:190
 msgid "задоволених клієнтів"
 msgstr "happy clients"
 
-#: .\main\templates\main\index.html:198
+#: .\main\templates\main\index.html:199
 msgid "виконаних проєктів"
 msgstr "completed projects"
 
-#: .\main\templates\main\index.html:236
+#: .\main\templates\main\index.html:237
 msgid "Про нас говорять клієнти"
 msgstr "Customers talk about us"
 
-#: .\main\templates\main\index.html:241
+#: .\main\templates\main\index.html:242
 msgid "Олександр Довбуш"
 msgstr "Oleksandr Dovbush"
 
-#: .\main\templates\main\index.html:244 .\main\templates\main\index.html:266
-#: .\main\templates\main\index.html:288 .\main\templates\main\index.html:311
-#: .\main\templates\main\index.html:333 .\main\templates\main\index.html:355
+#: .\main\templates\main\index.html:245 .\main\templates\main\index.html:267
+#: .\main\templates\main\index.html:289 .\main\templates\main\index.html:312
+#: .\main\templates\main\index.html:334 .\main\templates\main\index.html:356
 msgid "Клієнт"
 msgstr "Client"
 
-#: .\main\templates\main\index.html:252
+#: .\main\templates\main\index.html:253
 msgid ""
 "Співпраця з компанією Хенбілд була надзвичайно вигідною. Вони забезпечили "
 "ефективну комунікацію, точність у виконанні наших вимог та приємні бонуси. "
@@ -821,11 +820,11 @@ msgstr ""
 "communication, accuracy in meeting our requirements and nice bonuses. The "
 "result meets expectations, I recommend!"
 
-#: .\main\templates\main\index.html:263
+#: .\main\templates\main\index.html:264
 msgid "Михайло Скляр"
 msgstr "Mykhailo Sklyar"
 
-#: .\main\templates\main\index.html:274
+#: .\main\templates\main\index.html:275
 msgid ""
 "Як клієнт, я відчував себе повністю задоволеним процедурою співпраці. "
 "Високий рівень професіоналізму та прагнення до вдосконалення поєднуються в "
@@ -835,11 +834,11 @@ msgstr ""
 "high level of professionalism and the desire to improve are combined in to "
 "this company."
 
-#: .\main\templates\main\index.html:285
+#: .\main\templates\main\index.html:286
 msgid "Генадій Коломієць"
 msgstr "Genadiy Kolomiets"
 
-#: .\main\templates\main\index.html:296
+#: .\main\templates\main\index.html:297
 msgid ""
 "Якість напівпричепів цієї компанії перевершує очікування. Вражає відданість "
 "команди і постійне прагнення до інновацій."
@@ -847,11 +846,11 @@ msgstr ""
 "The quality of this company's semi-trailers exceeds expectations. Amazing "
 "devotion teams and the constant pursuit of innovation."
 
-#: .\main\templates\main\index.html:308
+#: .\main\templates\main\index.html:309
 msgid "Микола Мовчан"
 msgstr "Mykola Movchan"
 
-#: .\main\templates\main\index.html:319
+#: .\main\templates\main\index.html:320
 msgid ""
 "Замовляю не перший раз. Компанія завжди дотримується угодених термінів, що "
 "для мене є дуже важливим. Рекомендую!"
@@ -859,11 +858,11 @@ msgstr ""
 "I'm not ordering for the first time. The Company always complies with the "
 "agreed terms that is very important to me. I recommend!"
 
-#: .\main\templates\main\index.html:330
+#: .\main\templates\main\index.html:331
 msgid "Олексій Клименко"
 msgstr "Alexey Klimenko"
 
-#: .\main\templates\main\index.html:341
+#: .\main\templates\main\index.html:342
 msgid ""
 "Компанія врахувала кожну нашу вимогу та побажання. Ми отримали саме те, що "
 "було потрібно. Окреме дякую за знижку та консультації!"
@@ -872,11 +871,11 @@ msgstr ""
 "exactly what was required. Special thanks for the discount and the "
 "consultantї!"
 
-#: .\main\templates\main\index.html:352
+#: .\main\templates\main\index.html:353
 msgid "Святослав Матвійчук"
 msgstr "Svyatoslav Matviychuk"
 
-#: .\main\templates\main\index.html:363
+#: .\main\templates\main\index.html:364
 msgid ""
 "Все пройшло чудово починаючи з самого початку. Менеджери привітні та "
 "доброзичливі. Приємно мати справу."
@@ -912,8 +911,8 @@ msgid "Політика конфіденційності"
 msgstr "Privacy Policy"
 
 #: .\main\templates\main\privacy_policy.html:31
-msgid "ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ"
-msgstr "PRIVACY POLICY"
+msgid "Політика конфіденційності HanBild"
+msgstr "Privacy policy HanBild"
 
 #: .\main\templates\main\privacy_policy.html:33
 msgid "ДАНІ КОМПАНІЇ"
@@ -985,6 +984,10 @@ msgstr ""
 "Professional services for the manufacture and maintenance of trailers, semi-"
 "trailers and trucks from HanBild. High quality products ✓. Individual "
 "approach ✓. Delivery throughout Ukraine ✈."
+
+#: .\main\templates\main\services.html:36
+msgid "Послуги HanBild"
+msgstr "HanBild services"
 
 #: .\main\templates\main\services.html:38
 msgid ""
@@ -1162,6 +1165,10 @@ msgstr ""
 "A wide range of industrial products: trailers and dump truck bodies from the "
 "Ukrainian manufacturer ➤ HanBild. High quality products ✓. Individual "
 "approach ✓. Delivery throughout Ukraine ✈."
+
+#: .\product\templates\product\product.html:36
+msgid "Продукція HanBild"
+msgstr "Products HanBild"
 
 #: .\product\templates\product\product.html:38
 msgid ""
