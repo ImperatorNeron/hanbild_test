@@ -41,6 +41,10 @@
     {% block meta %}
 
     {% endblock %}
+    {% for lang, url in hreflangs.items %}
+        <link rel="alternate" href="{{ url }}" hreflang="{{ lang }}">
+    {% endfor %}
+    <link rel="canonical" href="{{ canonical_url }}">
   </head>
   <body id="scroll-body">
     {% include 'includes/_feedback_button.html' %}
