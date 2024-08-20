@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-01 19:10+0300\n"
+"POT-Creation-Date: 2024-08-20 13:24+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,545 +16,754 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
 #: .\cart\templates\cart\cart.html:7 .\cart\views.py:100
 msgid "Корзина"
-msgstr ""
+msgstr "Корзина"
 
 #: .\cart\templates\cart\cart.html:26
 #: .\cart\templates\cart\includes\_included_empty_cart.html:4
 msgid "Кошик"
-msgstr ""
+msgstr "Корзина"
 
 #: .\cart\templates\cart\cart.html:32
 #: .\main\templates\email_letters\cart_message.html:116
 #: .\main\templates\email_letters\cart_message.html:293
-#: .\product\templates\product\product_page.html:34
+#: .\product\templates\product\product_page.html:40
 msgid "До каталогу"
-msgstr ""
+msgstr "В каталог"
 
 #: .\cart\templates\cart\cart.html:33
 msgid "Оформити замовлення"
-msgstr ""
+msgstr "Оформить заказ"
 
 #: .\cart\templates\cart\includes\_included_cart.html:9
 #: .\cart\templates\cart\includes\_included_cart.html:91
 msgid "Фото"
-msgstr ""
+msgstr "Фото"
 
 #: .\cart\templates\cart\includes\_included_cart.html:12
 #: .\catalog\templates\catalog\item.html:140
 msgid "Назва"
-msgstr ""
+msgstr "Название"
 
 #: .\cart\templates\cart\includes\_included_cart.html:15
-#: .\catalog\templates\catalog\catalog.html:338
+#: .\catalog\templates\catalog\catalog.html:344
 msgid "Арт."
-msgstr ""
+msgstr "Арт."
 
 #: .\cart\templates\cart\includes\_included_cart.html:18
 msgid "К-сть"
-msgstr ""
+msgstr "Кол-во"
 
 #: .\cart\templates\cart\includes\_included_cart.html:21
 #: .\cart\templates\cart\includes\_included_cart.html:97
 #: .\catalog\templates\catalog\item.html:146
 msgid "Ціна"
-msgstr ""
+msgstr "Цена"
 
 #: .\cart\templates\cart\includes\_included_cart.html:58
 #: .\cart\templates\cart\includes\_included_cart.html:76
 #: .\cart\templates\cart\includes\_included_cart.html:121
 #: .\main\templates\email_letters\cart_message.html:274
 msgid "Договірна"
-msgstr ""
+msgstr "Договорная"
 
 #: .\cart\templates\cart\includes\_included_cart.html:60
 #: .\cart\templates\cart\includes\_included_cart.html:78
 #: .\cart\templates\cart\includes\_included_cart.html:123
 #: .\cart\templates\cart\includes\_included_cart.html:144
-#: .\catalog\templates\catalog\catalog.html:330
+#: .\catalog\templates\catalog\catalog.html:336
 #: .\catalog\templates\catalog\item.html:112
 #: .\catalog\templates\catalog\item.html:150
 #: .\main\templates\email_letters\cart_message.html:244
 #: .\main\templates\email_letters\cart_message.html:276
 msgid "грн."
-msgstr ""
+msgstr "грн."
 
 #: .\cart\templates\cart\includes\_included_cart.html:72
 #: .\cart\templates\cart\includes\_included_cart.html:141
 msgid "Всього:"
-msgstr ""
+msgstr "Всего:"
 
 #: .\cart\templates\cart\includes\_included_cart.html:94
 msgid "Товар"
-msgstr ""
+msgstr "Товар"
 
 #: .\cart\templates\cart\includes\_included_empty_cart.html:4
 msgid "порожній!"
-msgstr ""
+msgstr "пуст!"
 
 #: .\cart\templates\cart\includes\_included_empty_cart.html:7
 msgid ""
 "... це виглядає трохи сумно. Давайте допоможемо йому наповнитися радістю :) "
 "Перегляньте та додайте наші найкращі пропозиції і зробіть його щасливим."
 msgstr ""
+"... это выглядит немного грустно. Давайте поможем ему наполниться радостью:) "
+"Просмотрите и добавьте наши лучшие предложения и сделайте его счастливым."
 
 #: .\cart\templates\cart\includes\_included_empty_cart.html:8
 msgid "Перейти до каталогу."
-msgstr ""
+msgstr "Перейти в каталог."
 
 #: .\cart\views.py:32
 msgid "Товар доданий в корзину"
-msgstr ""
+msgstr "Товар добавлен в корзину."
 
 #: .\cart\views.py:73
 msgid "Товар видалено з корзини"
-msgstr ""
+msgstr "Товар удалён из корзины"
 
-#: .\catalog\templates\catalog\catalog.html:25
-#: .\catalog\templates\catalog\catalog.html:172
+#: .\catalog\templates\catalog\catalog.html:7
+#: .\catalog\templates\catalog\catalog.html:9
+msgid ""
+"Каталог продукції українського виробника ➤ HanBild. Широкий асортимент "
+"причепів, кузовів та самоскидів ✓. Висока якість продукції ✓. Індивідуальний "
+"підхід ✓. Доставка по всій Україні ✈."
+msgstr ""
+"Каталог продукции украинского производителя ➤ HanBild. Широкий ассортимент "
+"прицепов, кузовов и самосвалов ✓. Высокое качество продукции ✓. "
+"Индивидуальный подход ✓. Доставка по всей Украине ✈."
+
+#: .\catalog\templates\catalog\catalog.html:31
+#: .\catalog\templates\catalog\catalog.html:178
 msgid "Фільтр"
-msgstr ""
+msgstr "Фильтр"
 
-#: .\catalog\templates\catalog\catalog.html:36
-#: .\catalog\templates\catalog\catalog.html:183
+#: .\catalog\templates\catalog\catalog.html:42
+#: .\catalog\templates\catalog\catalog.html:189
 msgid "Категорії"
-msgstr ""
+msgstr "Категории"
 
-#: .\catalog\templates\catalog\catalog.html:67
-#: .\catalog\templates\catalog\catalog.html:214
+#: .\catalog\templates\catalog\catalog.html:73
+#: .\catalog\templates\catalog\catalog.html:220
 msgid "Діапазон цін"
-msgstr ""
+msgstr "Диапазон цен"
 
-#: .\catalog\templates\catalog\catalog.html:77
-#: .\catalog\templates\catalog\catalog.html:79
-#: .\catalog\templates\catalog\catalog.html:224
-#: .\catalog\templates\catalog\catalog.html:226
-msgid "За новизною"
-msgstr ""
-
+#: .\catalog\templates\catalog\catalog.html:83
 #: .\catalog\templates\catalog\catalog.html:85
-#: .\catalog\templates\catalog\catalog.html:87
+#: .\catalog\templates\catalog\catalog.html:230
 #: .\catalog\templates\catalog\catalog.html:232
-#: .\catalog\templates\catalog\catalog.html:234
-msgid "За зростанням ціни"
-msgstr ""
+msgid "За новизною"
+msgstr "По новизне"
 
+#: .\catalog\templates\catalog\catalog.html:91
 #: .\catalog\templates\catalog\catalog.html:93
-#: .\catalog\templates\catalog\catalog.html:95
+#: .\catalog\templates\catalog\catalog.html:238
 #: .\catalog\templates\catalog\catalog.html:240
-#: .\catalog\templates\catalog\catalog.html:242
+msgid "За зростанням ціни"
+msgstr "По росту цены"
+
+#: .\catalog\templates\catalog\catalog.html:99
+#: .\catalog\templates\catalog\catalog.html:101
+#: .\catalog\templates\catalog\catalog.html:246
+#: .\catalog\templates\catalog\catalog.html:248
 msgid "За спаданням ціни"
-msgstr ""
+msgstr "По убыванию цены"
 
-#: .\catalog\templates\catalog\catalog.html:126
-#: .\catalog\templates\catalog\catalog.html:273
+#: .\catalog\templates\catalog\catalog.html:132
+#: .\catalog\templates\catalog\catalog.html:279
 msgid "Застосувати"
-msgstr ""
+msgstr "Применить"
 
-#: .\catalog\templates\catalog\catalog.html:143
+#: .\catalog\templates\catalog\catalog.html:149
 #: .\catalog\templates\catalog\item.html:20
-#: .\main\templates\main\contact_us.html:15
-#: .\main\templates\main\privacy_policy.html:19
-#: .\main\templates\main\services.html:18
-#: .\product\templates\product\product.html:18
-#: .\product\templates\product\product_page.html:21
-#: .\vacancy\templates\vacancy\vacancy_page.html:16
+#: .\main\templates\main\contact_us.html:21
+#: .\main\templates\main\delivery.html:21
+#: .\main\templates\main\privacy_policy.html:22
+#: .\main\templates\main\services.html:24
+#: .\product\templates\product\product.html:24
+#: .\product\templates\product\product_page.html:27
+#: .\vacancy\templates\vacancy\vacancy_page.html:22
 msgid "Головна сторінка"
-msgstr ""
+msgstr "Главная страница"
 
-#: .\catalog\templates\catalog\catalog.html:146
+#: .\catalog\templates\catalog\catalog.html:152
 #: .\catalog\templates\catalog\item.html:23
-#: .\templates\includes\_footer.html:204 .\templates\includes\_footer.html:224
-#: .\templates\includes\_header.html:160 .\templates\includes\_header.html:261
+#: .\templates\includes\_footer.html:204 .\templates\includes\_footer.html:227
+#: .\templates\includes\_header.html:160 .\templates\includes\_header.html:264
 msgid "Каталог"
-msgstr ""
+msgstr "Каталог"
 
-#: .\catalog\templates\catalog\catalog.html:153
+#: .\catalog\templates\catalog\catalog.html:159
 msgid "Результати за запитом"
-msgstr ""
+msgstr "Результаты по запросу"
 
-#: .\catalog\templates\catalog\catalog.html:287
+#: .\catalog\templates\catalog\catalog.html:293
 msgid "Товарів на сторінці:"
-msgstr ""
+msgstr "Товаров на странице:"
 
-#: .\catalog\templates\catalog\catalog.html:334
+#: .\catalog\templates\catalog\catalog.html:340
 #: .\catalog\templates\catalog\item.html:114
 #: .\catalog\templates\catalog\item.html:152
 #: .\main\templates\email_letters\cart_message.html:242
 msgid "Ціна договірна"
-msgstr ""
+msgstr "Цена договорная"
 
-#: .\catalog\templates\catalog\catalog.html:343
-#: .\product\templates\product\product.html:51
-#: .\product\templates\product\product.html:67
+#: .\catalog\templates\catalog\catalog.html:349
+#: .\product\templates\product\product.html:57
+#: .\product\templates\product\product.html:73
 msgid "Детальніше"
-msgstr ""
+msgstr "Подробнее"
 
-#: .\catalog\templates\catalog\catalog.html:371
+#: .\catalog\templates\catalog\catalog.html:377
 msgid "На жаль, за вашим запитом нічого не знайдено."
-msgstr ""
+msgstr "К сожалению, по вашему запросу ничего не найдено."
 
-#: .\catalog\templates\catalog\catalog.html:371
+#: .\catalog\templates\catalog\catalog.html:377
 msgid "Повернутися до каталогу."
-msgstr ""
+msgstr "Вернуться в каталог."
 
 #: .\catalog\templates\catalog\item.html:118
 msgid "арт."
-msgstr ""
+msgstr "арт."
 
 #: .\catalog\templates\catalog\item.html:122
 msgid "Додати у кошик"
-msgstr ""
+msgstr "Добавить в корзину"
 
 #: .\catalog\templates\catalog\item.html:132
-#: .\product\templates\product\product_page.html:124
+#: .\product\templates\product\product_page.html:130
 msgid "Опис"
-msgstr ""
+msgstr "Описание"
 
 #: .\catalog\templates\catalog\item.html:134
-#: .\product\templates\product\product_page.html:132
+#: .\product\templates\product\product_page.html:138
 msgid "Характеристики"
-msgstr ""
+msgstr "Характеристики"
 
 #: .\catalog\templates\catalog\item.html:158
 msgid "Артикул"
-msgstr ""
+msgstr "Артикул"
 
 #: .\catalog\templates\catalog\item.html:164
-#: .\product\templates\product\product_page.html:137
-#: .\product\templates\product\product_page.html:172
+#: .\product\templates\product\product_page.html:143
+#: .\product\templates\product\product_page.html:178
 msgid "Категорія"
-msgstr ""
+msgstr "Категория"
 
 #: .\catalog\views.py:22
-msgid "Каталог компанії | HanBild.com.ua"
-msgstr ""
+msgid "Каталог продукції: причепи, кузови та самоскиди від HanBild"
+msgstr "Каталог продукции: прицепы, кузова и самосвалы от HanBild"
 
 #: .\hanbild\settings.py:97
 msgid "Ukrainian"
-msgstr ""
+msgstr "Ukrainian"
 
 #: .\hanbild\settings.py:98
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: .\main\forms.py:17 .\order\forms.py:9
 msgid "Поле не може містити цифри та заборонені знаки!"
-msgstr ""
+msgstr "Поле не может содержать цифры или запрещенные знаки!"
 
 #: .\main\forms.py:28
 msgid "Введіть дійсний номер телефону або електронну пошту"
-msgstr ""
+msgstr "Введите действительный телефонный номер или электронную почту"
 
 #: .\main\templates\email_letters\cart_message.html:97
 #: .\main\templates\email_letters\success_message.html:98
 msgid "Сайт"
-msgstr ""
+msgstr "Сайт"
 
 #: .\main\templates\email_letters\cart_message.html:98
 #: .\main\templates\email_letters\success_message.html:99
-#: .\main\templates\main\index.html:140
-#: .\product\templates\product\product.html:21
-#: .\product\templates\product\product.html:30
-#: .\product\templates\product\product_page.html:24
-#: .\templates\includes\_footer.html:201 .\templates\includes\_footer.html:221
-#: .\templates\includes\_header.html:140 .\templates\includes\_header.html:246
+#: .\main\templates\main\index.html:147
+#: .\product\templates\product\product.html:27
+#: .\product\templates\product\product_page.html:30
+#: .\templates\includes\_footer.html:201 .\templates\includes\_footer.html:224
+#: .\templates\includes\_header.html:140 .\templates\includes\_header.html:249
 msgid "Продукція"
 msgstr "Продукция"
 
 #: .\main\templates\email_letters\cart_message.html:99
 #: .\main\templates\email_letters\success_message.html:100
-#: .\templates\includes\_footer.html:210 .\templates\includes\_footer.html:230
-#: .\templates\includes\_header.html:166 .\templates\includes\_header.html:267
-#: .\vacancy\templates\vacancy\vacancy_page.html:19
-#: .\vacancy\templates\vacancy\vacancy_page.html:27
+#: .\templates\includes\_footer.html:213 .\templates\includes\_footer.html:236
+#: .\templates\includes\_header.html:169 .\templates\includes\_header.html:273
+#: .\vacancy\templates\vacancy\vacancy_page.html:25
+#: .\vacancy\templates\vacancy\vacancy_page.html:34
 msgid "Вакансії"
 msgstr "Вакансии"
 
 #: .\main\templates\email_letters\cart_message.html:133
 #: .\main\templates\email_letters\success_message.html:127
 msgid "Контактні дані"
-msgstr ""
+msgstr "Контактные данные"
 
 #: .\main\templates\email_letters\cart_message.html:160
 #: .\main\templates\email_letters\cart_message.html:209
 #: .\order\templates\order\order.html:124
 #: .\order\templates\order\success_order.html:16
 msgid "Замовлення"
-msgstr ""
+msgstr "Заказ"
 
 #: .\main\templates\email_letters\cart_message.html:162
 #: .\main\templates\email_letters\success_message.html:156
 msgid "Дата повідомлення:"
-msgstr ""
+msgstr "Дата сообщения:"
 
 #: .\main\templates\email_letters\cart_message.html:165
 msgid "Ім`я, прізвище:"
-msgstr ""
+msgstr "Имя, фамилия:"
 
 #: .\main\templates\email_letters\cart_message.html:168
 #: .\order\templates\order\order.html:53
 msgid "Номер телефону:"
-msgstr ""
+msgstr "Номер телефона:"
 
 #: .\main\templates\email_letters\cart_message.html:171
 msgid "Email:"
-msgstr ""
+msgstr "Email:"
 
 #: .\main\templates\email_letters\cart_message.html:174
 #: .\order\templates\order\order.html:78
 msgid "Місто:"
-msgstr ""
+msgstr "Город:"
 
 #: .\main\templates\email_letters\cart_message.html:177
 #: .\order\templates\order\order.html:91
 msgid "Адреса:"
-msgstr ""
+msgstr "Адрес:"
 
 #: .\main\templates\email_letters\cart_message.html:181
 #: .\main\templates\email_letters\success_message.html:165
 msgid "Коментар:"
-msgstr ""
+msgstr "Комментарий:"
 
 #: .\main\templates\email_letters\cart_message.html:238
 msgid "Загальна сума покупки:"
-msgstr ""
+msgstr "Общая сумма покупки:"
 
 #: .\main\templates\email_letters\cart_message.html:272
 msgid "Загальна сума:"
-msgstr ""
+msgstr "Общая сумма:"
 
 #: .\main\templates\email_letters\success_message.html:154
 msgid "Вміст повідомлення"
-msgstr ""
+msgstr "Содержимое сообщения"
 
 #: .\main\templates\email_letters\success_message.html:159
 #: .\order\templates\order\order.html:33
 msgid "Ім`я:"
-msgstr ""
+msgstr "Имя:"
 
 #: .\main\templates\email_letters\success_message.html:162
 msgid "Контакт:"
-msgstr ""
+msgstr "Контакт:"
 
 #: .\main\templates\email_letters\success_message.html:190
 msgid "Перейти на сайт"
-msgstr ""
+msgstr "Перейти на сайт"
 
-#: .\main\templates\main\contact_us.html:18
-#: .\main\templates\main\contact_us.html:26
-#: .\main\templates\main\index.html:156 .\templates\includes\_footer.html:207
-#: .\templates\includes\_footer.html:227 .\templates\includes\_header.html:163
-#: .\templates\includes\_header.html:264
+#: .\main\templates\main\contact_us.html:6
+#: .\main\templates\main\contact_us.html:8
+msgid ""
+"Контактна інформація компанії HanBild: телефони, електронна пошта та адреса "
+"офісу. Контакти для звʼязку з нами для обговорення співпраці чи отримання "
+"інформації про наші продукти. Ми завжди на звʼязку!"
+msgstr ""
+"Контактная информация HanBild: телефоны, электронная почта и адрес офиса. "
+"Контакты для связи с нами для обсуждения сотрудничества или получения "
+"информации о наших продуктах. Мы всегда на связи!"
+
+#: .\main\templates\main\contact_us.html:24
+#: .\main\templates\main\contact_us.html:33
+#: .\main\templates\main\index.html:163 .\templates\includes\_footer.html:207
+#: .\templates\includes\_footer.html:230 .\templates\includes\_header.html:163
+#: .\templates\includes\_header.html:267
 msgid "Контакти"
 msgstr "Контакты"
 
-#: .\main\templates\main\contact_us.html:28
+#: .\main\templates\main\contact_us.html:35
 msgid ""
 "На цій сторінці ви можете дізнатися наші контактні дані та місцезнаходження. "
 "Зв'яжіться з нами, щоб дізнатися більше про наші послуги та продукцію. Ми "
 "завжди раді відповісти на ваші питання і надати необхідну інформацію."
 msgstr ""
+"На этой странице вы можете узнать наши контактные данные и местоположение. "
+"Свяжитесь с нами, чтобы узнать больше о наших услугах и продуктах. Мы всегда "
+"готовы ответить на Ваши вопросы и предоставить необходимую информацию."
 
-#: .\main\templates\main\contact_us.html:45
+#: .\main\templates\main\contact_us.html:51
 #: .\templates\includes\_footer.html:19
 msgid "Номери телефонів"
-msgstr ""
+msgstr "Номера телефонов"
 
-#: .\main\templates\main\contact_us.html:64
+#: .\main\templates\main\contact_us.html:70
 msgid "Електронна адреса"
-msgstr ""
+msgstr "Электронный адрес"
 
-#: .\main\templates\main\contact_us.html:76
+#: .\main\templates\main\contact_us.html:82
 #: .\templates\includes\_footer.html:150
 msgid "Графік роботи"
-msgstr ""
+msgstr "График работы"
 
-#: .\main\templates\main\contact_us.html:81
+#: .\main\templates\main\contact_us.html:87
 #: .\templates\includes\_footer.html:160 .\templates\includes\_footer.html:168
 msgid "Пн-Пт:"
-msgstr ""
+msgstr "Пн-Пт:"
 
-#: .\main\templates\main\contact_us.html:81
+#: .\main\templates\main\contact_us.html:87
 #: .\templates\includes\_footer.html:160 .\templates\includes\_footer.html:168
 msgid "з 9.00 по 20.00"
-msgstr ""
+msgstr "с 9.00 до 20.00"
 
-#: .\main\templates\main\contact_us.html:86
+#: .\main\templates\main\contact_us.html:92
 #: .\templates\includes\_footer.html:163 .\templates\includes\_footer.html:171
 msgid "Сб-Нд:"
-msgstr ""
+msgstr "Сб-Вс:"
 
-#: .\main\templates\main\contact_us.html:86
+#: .\main\templates\main\contact_us.html:92
 #: .\templates\includes\_footer.html:163 .\templates\includes\_footer.html:171
 msgid "вихідний"
-msgstr ""
+msgstr "выходной"
 
-#: .\main\templates\main\contact_us.html:100
+#: .\main\templates\main\contact_us.html:106
 #: .\templates\includes\_footer.html:72 .\templates\includes\_footer.html:125
 msgid "Адреса"
-msgstr ""
+msgstr "Адрес"
 
-#: .\main\templates\main\contact_us.html:102
+#: .\main\templates\main\contact_us.html:108
 msgid "м. Дніпро, вул. Орловська, 21"
-msgstr ""
+msgstr "г. Днепр, ул. Орловская, 21"
 
-#: .\main\templates\main\contact_us.html:111
-#: .\vacancy\templates\vacancy\vacancy_page.html:163
+#: .\main\templates\main\contact_us.html:117
+#: .\vacancy\templates\vacancy\vacancy_page.html:170
 msgid "Форма зворотнього зв'язку"
-msgstr ""
-
-#: .\main\templates\main\contact_us.html:114
-#: .\templates\includes\_feedback_form.html:23
-#: .\vacancy\templates\vacancy\vacancy_page.html:166
-msgid "Як до вас звертатися:"
-msgstr ""
-
-#: .\main\templates\main\contact_us.html:115
-#: .\templates\includes\_feedback_form.html:24
-#: .\vacancy\templates\vacancy\vacancy_page.html:167
-msgid "Ваше ім`я"
-msgstr ""
-
-#: .\main\templates\main\contact_us.html:119
-#: .\templates\includes\_feedback_form.html:28
-#: .\vacancy\templates\vacancy\vacancy_page.html:171
-msgid "Номер телефону або e-mail:"
-msgstr ""
+msgstr "Форма обратной связи"
 
 #: .\main\templates\main\contact_us.html:120
-#: .\templates\includes\_feedback_form.html:29
-#: .\vacancy\templates\vacancy\vacancy_page.html:172
-msgid "Залиште контакт для зв`язку"
-msgstr ""
+#: .\templates\includes\_feedback_form.html:23
+#: .\vacancy\templates\vacancy\vacancy_page.html:173
+msgid "Як до вас звертатися:"
+msgstr "Как к вам обращаться:"
 
-#: .\main\templates\main\contact_us.html:124
-#: .\templates\includes\_feedback_form.html:33
-#: .\vacancy\templates\vacancy\vacancy_page.html:176
-msgid "Повідомлення:"
-msgstr ""
+#: .\main\templates\main\contact_us.html:121
+#: .\templates\includes\_feedback_form.html:24
+#: .\vacancy\templates\vacancy\vacancy_page.html:174
+msgid "Ваше ім`я"
+msgstr "Ваше имя"
 
 #: .\main\templates\main\contact_us.html:125
+#: .\templates\includes\_feedback_form.html:28
+#: .\vacancy\templates\vacancy\vacancy_page.html:178
+msgid "Номер телефону або e-mail:"
+msgstr "Номер телефона или e-mail:"
+
+#: .\main\templates\main\contact_us.html:126
+#: .\templates\includes\_feedback_form.html:29
+#: .\vacancy\templates\vacancy\vacancy_page.html:179
+msgid "Залиште контакт для зв`язку"
+msgstr "Оставьте контакт для связи"
+
+#: .\main\templates\main\contact_us.html:130
+#: .\templates\includes\_feedback_form.html:33
+#: .\vacancy\templates\vacancy\vacancy_page.html:183
+msgid "Повідомлення:"
+msgstr "Сообщение:"
+
+#: .\main\templates\main\contact_us.html:131
 #: .\templates\includes\_feedback_form.html:34
 msgid "Напишіть, що саме вас цікавить"
-msgstr ""
+msgstr "Напишите, что именно вас интересует"
 
-#: .\main\templates\main\contact_us.html:129
+#: .\main\templates\main\contact_us.html:135
 #: .\templates\includes\_feedback_form.html:38
-#: .\vacancy\templates\vacancy\vacancy_page.html:181
+#: .\vacancy\templates\vacancy\vacancy_page.html:188
 msgid "Натискаючи кнопку \"Надіслати\" я погоджуюсь з умовами"
-msgstr ""
+msgstr "Нажимая кнопку \"Отправить\" я соглашаюсь с условиями"
 
-#: .\main\templates\main\contact_us.html:129
+#: .\main\templates\main\contact_us.html:135
 #: .\templates\includes\_feedback_form.html:38
-#: .\vacancy\templates\vacancy\vacancy_page.html:181
+#: .\vacancy\templates\vacancy\vacancy_page.html:188
 msgid "політики конфіденційності"
-msgstr ""
+msgstr "политики конфиденциальности"
 
-#: .\main\templates\main\contact_us.html:132
+#: .\main\templates\main\contact_us.html:138
 #: .\templates\includes\_feedback_form.html:41
-#: .\vacancy\templates\vacancy\vacancy_page.html:184
+#: .\vacancy\templates\vacancy\vacancy_page.html:191
 msgid "Надіслати"
-msgstr ""
+msgstr "Отправить"
 
-#: .\main\templates\main\index.html:21
+#: .\main\templates\main\delivery.html:6 .\main\templates\main\delivery.html:8
 msgid ""
-"Hanbild - ваш надійний партнер у сфері виробництва причепів та "
-"напівпричепів. Наша компанія спеціалізується на створенні надійних, "
-"безпечних і функціональних рішень для перевезення вантажів будь-якого типу і "
-"розміру. Завдяки нашому досвіду та професіоналізму ми забезпечуємо високу "
-"якість продукції та індивідуальний підхід до кожного клієнта."
+"Дізнайтеся про умови доставки продукції HanBild: причепи, напівпричепи та "
+"вантажна техніка. Швидка та безпечна доставка по всій Україні ✓. Професійний "
+"підхід до кожного замовлення ✓."
 msgstr ""
+"Узнайте об условиях доставки HanBild: прицепы, полуприцепы и грузовая "
+"техника. Быстрая и безопасная доставка по всей Украине ✓. Профессиональный "
+"подход к каждому заказу ✓."
 
-#: .\main\templates\main\index.html:30
-msgid "Вас вітає,"
+#: .\main\templates\main\delivery.html:24
+#: .\templates\includes\_footer.html:210
+#: .\templates\includes\_header.html:270
+msgid "Доставка"
+msgstr "Доставка"
+
+#: .\main\templates\main\delivery.html:33
+msgid "Доставка HanBild"
+msgstr "Доставка HanBild"
+
+#: .\main\templates\main\delivery.html:35
+msgid ""
+"Компанія HanBild пропонує зручні та надійні способи доставки нашої "
+"продукції, а також різні варіанти оплати. Дізнайтеся деталі про процес "
+"доставки та доступні методи оплати на цій сторінці."
 msgstr ""
+"HanBild предлагает удобные и надежные методы доставки для наших товаров, а "
+"также различные варианты оплаты. Подробнее о процессе доставки и доступные "
+"методы оплаты на этой странице."
+
+#: .\main\templates\main\delivery.html:44
+msgid "Способи доставки"
+msgstr "Способы доставки"
+
+#: .\main\templates\main\delivery.html:46
+msgid "Доставка здійснюється по всій Україні:"
+msgstr "Доставка осуществляется по всей Украине:"
+
+#: .\main\templates\main\delivery.html:48
+msgid "доставка у відділення"
+msgstr "доставка в отделение"
+
+#: .\main\templates\main\delivery.html:49
+msgid "доставка за адресою"
+msgstr "доставка по адресу"
+
+#: .\main\templates\main\delivery.html:50
+msgid "самовивіз"
+msgstr "самовывоз"
+
+#: .\main\templates\main\delivery.html:52
+msgid "Ми співпрацюємо з такими транспортними компаніями:"
+msgstr "Мы сотрудничаем со следующими транспортными компаниями:"
+
+#: .\main\templates\main\delivery.html:54
+msgid "Укрпошта"
+msgstr "Укрпочта"
+
+#: .\main\templates\main\delivery.html:55
+msgid "Нова пошта"
+msgstr "Новая почта"
+
+#: .\main\templates\main\delivery.html:56
+msgid "Delivery"
+msgstr "Delivery"
+
+#: .\main\templates\main\delivery.html:57
+msgid "SAT"
+msgstr "SAT"
+
+#: .\main\templates\main\delivery.html:58
+msgid "Нічний експрес"
+msgstr "Ночной экспресс"
+
+#: .\main\templates\main\delivery.html:61
+msgid "Вартість та термін доставки"
+msgstr "Стоимость и сроки доставки"
+
+#: .\main\templates\main\delivery.html:61
+msgid ""
+"можна обговорити з нашим менеджером, який допоможе підібрати оптимальний "
+"варіант для вас."
+msgstr ""
+"можно обсудить с нашим менеджером, который поможет выбрать лучшее опция для "
+"вас."
+
+#: .\main\templates\main\delivery.html:66
+msgid "Способи оплати"
+msgstr "Способы оплаты"
+
+#: .\main\templates\main\delivery.html:68
+msgid "Оплата замолення здійснюється такими способіми:"
+msgstr "Оплата замоления осуществляется следующими способами:"
+
+#: .\main\templates\main\delivery.html:70
+msgid "готівковий розрахунок"
+msgstr "наличный расчет"
+
+#: .\main\templates\main\delivery.html:71
+msgid "безготівковий розрахунок за реквізитами, виданими менеджером"
+msgstr "безналичный расчет по реквизитам, выданным менеджером"
+
+#: .\main\templates\main\delivery.html:73
+msgid "Також ви можете обрати найзручніший для вас спосіб оплати:"
+msgstr "Также вы можете выбрать самый удобный для вас способ оплаты:"
+
+#: .\main\templates\main\delivery.html:75
+msgid "передоплата"
+msgstr "предоплата"
+
+#: .\main\templates\main\delivery.html:76
+msgid "післяплата"
+msgstr "наложенный платеж"
+
+#: .\main\templates\main\delivery.html:77
+msgid "відстрочка платежу"
+msgstr "отсрочка платежа"
+
+#: .\main\templates\main\delivery.html:80
+msgid "Після оформлення замовлення на сайті"
+msgstr "После оформления заказа на сайте"
+
+#: .\main\templates\main\delivery.html:80
+msgid "наш менеджер зателефонує Вам, щоб повідомити всі деталі."
+msgstr "наш менеджер позвонит Вам, чтобы сообщить все подробности."
+
+#: .\main\templates\main\delivery.html:85
+msgid "Лізинг та Трейд-ін"
+msgstr "Лизинг и Трейд-ин"
+
+#: .\main\templates\main\delivery.html:88
+msgid ""
+"У Hanbild Ви можете <b>лізингувати</b> напівпричепи, причепи та іншу "
+"техніку. Ми пропонуємо зручні умови лізингу, щоб Ви могли отримати необхідне "
+"обладнання без значних витрат. Незалежно від Вашого бізнесу, ми підберемо "
+"найкращий варіант лізингу для Ваших потреб."
+msgstr ""
+"На сайте Hanbild вы можете: </b>арендовать</b> полуприцепы, прицепы и другую "
+"технику. Мы предлагаем удобные условия аренды, чтобы Вы могли получить "
+"необходимые оборудование без значительных затрат. Независимо от Вашего "
+"бизнеса, мы подберем лучший вариант лизинга для Ваших нужд."
+
+#: .\main\templates\main\delivery.html:91
+msgid ""
+"Крім того, у ми пропонуємо <b>послуги trade-in</b>, що дозволяють обміняти "
+"стару техніку на нову. Наші фахівці допоможуть оцінити техніку та підібрати "
+"найкращий варіант обміну."
+msgstr ""
+"Кроме того, мы предлагаем <b>услуги trade-in</b>, позволяющие обменять "
+"старую технику на новую. Наши специалисты помогут оценить технику и "
+"подобрать лучший вариант обмена."
+
+#: .\main\templates\main\index.html:6 .\main\templates\main\index.html:8
+msgid ""
+"Професійне виробництво причепів та напівпричепів від ➤ HanBild. Виготовлення "
+"кузовів самоскидів ✓. Висока якість продукції ✓. Індивідуальний підхід ✓. "
+"Доставка по всій Україні ✈."
+msgstr ""
+"Профессиональное производство прицепов и полуприцепов ➤ HanBild. "
+"Изготовление кузовов самосвалов ✓. Высокое качество продукции ✓. "
+"Индивидуальный подход ✓. Доставка по всей Украине ✈."
+
+#: .\main\templates\main\index.html:26
+msgid "HanBild - Виробництво причепів та напівпричепів"
+msgstr "HanBild - Производство прицепов и полуприцепов"
+
+#: .\main\templates\main\index.html:28
+msgid ""
+"Наша компанія спеціалізується на створенні надійних, безпечних і "
+"функціональних рішень для перевезення вантажів будь-якого типу і розміру. "
+"Завдяки нашому досвіду та професіоналізму ми забезпечуємо високу якість "
+"продукції та індивідуальний підхід до кожного клієнта."
+msgstr ""
+"Наша компания специализируется на создании надежных, безопасных и "
+"функциональных решений для перевозки грузов любого типа и размера. "
+"Благодаря нашему опыту и профессионализму мы обеспечиваем высокое качество "
+"продукции и индивидуальный подход к каждому клиенту."
 
 #: .\main\templates\main\index.html:37
+msgid "Вас вітає,"
+msgstr "Вас приветствует,"
+
+#: .\main\templates\main\index.html:44
 msgid ""
 "Якість, швидкість, надійність – саме ці слова асоціюються у наших клієнтів з "
 "компанією Hanbild. Ми спеціалізуємося на створенні спеціалізованих причепів "
 "та напівпричепів, що відповідають найвищим стандартам якості."
 msgstr ""
+"Качество, скорость, надежность – именно эти слова ассоциируются у наших клиентов с "
+"компанией Hanbild. Мы специализируемся на создании специализированных прицепов "
+"и полуприцепов, отвечающих самым высоким стандартам качества."
 
-#: .\main\templates\main\index.html:43
+#: .\main\templates\main\index.html:50
 msgid ""
 "У нашій роботі ми використовуємо тільки високоякісні матеріали та "
 "комплектуючі, що гарантує довговічність і надійність виготовленого продукту."
 msgstr ""
+"В нашей работе мы используем только высококачественные материалы и "
+"комплектующие, гарантирующие долговечность и надежность изготовленного продукта."
 
-#: .\main\templates\main\index.html:49
+#: .\main\templates\main\index.html:56
 msgid ""
 "Наша компанія працює на ринку понад 10 років, і за цей час ми "
 "зарекомендували себе як професіонали, що здатні вирішувати завдання будь-"
 "якої складності в стислі терміни."
 msgstr ""
+"Наша компания работает на рынке более 10 лет, и за это время мы "
+"зарекомендовали себя как профессионалы, способные решать задачи любой "
+"сложности в сжатые сроки."
 
-#: .\main\templates\main\index.html:55
+#: .\main\templates\main\index.html:62
 msgid ""
 "Ми пишаємося тим, що наші клієнти довіряють нам, оцінюючи нашу гнучкість, "
 "якість та індивідуальний підхід до кожного проєкту."
 msgstr ""
-
-#: .\main\templates\main\index.html:61
-msgid "Переваги роботи з нами"
-msgstr ""
-
-#: .\main\templates\main\index.html:65
-msgid "Оперативність"
-msgstr ""
+"Мы гордимся тем, что наши клиенты доверяют нам, оценивая нашу гибкость, "
+"качество и индивидуальный подход к каждому проекту."
 
 #: .\main\templates\main\index.html:68
+msgid "Переваги роботи з нами"
+msgstr "Преимущества работы с нами"
+
+#: .\main\templates\main\index.html:72
+msgid "Оперативність"
+msgstr "Оперативность"
+
+#: .\main\templates\main\index.html:75
 msgid "Швидке виконання замовлень у стислі терміни"
-msgstr ""
+msgstr "Быстрое выполнение заказов в сжатые сроки"
 
-#: .\main\templates\main\index.html:78
+#: .\main\templates\main\index.html:85
 msgid "Якість"
-msgstr ""
+msgstr "Качество"
 
-#: .\main\templates\main\index.html:81
+#: .\main\templates\main\index.html:88
 msgid "Використання тільки якісних матеріалів"
-msgstr ""
+msgstr "Использование только качественных материалов"
 
-#: .\main\templates\main\index.html:91
+#: .\main\templates\main\index.html:98
 msgid "Комунікація"
-msgstr ""
+msgstr "Коммуникация"
 
-#: .\main\templates\main\index.html:94
+#: .\main\templates\main\index.html:101
 msgid "Постійний зв`язок з менеджером, що координує проєкт"
-msgstr ""
+msgstr "Постоянная связь с менеджером, координирующим проект"
 
-#: .\main\templates\main\index.html:104
+#: .\main\templates\main\index.html:111
 msgid "Контроль"
-msgstr ""
+msgstr "Контроль"
 
-#: .\main\templates\main\index.html:107
+#: .\main\templates\main\index.html:114
 msgid "Контролюється кожен етап виробництва"
-msgstr ""
+msgstr "Контролируется каждый этап производства"
 
-#: .\main\templates\main\index.html:117
+#: .\main\templates\main\index.html:124
 msgid "Бонуси"
-msgstr ""
+msgstr "Бонусы"
 
-#: .\main\templates\main\index.html:120
+#: .\main\templates\main\index.html:127
 msgid "Постійним клієнтам надаємо персональні знижки"
-msgstr ""
+msgstr "Постоянным клиентам предоставляем персональные скидки"
 
-#: .\main\templates\main\index.html:130
+#: .\main\templates\main\index.html:137
 msgid ""
 " ... і це лише невелика частина переваг співпраці з нами. Доєднуйтесь, щоб "
 "отримати якісний товар та професійний сервіс!"
 msgstr ""
+" ... и это лишь небольшая часть преимуществ сотрудничества с нами. Присоединяйтесь, чтобы "
+"получить качественный товар и профессиональный сервис!"
 
-#: .\main\templates\main\index.html:132
+#: .\main\templates\main\index.html:139
 msgid "Наші товари та послуги"
-msgstr ""
+msgstr "Наши товары и услуги"
 
-#: .\main\templates\main\index.html:134
+#: .\main\templates\main\index.html:141
 msgid ""
 "Запрошуємо вас ознайомитись з широким спектром товарів та послуг для вашого "
 "бізнесу. Від розробки індивідуальних рішень до постачання стандартних "
@@ -562,143 +771,171 @@ msgid ""
 "експертів завжди готова відповісти на ваші запитання та розглянути будь-які "
 "пропозиції."
 msgstr ""
+"Приглашаем вас ознакомиться с широким спектром товаров и услуг для вашего "
+"бизнеса. От разработки индивидуальных решений до поставки стандартных "
+"полуприцепепов - мы готовы удовлетворить все ваши потребности. Наша команда "
+"экспертов всегда готова ответить на ваши вопросы и рассмотреть любые "
+"предложения."
 
-#: .\main\templates\main\index.html:148 .\main\templates\main\services.html:21
-#: .\main\templates\main\services.html:30
-#: .\templates\includes\_footer.html:198
-#: .\templates\includes\_footer.html:218
-#: .\templates\includes\_header.html:117
-#: .\templates\includes\_header.html:231
+#: .\main\templates\main\index.html:155 .\main\templates\main\services.html:27
+#: .\templates\includes\_footer.html:198 .\templates\includes\_header.html:234
 msgid "Послуги"
 msgstr "Услуги"
 
-#: .\main\templates\main\index.html:165
+#: .\main\templates\main\index.html:172
 msgid "Чому нас обирають"
-msgstr ""
+msgstr "Почему нас выбирают"
 
-#: .\main\templates\main\index.html:174
+#: .\main\templates\main\index.html:181
 msgid "років досвіду"
-msgstr ""
+msgstr "лет опыта"
 
-#: .\main\templates\main\index.html:183
+#: .\main\templates\main\index.html:190
 msgid "задоволених клієнтів"
-msgstr ""
+msgstr "довольных клиентов"
 
-#: .\main\templates\main\index.html:192
+#: .\main\templates\main\index.html:199
 msgid "виконаних проєктів"
-msgstr ""
+msgstr "выполненных проектов"
 
-#: .\main\templates\main\index.html:230
+#: .\main\templates\main\index.html:237
 msgid "Про нас говорять клієнти"
-msgstr ""
+msgstr "О нас говорят клиенты"
 
-#: .\main\templates\main\index.html:235
+#: .\main\templates\main\index.html:242
 msgid "Олександр Довбуш"
-msgstr ""
+msgstr "Александр Довбуш"
 
-#: .\main\templates\main\index.html:238 .\main\templates\main\index.html:260
-#: .\main\templates\main\index.html:282 .\main\templates\main\index.html:305
-#: .\main\templates\main\index.html:327 .\main\templates\main\index.html:349
+#: .\main\templates\main\index.html:245 .\main\templates\main\index.html:267
+#: .\main\templates\main\index.html:289 .\main\templates\main\index.html:312
+#: .\main\templates\main\index.html:334 .\main\templates\main\index.html:356
 msgid "Клієнт"
-msgstr ""
+msgstr "Клиент"
 
-#: .\main\templates\main\index.html:246
+#: .\main\templates\main\index.html:253
 msgid ""
 "Співпраця з компанією Хенбілд була надзвичайно вигідною. Вони забезпечили "
 "ефективну комунікацію, точність у виконанні наших вимог та приємні бонуси. "
 "Результат відповідає очікуванням, рекомендую!"
 msgstr ""
+"Сотрудничество с компанией Хенбилд было чрезвычайно выгодным. Они обеспечили "
+"эффективную коммуникацию, точность выполнения наших требований и приятные бонусы. "
+"Результат отвечает ожиданиям, рекомендую!"
 
-#: .\main\templates\main\index.html:257
+#: .\main\templates\main\index.html:264
 msgid "Михайло Скляр"
-msgstr ""
+msgstr "Михаил Скляр"
 
-#: .\main\templates\main\index.html:268
+#: .\main\templates\main\index.html:275
 msgid ""
 "Як клієнт, я відчував себе повністю задоволеним процедурою співпраці. "
 "Високий рівень професіоналізму та прагнення до вдосконалення поєднуються в "
 "цій компанії."
 msgstr ""
+"Как клиент, я чувствовал себя полностью удовлетворенным процедурой сотрудничества. "
+"Высокий уровень профессионализма и стремление к совершенствованию сочетаются в "
+"этой компании."
 
-#: .\main\templates\main\index.html:279
+#: .\main\templates\main\index.html:286
 msgid "Генадій Коломієць"
-msgstr ""
+msgstr "Геннадий Коломиец"
 
-#: .\main\templates\main\index.html:290
+#: .\main\templates\main\index.html:297
 msgid ""
 "Якість напівпричепів цієї компанії перевершує очікування. Вражає відданість "
 "команди і постійне прагнення до інновацій."
 msgstr ""
+"Качество полуприцепов этой компании превосходит ожидания. Впечатляет преданность "
+"команды и постоянное стремление к инновациям."
 
-#: .\main\templates\main\index.html:302
+#: .\main\templates\main\index.html:309
 msgid "Микола Мовчан"
-msgstr ""
+msgstr "Николай Мовчан"
 
-#: .\main\templates\main\index.html:313
+#: .\main\templates\main\index.html:320
 msgid ""
 "Замовляю не перший раз. Компанія завжди дотримується угодених термінів, що "
 "для мене є дуже важливим. Рекомендую!"
 msgstr ""
+"Заказываю не первый раз. Компания всегда придерживается согласованных терминов, что "
+"для меня очень важно. Рекомендую!"
 
-#: .\main\templates\main\index.html:324
+#: .\main\templates\main\index.html:331
 msgid "Олексій Клименко"
-msgstr ""
+msgstr "Алексей Клименко"
 
-#: .\main\templates\main\index.html:335
+#: .\main\templates\main\index.html:342
 msgid ""
 "Компанія врахувала кожну нашу вимогу та побажання. Ми отримали саме те, що "
 "було потрібно. Окреме дякую за знижку та консультації!"
 msgstr ""
+"Компания учла каждое наше требование и пожелания. Мы получили именно то, что "
+"требовалось. Отдельное спасибо за скидку и консультации!"
 
-#: .\main\templates\main\index.html:346
+#: .\main\templates\main\index.html:353
 msgid "Святослав Матвійчук"
-msgstr ""
+msgstr "Святослав Матвийчук"
 
-#: .\main\templates\main\index.html:357
+#: .\main\templates\main\index.html:364
 msgid ""
 "Все пройшло чудово починаючи з самого початку. Менеджери привітні та "
 "доброзичливі. Приємно мати справу."
 msgstr ""
+"Все прошло отлично начиная с самого начала. Менеджеры приветливы и "
+"доброжелательны. Приятно иметь дело."
 
 #: .\main\templates\main\page404.html:15
 msgid ""
 "Упс... Здається щось пішло не так. Сторінку, яку ви шукали, не знайдено. "
 "Проте не засмучуйтесь, у нас є багато цікавого для вас."
 msgstr ""
+"Упс... Кажется что-то пошло не так. Страница, которую вы искали, не найдена. "
+"Однако не огорчайтесь, у нас есть много интересного для вас."
 
 #: .\main\templates\main\page404.html:16
 msgid "Перейти на головну"
-msgstr ""
+msgstr "Перейти на главную"
 
-#: .\main\templates\main\privacy_policy.html:22
+#: .\main\templates\main\privacy_policy.html:10
+#: .\main\templates\main\privacy_policy.html:12
+msgid ""
+"Політика конфіденційності для сайту HanBild, яка гарантує захист "
+"персональних даних. Забезпечення безпеки та конфіденційністі інформації під "
+"час взаємодії з сайтом."
+msgstr ""
+"Политика конфиденциальности для сайта HanBild, гарантирующая защиту "
+"персональных данных. Обеспечение безопасности и конфиденциальности информации при "
+"взаимодействии с сайтом."
+
+#: .\main\templates\main\privacy_policy.html:25
 msgid "Політика конфіденційності"
-msgstr ""
+msgstr "Политика конфиденциальности"
 
-#: .\main\templates\main\privacy_policy.html:28
-msgid "ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ"
-msgstr ""
+#: .\main\templates\main\privacy_policy.html:31
+msgid "Політика конфіденційності HanBild"
+msgstr "Политика конфиденциальности HanBild"
 
-#: .\main\templates\main\privacy_policy.html:30
+#: .\main\templates\main\privacy_policy.html:33
 msgid "ДАНІ КОМПАНІЇ"
-msgstr ""
-
-#: .\main\templates\main\privacy_policy.html:32
-msgid "Компанія ТОВ \"ХЕНБІЛД\" (LLC HANBILD)"
-msgstr ""
+msgstr "ДАННЫЕ КОМПАНИИ"
 
 #: .\main\templates\main\privacy_policy.html:35
-msgid "Телефон: +38 095 151 5315"
-msgstr ""
+msgid "Компанія ТОВ \"ХЕНБІЛД\" (LLC HANBILD)"
+msgstr "Компания ООО \"ХЕНБИЛД\" (LLC HANBILD)"
 
 #: .\main\templates\main\privacy_policy.html:38
+msgid "Телефон: +38 095 151 5315"
+msgstr "Телефон: +38 095 151 5315"
+
+#: .\main\templates\main\privacy_policy.html:41
 msgid "Адреса сайту: https://hanbild.com.ua"
-msgstr ""
+msgstr "Адрес сайта: https://hanbild.com.ua"
 
-#: .\main\templates\main\privacy_policy.html:42
+#: .\main\templates\main\privacy_policy.html:45
 msgid "ПЕРСОНАЛЬНІ ДАНІ, ЯКІ ЗБИРАЮТЬСЯ І З ЯКОЮ МЕТОЮ"
-msgstr ""
+msgstr "ПЕРСОНАЛЬНЫЕ ДАННЫЕ, ЗАЧЕМ И С КАКОЙ ЦЕЛЬЮ"
 
-#: .\main\templates\main\privacy_policy.html:44
+#: .\main\templates\main\privacy_policy.html:47
 msgid ""
 "Якщо ви залишите повідомлення на нашому сайті, автоматично збережеться ваше "
 "ім`я, email або телефон, повідомлення у базі даних, для подальшої обробки та "
@@ -713,200 +950,280 @@ msgid ""
 "використовується виключно з метою вивчення попиту на наші продукти та "
 "послуги."
 msgstr ""
+"Если вы оставите сообщение на нашем сайте, автоматически сохранится ваше "
+"имя, email или телефон, сообщение в базе данных, для дальнейшей обработки и "
+"установка контакта. Также на этом сайте может содержаться контент "
+"(например, видео, карты и т.д.), встраиваемый с помощью другого сайта. "
+"Подобное содержимое ведет себя так же, словно посетитель зашел на другой сайт. Эти "
+"сайты могут собирать данные о вас, использовать куки, внедрять "
+"дополнительное отслеживание третьей стороной и следить за вашим взаимодействием с "
+"внедренным содержимым, включая отслеживание взаимодействия, если вы имеете "
+"учетную запись и авторизованные на том сайте. Важно заметить, что на "
+"сайте установлен код аналитики Google, вся полученная нами информация "
+"используется исключительно для изучения спроса на наши продукты и "
+"услуги."
 
-#: .\main\templates\main\privacy_policy.html:48
+#: .\main\templates\main\privacy_policy.html:51
 msgid "ТРИВАЛІСТЬ ЗБЕРІГАННЯ ДАНИХ"
-msgstr ""
+msgstr "ПРОДОЛЖИТЕЛЬНОСТЬ ХРАНЕНИЯ ДАННЫХ"
 
-#: .\main\templates\main\privacy_policy.html:50
+#: .\main\templates\main\privacy_policy.html:53
 msgid ""
 "Інформація та контактні дані, які ви надаєте в повідомленні на сайті "
 "зберігаються невизначений термін. Це робиться з метою покращення "
 "обслуговування клієнтів і для можливості ідентифікувати користувача при "
 "подальших зверненнях."
 msgstr ""
+"Информация и контактные данные, которые вы предоставляете в сообщении на сайте "
+"сохраняются неопределенный срок. Это делается с целью улучшения "
+"обслуживание клиентов и для возможности идентифицировать пользователя при "
+"дальнейших обращениях."
 
-#: .\main\templates\main\services.html:32
+#: .\main\templates\main\services.html:5 .\main\templates\main\services.html:7
+msgid ""
+"Професійні послуги з виготовлення та обслуговування причепів, напівпричепів "
+"та вантажної техніки від HanBild. Висока якість продукції ✓. Індивідуальний "
+"підхід ✓. Доставка по всій Україні ✈."
+msgstr ""
+"Профессиональные услуги по изготовлению и обслуживанию прицепов, полуприцепов "
+"и грузовой техники от HanBild. Высокое качество продукции ✓. Индивидуальный "
+"подход ✓. Доставка по всей Украине ✈."
+
+#: .\main\templates\main\services.html:36
+msgid "Послуги HanBild"
+msgstr "Услуги HanBild"
+
+#: .\main\templates\main\services.html:38
 msgid ""
 "Наша компанія надає широкий спектр послуг. На цій сторінці ви знайдете "
 "детальну інформацію про кожну з них. Наша команда гарантує якісне виконання "
 "усіх завдань, враховуючи індивідуальні потреби та вимоги кожного клієнта."
 msgstr ""
+"Наша компания предоставляет широкий спектр услуг. На этой странице вы найдете "
+"подробную информацию о каждой из них. Наша команда гарантирует качественное исполнение "
+"всех задач, учитывая индивидуальные потребности и требования каждого клиента."
 
-#: .\main\templates\main\services.html:75
-#: .\product\templates\product\product.html:77
+#: .\main\templates\main\services.html:81
+#: .\product\templates\product\product.html:83
 msgid ""
 "Якщо ви хочете отримати більш детальну інформацію або задати питання ви "
 "можете зателефонувати або написати нам. Ми будемо раді вам допомогти!"
 msgstr ""
+"Если вы хотите получить более подробную информацию или задать вопрос вы "
+"можете позвонить или написать нам. Мы будем рады вам помочь!"
 
-#: .\main\utils.py:24
+#: .\main\utils.py:36
 msgid "Дякуємо за Ваше повідомлення!"
-msgstr ""
+msgstr "Спасибо за Ваше сообщение!"
 
-#: .\main\utils.py:26 .\order\utils.py:44
+#: .\main\utils.py:38 .\order\utils.py:44
 msgid "Найближчим часом з вами зв'яжеться наш менеджер."
-msgstr ""
+msgstr "В ближайшее время с вами свяжется наш менеджер."
 
-#: .\main\utils.py:44
+#: .\main\utils.py:57
 msgid "Повідомлення надійшло успішно!"
-msgstr ""
+msgstr "Уведомление поступило успешно!"
 
 #: .\main\views.py:37
-msgid "HanBild - виробник самоскидних та бортових кузовів"
-msgstr ""
+msgid "Виробництво причепів: замовити виготовлення кузовів в Україні - HanBild"
+msgstr "Производство прицепов: заказать изготовление кузовов в Украине- HanBild"
 
 #: .\main\views.py:47
-msgid "Контакти компанії | HanBild.com.ua"
+msgid ""
+"Контактна інформація компанії з виготовлення причепів та напівпричепів | "
+"HanBild "
 msgstr ""
+"Контактная информация компании по производству прицепов и полуприцепов | "
+"HanBild "
 
 #: .\main\views.py:57
-msgid "Ремонт, Trade in та Leasing | HanBild.com.ua"
+msgid ""
+"Послуги HanBild: виробництво та обслуговування причепів та напівпричепів"
 msgstr ""
+"Услуги HanBild: производство и обслуживание прицепов и полуприцепов"
 
-#: .\main\views.py:72
-msgid "Політика конфіденційності | HanBild.com.ua"
+#: .\main\views.py:68
+msgid ""
+"Доставка HanBild: інформація про умови та варіанти доставки причепів та "
+"напівпричепів"
 msgstr ""
+"Доставка HanBild: информация об условиях и вариантах доставки прицепов и "
+"полуприцепов"
+
+#: .\main\views.py:78
+msgid "Політика конфіденційності HanBild: надійний захист персональних даних"
+msgstr "Политика конфиденциальности HanBild: надежная защита персональных данных"
 
 #: .\order\forms.py:19
 msgid "Номер телефону повинен бути в форматі +380960001122 або 0960001122"
-msgstr ""
+msgstr "Номер телефона должен быть в формате +380960001122 или 0960001122"
 
 #: .\order\forms.py:27
 msgid "Введіть коректну електронну пошту"
-msgstr ""
+msgstr "Введите корректную электронную почту"
 
 #: .\order\forms.py:36
 msgid "Адреса не може містити заборонені знаки!"
-msgstr ""
+msgstr "Адрес не может содержать запретные знаки!"
 
 #: .\order\templates\order\order.html:22
 msgid "Оформлення замовлення"
-msgstr ""
+msgstr "Оформление заказа"
 
 #: .\order\templates\order\order.html:29
 msgid "Особисті дані"
-msgstr ""
+msgstr "Личные данные"
 
 #: .\order\templates\order\order.html:34
 msgid "Микола"
-msgstr ""
+msgstr "Николай"
 
 #: .\order\templates\order\order.html:37 .\order\templates\order\order.html:46
 #: .\order\templates\order\order.html:57 .\order\templates\order\order.html:66
 #: .\order\templates\order\order.html:86 .\order\templates\order\order.html:95
 msgid "Поле не може містити цифри і заборонені знаки!"
-msgstr ""
+msgstr "Поле не может содержать цифры и запретные знаки!"
 
 #: .\order\templates\order\order.html:42
 msgid "Прізвище:"
-msgstr ""
+msgstr "Фамилия:"
 
 #: .\order\templates\order\order.html:43
 msgid "Коцюбинський"
-msgstr ""
+msgstr "Коцюбинский"
 
 #: .\order\templates\order\order.html:62
 msgid "Електронна пошта:"
-msgstr ""
+msgstr "Электронная почта:"
 
 #: .\order\templates\order\order.html:74
 msgid "Дані для доставки"
-msgstr ""
+msgstr "Данные для доставки"
 
 #: .\order\templates\order\order.html:80
 msgid "Дніпро"
-msgstr ""
+msgstr "Днепр"
 
 #: .\order\templates\order\order.html:92
 msgid "вул. Дніпрянська 7"
-msgstr ""
+msgstr "ул. Днепрянская 7"
 
 #: .\order\templates\order\order.html:107
 msgid "Доставка узгоджується з менеджером"
-msgstr ""
+msgstr "Доставка согласовывается с менеджером"
 
 #: .\order\templates\order\order.html:113
 msgid "Коментар"
-msgstr ""
+msgstr "Комментарий"
 
 #: .\order\templates\order\order.html:116
 msgid "Побажання, прохання, тощо ..."
-msgstr ""
+msgstr "Пожелания, просьбы и т.д."
 
 #: .\order\templates\order\order.html:129
 msgid "Підтвердити замовлення"
-msgstr ""
+msgstr "Подтвердить заказ"
 
 #: .\order\templates\order\success_order.html:16
 msgid " оформлене!"
-msgstr ""
+msgstr " оформлено!"
 
 #: .\order\templates\order\success_order.html:19
 msgid ""
 "Дякуємо за покупку! Ваше замовлення успішно оформлене і прийняте до обробки. "
 "Найближчим часом з вами зв`яжеться менеджер. Бажаємо гарного дня!"
 msgstr ""
+"Спасибо за покупку! Ваш заказ успешно оформлен и принят к обработке. "
+"В ближайшее время с вами свяжется менеджер. Желаем хорошего дня!"
 
 #: .\order\templates\order\success_order.html:20
 msgid "Переглянути інші товари."
-msgstr ""
+msgstr "Просмотреть другие товары."
 
 #: .\order\utils.py:42
 msgid "Дякуємо за Ваше замовлення!"
-msgstr ""
+msgstr "Спасибо за Ваш заказ!"
 
 #: .\order\utils.py:81
 msgid "Помилка в формі. Спробуйте знову."
-msgstr ""
+msgstr "Ошибка в форме. Попробуйте снова."
 
 #: .\order\views.py:18
 msgid "Оформлення замовлення | HanBild.com.ua"
-msgstr ""
+msgstr "Оформление заказа HanBild.com.ua"
 
 #: .\order\views.py:61
 msgid "Замовлення пройшло успішно!"
-msgstr ""
+msgstr "Заказ прошел успешно!"
 
-#: .\product\templates\product\product.html:32
+#: .\product\templates\product\product.html:5
+#: .\product\templates\product\product.html:7
+msgid ""
+"Широкий асортимент промислової продукції: причепи та кузови самоскидів від "
+"українського виробника ➤ HanBild. Висока якість продукції ✓. Індивідуальний "
+"підхід ✓. Доставка по всій Україні ✈."
+msgstr ""
+"Широкий ассортимент промышленной продукции: прицепы и кузова самосвалов от "
+"украинского производителя ➤ HanBild. Высокое качество продукции ✓. Индивидуальный "
+"подход ✓. Доставка по всей Украине ✈."
+
+#: .\product\templates\product\product.html:36
+msgid "Продукція HanBild"
+msgstr "Продукция HanBild"
+
+#: .\product\templates\product\product.html:38
 msgid ""
 "На даній сторінці ви знайдете детальну інформацію про наші вироби. Наш "
 "асортимент включає широкий спектр причепів, тягачів та деталей, щоб "
 "задовольнити потреби клієна. Наша продукція відповідає найвищим стандартам "
 "якості та являється надійною при експлуатації."
 msgstr ""
+"На данной странице вы найдете подробную информацию о наших изделиях. Наш "
+"ассортимент включает широкий спектр прицепов, тягачей и деталей, чтобы "
+"удовлетворить потребности клиена. Наша продукция отвечает самым высоким стандартам "
+"качества и является надежным при эксплуатации."
 
-#: .\product\templates\product\product_page.html:141
-#: .\product\templates\product\product_page.html:178
+#: .\product\templates\product\product_page.html:147
+#: .\product\templates\product\product_page.html:184
 msgid "Виготовлення під замовлення"
-msgstr ""
+msgstr "Изготовление под заказ"
 
-#: .\product\templates\product\product_page.html:144
-#: .\product\templates\product\product_page.html:181
+#: .\product\templates\product\product_page.html:150
+#: .\product\templates\product\product_page.html:187
 msgid "Так"
-msgstr ""
+msgstr "Да"
 
-#: .\product\views.py:23 .\product\views.py:38
-msgid "Продукція від компанії HanBild | HanBild.com.ua"
+#: .\product\views.py:23
+msgid ""
+"Продукція HanBild: причепи, кузови самоскидів та деталі по вигідній ціні в "
+"Україні"
 msgstr ""
+"Продукция HanBild: прицепы, кузова самосвалов и детали по выгодной цене в "
+"Украине"
+
+#: .\product\views.py:38
+msgid "Продукція від компанії HanBild | HanBild.com.ua"
+msgstr "Продукция от компании HanBild HanBild.com.ua"
 
 #: .\templates\includes\_cookies_agreement.html:19
 msgid "Наш сайт використовує cookies!"
-msgstr ""
+msgstr "Наш сайт использует cookies!"
 
 #: .\templates\includes\_cookies_agreement.html:23
 msgid ""
 "Вони допомагають та полегшують користування сайтом. Продовжуючи, ви "
 "погоджуєтеся з "
 msgstr ""
+"Они помогают и облегчают пользование сайтом. Продолжая, вы "
+"соглашаетесь с "
 
 #: .\templates\includes\_cookies_agreement.html:24
 msgid "Політикою конфіденційності."
-msgstr ""
+msgstr "Политика конфиденциальности."
 
 #: .\templates\includes\_cookies_agreement.html:28
 msgid "Ок"
-msgstr ""
+msgstr "Ок"
 
 #: .\templates\includes\_feedback_form.html:19
 msgid ""
@@ -914,33 +1231,36 @@ msgid ""
 "запитання. Будь ласка, заповніть цю форму, і ми зв'яжемося з вами найближчим "
 "часом. Дякуємо за вибір наших послуг!"
 msgstr ""
+"Мы ценим ваш интерес к нашей компании и готовы ответить на все ваши "
+"вопрос. Пожалуйста, заполните эту форму, и мы свяжемся с вами ближайшим "
+"Иногда. Спасибо за выбор наших услуг!"
 
 #: .\templates\includes\_footer.html:51 .\templates\includes\_footer.html:112
 msgid "Електронна пошта"
-msgstr ""
+msgstr "Электронная почта"
 
 #: .\templates\includes\_footer.html:83 .\templates\includes\_footer.html:91
 #: .\templates\includes\_footer.html:131
 msgid "м. Дніпро,"
-msgstr ""
+msgstr "г. Днепр,"
 
 #: .\templates\includes\_footer.html:86 .\templates\includes\_footer.html:94
 #: .\templates\includes\_footer.html:134
 msgid "вул. Орловська, 21"
-msgstr ""
+msgstr "ул. Орловская, 21"
 
 #: .\templates\includes\_footer.html:185
 msgid "Навігація"
-msgstr ""
+msgstr "Навигация"
 
-#: .\templates\includes\_footer.html:195 .\templates\includes\_footer.html:215
-#: .\templates\includes\_header.html:112 .\templates\includes\_header.html:228
+#: .\templates\includes\_footer.html:195 .\templates\includes\_footer.html:218
+#: .\templates\includes\_header.html:112 .\templates\includes\_header.html:231
 msgid "Про нас"
 msgstr "О нас"
 
-#: .\templates\includes\_footer.html:236
+#: .\templates\includes\_footer.html:242
 msgid "Зв'язатися"
-msgstr ""
+msgstr "Связаться"
 
 #: .\templates\includes\_header.html:23
 msgid "— Якість. Швидкість. Надійність."
@@ -948,37 +1268,48 @@ msgstr "— Качество. Быстрота. Надежность."
 
 #: .\templates\includes\_header.html:28 .\templates\includes\_header.html:77
 msgid "Знайти..."
-msgstr ""
+msgstr "Найти..."
 
 #: .\templates\includes\_header.html:127
 msgid "Всі послуги"
-msgstr ""
+msgstr "Все услуги"
 
 #: .\templates\includes\_header.html:150
 msgid "Вся продукція"
-msgstr ""
+msgstr "Вся продукция"
 
 #: .\templates\includes\_load_indicator.html:7
 msgid "Зачекайте секунду..."
-msgstr ""
+msgstr "Подождите секунду..."
 
-#: .\vacancy\models.py:35 .\vacancy\templates\vacancy\vacancy_page.html:71
+#: .\vacancy\models.py:34 .\vacancy\templates\vacancy\vacancy_page.html:78
 msgid "Вимоги"
-msgstr ""
+msgstr "Требования"
 
-#: .\vacancy\models.py:36
+#: .\vacancy\models.py:35
 msgid "Обов'язки"
-msgstr ""
+msgstr "Обязанности"
 
-#: .\vacancy\models.py:37 .\vacancy\templates\vacancy\vacancy_page.html:103
+#: .\vacancy\models.py:36 .\vacancy\templates\vacancy\vacancy_page.html:110
 msgid "Умови"
-msgstr ""
+msgstr "Условия"
 
-#: .\vacancy\models.py:38 .\vacancy\templates\vacancy\vacancy_page.html:119
+#: .\vacancy\models.py:37 .\vacancy\templates\vacancy\vacancy_page.html:126
 msgid "Від нас"
-msgstr ""
+msgstr "От нас"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:29
+#: .\vacancy\templates\vacancy\vacancy_page.html:7
+#: .\vacancy\templates\vacancy\vacancy_page.html:9
+msgid ""
+"Робота в інноваційній компанії HanBild у галузі виробництва причепів та "
+"кузовів. Актуальні вакансії на роботу в успішній компанії з великими "
+"перспективами."
+msgstr ""
+"Работа в инновационной компании HanBild по производству прицепов и "
+"кузовов. Актуальные вакансии на работу в успешной компании с большими "
+"перспективами."
+
+#: .\vacancy\templates\vacancy\vacancy_page.html:36
 msgid ""
 "Обирай роботу до вподоби та приєднуйся до нашої команди! У компанії Hanbild "
 "ти отримаєш не лише роботу, але й можливість для особистого зростання та "
@@ -986,36 +1317,45 @@ msgid ""
 "підтримка від талановитих колег. Приєднуйся до нас сьогодні та зроби перший "
 "крок до свого успіху!"
 msgstr ""
+"Выбирай работу по вкусу и присоединяйся к нашей команде! В компании Hanbild "
+"ты получишь не только работу, но и возможность для личного роста и "
+"профессионального развития. Здесь каждый день - это новые вызовы, возможности и "
+"поддержка от талантливых коллег. Присоединяйся к нам сегодня и сделай первый "
+"шаг к своему успеху!"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:43
+#: .\vacancy\templates\vacancy\vacancy_page.html:50
 msgid "Список наявних вакансій"
-msgstr ""
+msgstr "Список имеющихся вакансий"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:53
-#: .\vacancy\templates\vacancy\vacancy_page.html:55
+#: .\vacancy\templates\vacancy\vacancy_page.html:60
+#: .\vacancy\templates\vacancy\vacancy_page.html:62
 msgid "грн"
-msgstr ""
+msgstr "грн"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:87
+#: .\vacancy\templates\vacancy\vacancy_page.html:94
 msgid "Обов`язки"
-msgstr ""
+msgstr "Обязанности"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:130
+#: .\vacancy\templates\vacancy\vacancy_page.html:137
 msgid "Написати нам"
-msgstr ""
-
-#: .\vacancy\templates\vacancy\vacancy_page.html:149
-msgid "Інфомація відсутня"
-msgstr ""
+msgstr "Написать нам"
 
 #: .\vacancy\templates\vacancy\vacancy_page.html:156
-msgid "На даний момент у Hanbild відсутні вільні вакансії."
-msgstr ""
+msgid "Інфомація відсутня"
+msgstr "Информация отсутствует"
 
-#: .\vacancy\templates\vacancy\vacancy_page.html:177
+#: .\vacancy\templates\vacancy\vacancy_page.html:163
+msgid "На даний момент у Hanbild відсутні вільні вакансії."
+msgstr "На данный момент у Hanbild отсутствуют свободные вакансии."
+
+#: .\vacancy\templates\vacancy\vacancy_page.html:184
 msgid "Напишіть, яка вакансія вас цікавить"
-msgstr ""
+msgstr "Напишите, какая вакансия вас интересует"
 
 #: .\vacancy\views.py:15
-msgid "Вакансії в компанії | HanBild.com.ua"
-msgstr "Работа в компании | HanBild.com.ua"
+msgid ""
+"Актуальні вакансії: робота в компанії з виробництва причепів та "
+"напівпричепів HanBild"
+msgstr ""
+"Актуальные вакансии: работа в компании по производству прицепов и "
+"полуприцепов HanBild"
