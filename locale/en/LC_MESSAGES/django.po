@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-20 01:28+0300\n"
+"POT-Creation-Date: 2024-08-20 14:09+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -660,9 +660,9 @@ msgid ""
 "Завдяки нашому досвіду та професіоналізму ми забезпечуємо високу якість "
 "продукції та індивідуальний підхід до кожного клієнта."
 msgstr ""
-"Our company specializes in creating reliable, safe and functional "
-"solutions for the transportation of goods of any type and size. Thanks to "
-"our experience and professionalism, we provide high product quality and "
+"Our company specializes in creating reliable, safe and functional solutions "
+"for the transportation of goods of any type and size. Thanks to our "
+"experience and professionalism, we provide high product quality and "
 "individual approach to each customer."
 
 #: .\main\templates\main\index.html:37
@@ -1255,6 +1255,14 @@ msgstr "Navigation"
 #: .\templates\includes\_header.html:112 .\templates\includes\_header.html:231
 msgid "Про нас"
 msgstr "About us"
+
+#: .\templates\includes\_footer.html:221 .\templates\includes\_header.html:117
+msgid "Пoслуги"
+msgstr "Services"
+
+#: .\templates\includes\_footer.html:233 .\templates\includes\_header.html:166
+msgid "Достaвка"
+msgstr "Delivery"
 
 #: .\templates\includes\_footer.html:242
 msgid "Зв'язатися"
