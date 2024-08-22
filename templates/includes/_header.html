@@ -9,12 +9,23 @@
 <header class="header">
   <div class="up-section">
     <div class="logo-tagline">
-      <a href="{% url 'main:index' %}"><img id="black-logo" src="{% static 'hanbild/icons/hb-black.svg' %}" alt="" /></a>
+      <a href="{% url 'main:index' %}">
+        <img id="black-logo" src="{% static 'hanbild/icons/hb-black.svg' %}"
+             alt="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
+             title="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
+        />
+      </a>
       <div class="logo-wrap">
         <a href="{% url 'main:index' %}">
           <div class="logo">
-            <img class="logotype" src="{% static 'hanbild/icons/logo_dv.svg' %}" alt="logo" />
-            <img src="{% static 'hanbild/icons/logobg_dv.svg' %}" alt="" />
+            <img class="logotype" src="{% static 'hanbild/icons/logo_dv.svg' %}"
+                 alt="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
+                 title="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
+            />
+            <img src="{% static 'hanbild/icons/logobg_dv.svg' %}"
+                 alt="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
+                 title="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
+            />
           </div>
         </a>
       </div>

@@ -5,7 +5,12 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-logo">
-      <a href="{% url 'main:index' %}"><img class="logotype" src="{% static 'hanbild/icons/logo_dv.svg' %}" alt="logo" /></a>
+      <a href="{% url 'main:index' %}">
+        <img class="logotype" src="{% static 'hanbild/icons/logo_dv.svg' %}"
+             alt="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
+             title="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
+        />
+      </a>
     </div>
     <div class="footer-info">
       <?xml version="1.0" encoding="UTF-8"?><svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.02 184.02">

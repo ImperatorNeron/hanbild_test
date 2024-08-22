@@ -22,7 +22,10 @@
       <div class="photo-block">
         <div class="left-container">
           <div class="info">
-            <img class="logotype" src="{% static 'hanbild/icons/logo_dv.svg' %}" alt="logo" />
+            <img class="logotype" src="{% static 'hanbild/icons/logo_dv.svg' %}"
+                 alt="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
+                 title="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
+            />
             <h1 class="h1-title">{% translate 'HanBild - Виробництво причепів та напівпричепів' %}.</h1>
             <p>
               {% translate 'Наша компанія спеціалізується на створенні надійних, безпечних і функціональних рішень для перевезення вантажів будь-якого типу і розміру. Завдяки нашому досвіду та професіоналізму ми забезпечуємо високу якість продукції та індивідуальний підхід до кожного клієнта.' %}
