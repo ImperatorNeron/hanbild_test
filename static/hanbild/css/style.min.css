@@ -4178,7 +4178,7 @@ thead tr th:last-child svg {
 }
 
 .delivery-card:hover{
-    scale: 1.02;
+    transform: scale(1.02);
 }
 
 .delivery-card h2{
@@ -4603,15 +4603,6 @@ thead tr th:last-child svg {
 
     .photo-block .left-container {
         width: 61%
-    }
-
-    .services-page .photo-block,
-    .product-page .photo-block,
-    .home-page .photo-block,
-    .delivery-page .photo-block,
-    .contact-page .photo-block,
-    .vacancy-page .photo-block {
-        background-position: cover right -100px;
     }
 
     .product-card .right-container .info,
