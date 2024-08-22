@@ -27,6 +27,8 @@ class GoodsCharacteristicTabulareAdmin(admin.TabularInline):
         "good",
         "name_uk",
         "description_uk",
+        "name_ru",
+        "description_ru",
         "name_en",
         "description_en",
     )
@@ -70,10 +72,14 @@ class GoodsAdmin(TranslationAdmin):
     list_editable = ("category",)
     fields = (
         "category",
-        ("name_uk", "name_en"),
+        "name_uk",
+        "name_ru",
+        "name_en",
         "price",
         "preview_image",
-        ("description_uk", "description_en"),
+        "description_uk",
+        "description_ru",
+        "description_en",
     )
     inlines = (
         GoodsCharacteristicTabulareAdmin,
