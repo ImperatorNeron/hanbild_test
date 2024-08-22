@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy
 
 from catalog.models import Categories
@@ -39,7 +39,7 @@ class ProductDetailView(BaseApplicationFormView):
 
     def get(self, request, product_details_slug, *args, **kwargs):
         # Get category from slug
-        category = Categories.objects.get(slug=product_details_slug)
+        category = get_object_or_404(Categories, slug=product_details_slug)
         # Get product(addition to category) which has OneToOne category field
         product = Product.objects.get(category=category)
         # Get all content to product page

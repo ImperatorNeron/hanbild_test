@@ -82,7 +82,3 @@ def page404exception(request, exception):
     """404 exeption handler"""
     return render(request, "main/page404.html", status=404)
 
-
-def page500exception(request):
-    """500 exeption handler"""
-    return render(request, "main/page404.html", status=500)

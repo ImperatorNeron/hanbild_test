@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
 
@@ -38,7 +38,7 @@ class ItemView(BaseApplicationFormView):
 
     def get(self, request, item_slug, *args, **kwargs):
         # Get all item content
-        item = Goods.objects.get(slug=item_slug)
+        item = get_object_or_404(Goods, slug=item_slug)
         item_photos = GoodsImage.objects.filter(good=item)
         item_videos = GoodsVideo.objects.filter(good=item)
         item_characteristics = GoodsCharacteristic.objects.filter(good=item)

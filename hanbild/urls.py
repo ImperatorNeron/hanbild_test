@@ -8,7 +8,6 @@ from hanbild import settings
 from hanbild.settings import DEBUG
 
 handler404 = "main.views.page404exception"
-handler500 = "main.views.page500exception"
 
 urlpatterns = [
     path("admin/", admin.site.urls),
