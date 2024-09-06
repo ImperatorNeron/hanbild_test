@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% load embed_video_tags %}
+
+{% block title %}
+  {{ solution.title }}
+{% endblock %}
+
+{% block meta %}
+  <meta name="description" content="{{ solution.description }}" />
+  <meta property="og:title" content="{{ solution.title }}" />
+  <meta property="og:description" content="{{ solution.description }}" />
+{% endblock %}
+
+{% block css %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+{% endblock %}
+
+{% block content %}
+  <main class="main">
+    <div class="up-main-section">
+      <div class="breadcrumbs" id="breadcrumbs-main">
+        <ul>
+          <li>
+            <a href="{% url 'main:index' %}">{% translate 'Головна сторінка' %}</a>
+          </li>
+          <li>
+            <a href="{% url 'solution:solution' %}">{% translate 'Послуги' %}</a>
+          </li>
+          <li>{{ solution.solution_title|truncatechars:10 }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="product-page solution-page">
+      <div class="photo-block">
+        <div class="left-container">
+          <div class="info">
+            <h1>{{ solution.solution_title }}</h1>
+          </div>
+        </div>
+        <div class="right-container"></div>
+      </div>
+      <div class="service-blog-container">{{ solution.content|safe }}</div>
+      {% include 'includes/_slider.html' with item_photos=solution_photos item_videos=solution_videos alt=solution.solution_title review_image=solution.review_image %}
+      <div class="contacts-info background-off">
+        <form class="feedback-form" method="post" id="page-contact-form">
+          {% csrf_token %}
+          <h3>{% translate "Форма зворотнього зв'язку" %}</h3>
+          <div class="form-container">
+            <div class="point">
+              <label for="id_name">{% translate 'Як до вас звертатися:' %}</label>
+              <input type="text" name="name" id="id_name" required placeholder="{% translate 'Ваше ім`я' %}" />
+              <div id="page_name" class="page-validation-error"></div>
+            </div>
+            <div class="point">
+              <label for="id_number_or_email">{% translate 'Номер телефону або e-mail:' %}</label>
+              <input type="text" name="number_or_email" id="id_number_or_email" required placeholder="{% translate 'Залиште контакт для зв`язку' %}" />
+              <div id="page_number_or_email" class="page-validation-error"></div>
+            </div>
+            <div class="point">
+              <label for="id_message">{% translate 'Повідомлення:' %}</label>
+              <textarea name="message" id="id_message" placeholder="{% translate 'Напишіть, що саме вас цікавить' %}"></textarea>
+            </div>
+          </div>
+          <div class="form-end">
+            <input type="checkbox" id="contact-agreement" value="" checked /><label for="contact-agreement">{% translate 'Натискаючи кнопку "Надіслати" я погоджуюсь з умовами' %} <a href="{% url 'main:privacy_policy' %}"><span>{% translate 'політики конфіденційності' %}</span></a></label>
+
+            <div class="form-buttons">
+              <a class="contact-submit-button-wrapper"><button class="contact-submit-button" type="submit">{% translate 'Надіслати' %}</button></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+{% endblock %}
+
+{% block js %}
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="{% static 'hanbild/js/swiper.js' %}"></script>
+{% endblock %}

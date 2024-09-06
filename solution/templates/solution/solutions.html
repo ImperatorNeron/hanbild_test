@@ -2,9 +2,9 @@
 {% load i18n %}
 
 {% block meta %}
-<meta name="description" content="{% translate 'Професійні послуги з виготовлення та обслуговування причепів, напівпричепів та вантажної техніки від HanBild. Висока якість продукції ✓. Індивідуальний підхід ✓. Доставка по всій Україні ✈.' %}">
-<meta property="og:title" content="{{ title }}" />
-<meta property="og:description" content="{% translate 'Професійні послуги з виготовлення та обслуговування причепів, напівпричепів та вантажної техніки від HanBild. Висока якість продукції ✓. Індивідуальний підхід ✓. Доставка по всій Україні ✈.' %}" />
+  <meta name="description" content="{% translate 'Професійні послуги з виготовлення та обслуговування причепів, напівпричепів та вантажної техніки від HanBild. Висока якість продукції ✓. Індивідуальний підхід ✓. Доставка по всій Україні ✈.' %}" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{% translate 'Професійні послуги з виготовлення та обслуговування причепів, напівпричепів та вантажної техніки від HanBild. Висока якість продукції ✓. Індивідуальний підхід ✓. Доставка по всій Україні ✈.' %}" />
 {% endblock %}
 
 {% block title %}
@@ -40,40 +40,16 @@
           </div>
           <div></div>
         </div>
-        <div class="right-container"></div>
       </div>
       <div class="product-cards services-cards">
-        {% for service in services %}
-        <div id="{{ service.index_on_page }}" style="margin-top: -155px; padding-top: 155px;"></div>
-
+        {% for solution in solutions %}
+          <div id="{{ solution.index_on_page }}" style="margin-top: -155px; padding-top: 155px;"></div>
           {% if forloop.counter0|divisibleby:2 %}
-            <div class="service-card" data-aos="fade-right" data-aos-duration="500" data-aos-easing="easy-in-sine" style="background: url({{ service.service_image.url }}) no-repeat center/cover">
-              <div class="left-container" style="background: url({{ service.service_image.url }}) no-repeat center/cover"></div>
-              <div class="img-cont">
-                <img src="{{ service.service_image.url }}" alt="" />
-              </div>
-              <div class="right-container">
-                <div class="info">
-                  <h2>{{ service.service_name }}</h2>
-                  {{ service.service_description|linebreaks }}
-                </div>
-              </div>
-            </div>
+            {% include 'solution/includes/_left_card.html' with solution=solution %}
           {% else %}
-            <div class="service-card" data-aos="fade-left" data-aos-duration="500" data-aos-easing="easy-in-sine" style="background: url({{ service.service_image.url }}) no-repeat center/cover">
-              <div class="left-container" style="background: url({{ service.service_image.url }}) no-repeat center/cover"></div>
-              <div class="img-cont">
-                <img src="{{ service.service_image.url }}" alt="" />
-              </div>
-              <div class="right-container">
-                <div class="info">
-                  <h2>{{ service.service_name }}</h2>
-                  {{ service.service_description|linebreaks }}
-                </div>
-              </div>
-            </div>
+            {% include 'solution/includes/_right_card.html' with solution=solution %}
           {% endif %}
-          <div id="{{ service.index_on_page }}" style="margin-top: -155px; padding-top: 155px;"></div>
+          <div id="{{ solution.index_on_page }}" style="margin-top: -155px; padding-top: 155px;"></div>
         {% endfor %}
       </div>
       <div class="add-inf">

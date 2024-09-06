@@ -11,6 +11,7 @@ handler404 = "main.views.page404exception"
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("ckeditor5/", include('django_ckeditor_5.urls')),
 ]
 
 urlpatterns += i18n_patterns(
@@ -19,6 +20,7 @@ urlpatterns += i18n_patterns(
     path("catalog/", include("catalog.urls", namespace="catalog")),
     path("cart/", include("cart.urls", namespace="cart")),
     path("product/", include("product.urls", namespace="product")),
+    path("services/", include("solution.urls", namespace="solution")),
     path("order/", include("order.urls", namespace="order")),
     path("vacancies/", include("vacancy.urls", namespace="vacancy")),
     prefix_default_language=False,

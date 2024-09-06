@@ -702,7 +702,7 @@ main .catalog-bar {
     width: 78%
 }
 
-#margin_bt{
+#margin_bt {
     margin-bottom: 20px;
 }
 
@@ -1015,7 +1015,7 @@ select {
     height: 50px
 }
 
-.card-title{
+.card-title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1274,7 +1274,7 @@ select {
     color: #f0500a
 }
 
-.photo-block .left-container .info .h1-title{
+.photo-block .left-container .info .h1-title {
     font-size: 16px;
 }
 
@@ -2949,8 +2949,7 @@ thead tr th:last-child svg {
 .home-page .photo-block,
 .delivery-page .photo-block,
 .contact-page .photo-block,
-.vacancy-page .photo-block
-{
+.vacancy-page .photo-block {
     background: url(../images/banner.webp) no-repeat right/auto 93%
 }
 
@@ -3009,24 +3008,19 @@ thead tr th:last-child svg {
     gap: 80px
 }
 
-.service-card {
+.service-card,
+.product-card {
     height: 70vh;
     min-height: 430px;
+    max-height: 750px;
+    max-width: 1800px;
 }
 
-.service-card .left-container {
+.service-card .left-container,
+.product-card .left-container {
     height: 75vh;
     min-height: 470px;
-}
-
-.product-card {
-    height: 60vh;
-    min-height: 300px;
-}
-
-.product-card .left-container {
-    height: 65vh;
-    min-height: 360px;
+    max-height: 790px;
 }
 
 .product-card,
@@ -4151,7 +4145,9 @@ thead tr th:last-child svg {
     border-top-right-radius: 5px
 }
 
-.delivery-container, .delivery-card, .delivery-card-content{
+.delivery-container,
+.delivery-card,
+.delivery-card-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4161,13 +4157,13 @@ thead tr th:last-child svg {
     flex-direction: column;
 }
 
-.delivery-container{
+.delivery-container {
     margin: 30px 0 40px 0;
     align-items: center;
     gap: 20px;
 }
 
-.delivery-card{
+.delivery-card {
     background-color: white;
     padding: 30px;
     min-height: 200px;
@@ -4177,21 +4173,21 @@ thead tr th:last-child svg {
     transition-duration: 0.5s;
 }
 
-.delivery-card:hover{
+.delivery-card:hover {
     transform: scale(1.02);
 }
 
-.delivery-card h2{
+.delivery-card h2 {
     font-size: 28px;
     color: #f0500a;
     margin-bottom: 5px;
 }
 
-.delivery-card ul{
+.delivery-card ul {
     list-style: inside;
 }
 
-.delivery-card-content{
+.delivery-card-content {
     gap: 8px;
 }
 
@@ -5512,11 +5508,11 @@ thead tr th:last-child svg {
         align-self: flex-start;
     }
 
-    .popup-contact-form .form-buttons{
+    .popup-contact-form .form-buttons {
         width: 100%;
     }
-    
-    .popup-contact-form .form-buttons a:first-child{
+
+    .popup-contact-form .form-buttons a:first-child {
         flex: 1;
     }
 
@@ -5962,7 +5958,8 @@ main aside .filtermenu-button a svg {
     outline: none;
 }
 
-.my-slider-track, .my-slider-track1 {
+.my-slider-track,
+.my-slider-track1 {
     width: 100%;
     height: 2px;
     position: absolute;
@@ -6300,9 +6297,9 @@ main .breadcrumbs ul li:before {
     gap: 8px;
 }
 
-.empty-vacancies-list{
+.empty-vacancies-list {
     font-size: 25px;
-     margin: 40px auto 20px auto;
+    margin: 40px auto 20px auto;
 }
 
 .vacancies-list-title svg {
@@ -6472,7 +6469,7 @@ main .breadcrumbs ul li:before {
         width: 35px;
     }
 
-    .empty-vacancies-list{
+    .empty-vacancies-list {
         font-size: 17px;
         margin-top: 20px;
         margin-bottom: 0;
@@ -6499,19 +6496,19 @@ main .breadcrumbs ul li:before {
         width: 95%;
     }
 
-    #page-contact-form .form-buttons{
+    #page-contact-form .form-buttons {
         width: 100%;
     }
 
-    .contact-submit-button-wrapper{
+    .contact-submit-button-wrapper {
         flex: 1;
     }
-    
+
     .cart-heading h2 {
         font-size: 23px;
     }
 
-    .cart-heading svg{
+    .cart-heading svg {
         width: 33px;
     }
 
@@ -6572,7 +6569,7 @@ main .breadcrumbs ul li:before {
         font-size: 17px;
     }
 
-    .empty-vacancies-list{
+    .empty-vacancies-list {
         font-size: 13px;
     }
 
@@ -7176,7 +7173,7 @@ main .breadcrumbs ul li:before {
         width: 7%;
     }
 
-    .delivery-card{
+    .delivery-card {
         width: 90%;
     }
 
@@ -7514,7 +7511,7 @@ main .breadcrumbs ul li:before {
         padding: 10px;
     }
 
-    .delivery-card h2{
+    .delivery-card h2 {
         font-size: 22px;
     }
 }
@@ -7604,7 +7601,8 @@ main .breadcrumbs ul li:before {
     height: 18.5px;
 }
 
-.char-title, .desc-title {
+.char-title,
+.desc-title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7772,7 +7770,7 @@ main .breadcrumbs ul li:before {
         height: 250px;
     }
 
-    .delivery-card{
+    .delivery-card {
         padding: 20px 30px;
         width: 94%;
     }
@@ -7823,205 +7821,166 @@ main .breadcrumbs ul li:before {
 
 /* end for scroll */
 
-/*
-В .form-container .point, .order-box .point ТРЕБА ВИДАЛИТИ СПЕЙС БЕВІІН
-*/
-
-/* 
-оце видаляти
-.order-box input:user-invalid {
-    -webkit-box-shadow: 0px 0px 12px 3px #cececeb0;
-    box-shadow: 0px 0px 12px 3px #cececeb0
-}
-
-
-додати до
-.error-massage {
-    display: none;
-}
-
-зробити такий геп
-.contacts-info .right-section {
-    gap: 40px
-}
-
-Переписати оці атрибути отак
-#cartCount {
-    top: -3%
-}
-
-#cart {
-    margin-top: 5px;
-}
-
-
-.additional-elements {
-    display: -webkit-box;
-    display: -ms-flexbox;
+/* SOLUTION PAGE */
+.service-card-buttons {
     display: flex;
-    position: fixed;
-    z-index: 90;
+    gap: 20px;
+}
+
+.service-card-buttons a {
     text-align: center;
-    right: 3%;
-    bottom: 40px;
-    gap: 20px
+    padding: 12px;
+    margin: 12px 0;
+    background-color: #f0500a;
+    flex: 1;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 800;
+    font-family: "Raleway", Sans-serif
 }
 
-.fhfhf {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 10px;
-    height: 25px;
-    margin-bottom: 10px;
+.service-card-buttons a:last-child {
+    background-color: #f5f5dc;
 }
 
-tam de 680
-footer .contact-heading svg {
-    height: 7px !important;
-    fill: #ffffff !important;
-}
-
-footer .contact-heading p {
-    font-size: 18px;
-    font-weight: 600;
-    color: #ffffff
-}
-
-delete
-.order-box .final-price {
-    width: 32%
-}
-
-change
-.final-price {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: end;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    font-size: 18px;
-    padding: 7px 0;
-    gap: 15px;
-}
-
-dlia 500
-
-    .service-card, .product-card {
-        height: auto;
-        padding-bottom: 15px;
-        background-image: inherit !important;
-        background-color: #000 !important;
-    }
-
-.product-card .right-container .info,
-    .service-card .right-container .info {
-        height: 100%;
-        gap: 10px;
-        -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-        justify-content: space-evenly
-    }
-
-@media(min-width: 821px) {
-    .service-card, .product-card  {
-        background-image: inherit !important;
-        background-color: #000 !important;
-    }
-}
-
-видалити
-.add-inf .form-buttons {
-        display: none
-    }
-
-
-v 520
-    .add-inf{
+@media(max-width: 500px) {
+    .service-card-buttons {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
     }
 
-v 1300+-
-    .add-inf{
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+    .service-card-buttons a {
+        margin: 0;
     }
-
------
-.service-card {
-    height: 70vh;
-    min-height: 430px;
 }
 
-.service-card .left-container {
-    height: 75vh;
-    min-height: 470px;
+/* END SOLUTION PAGE */
+
+/* SPECIFIC SOLUTION */
+
+.service-blog-container {
+    width: 95%;
+    margin: 40px auto;
+    padding: 60px 50px 50px 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
 }
 
-.product-card {
-    height: 60vh;
-    min-height: 300px;
+.solution-page .single-card-product .single-card-left {
+    margin: auto;
 }
 
-.product-card .left-container {
-    height: 65vh;
-    min-height: 360px;
+.solution-page .single-card-left {
+    max-width: 1100px;
 }
 
-change
-.photo-block {
+.solution-page .single-card-product {
+    margin-bottom: 0;
+}
+
+.solution-page .single-card-product .swiper-container,
+.solution-page .single-card-left,
+.solution-page .slider {
     width: 100%;
-    height: 74vh;
-    min-height: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+}
+
+.solution-page .single-card-product .swiper-container .image-slider__image {
+    height: 600px;
+}
+
+.solution-page .image-mini-slider__image {
+    height: 100px;
+}
+
+.service-blog-container h2 {
+    font-size: 30px;
+    margin: 17px 0;
+}
+
+.service-blog-container p,
+.service-blog-container ul,
+.service-blog-container ol {
+    font-size: 19px;
+}
+
+.service-blog-container ul {
+    list-style: disc;
+    padding: 0 0 10px 60px;
+}
+
+.service-blog-container ol {
     display: flex;
-    background: url(../images/contacts-photo.jpg) no-repeat;
-    background-size: auto 110%;
-    background-position: right;
-    border-radius: 5px;
-    color: #fff
+    flex-direction: column;
+    padding: 0px 0px 10px 100px;
 }
 
-change
-
-.desc-title::before,
-.char-title::before {
-    content: url(../icons/point-trig.svg);
-    width: 15px;
-    height: 18.5px;
-}
-
-.char-title, .desc-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.service-blog-container ul,
+.service-blog-container ol {
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    gap: 7px;
-    align-items: center;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.single-card-right h3::before {
-    content: url(../icons/point-trig.svg);
-    width: 15px;
+@media (max-width: 960px) {
+    .solution-page .single-card-product .swiper-container .image-slider__image {
+        height: 450px;
+    }
+
+    .solution-page .image-mini-slider__image {
+        height: 80px;
+    }
 }
 
-.single-card-right h3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    gap: 7px;
-    align-items: center;
+@media (max-width: 700px) {
+    .solution-page .single-card-product .swiper-container .image-slider__image {
+        height: 320px;
+    }
+
+    .solution-page .image-mini-slider__image {
+        height: 60px;
+    }
+
+    .service-blog-container {
+        padding: 30px;
+    }
+
+    .service-blog-container ul {
+        padding: 0 0 0 30px;
+    }
+
+    .service-blog-container ol {
+        padding: 0 0 0 50px;
+    }
 }
 
-*/
+@media (max-width: 500px) {
+    .solution-page .single-card-product .swiper-container .image-slider__image {
+        height: 220px;
+    }
+
+    .solution-page .image-mini-slider__image {
+        height: 60px;
+    }
+
+    .service-blog-container {
+        padding: 20px;
+    }
+
+    .service-blog-container h2 {
+        font-size: 20px;
+        margin: 17px 0;
+    }
+
+    .service-blog-container p,
+    .service-blog-container ul,
+    .service-blog-container ol {
+        font-size: 15px;
+    }
+}
+
+/* END SPECIFIC SOLUTION */

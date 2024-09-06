@@ -1,0 +1,89 @@
+{% load i18n %}
+{% load static %}
+{% load embed_video_tags %}
+
+<div class="single-card-product">
+    <div class="single-card-left">
+        <div class="slider">
+            <div class="slider-deco">
+                <div class="image-slider swiper-container">
+                    <div class="image-slider__wrapper swiper-wrapper">
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <img src="{{ review_image.url }}" alt="{{ alt }}"/>
+                            </div>
+                        </div>
+                        {% for photo in item_photos %}
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <img src="{{ photo.image.url }}" alt=""/>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% for video in item_videos %}
+                        {% video video.video as vid %}
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <iframe id="video-slide" src="{{ vid.url }}" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin"
+                                        allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        {% endvideo %}
+                        {% endfor %}
+                    </div>
+                    <div class="button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.85 9.25">
+                            <g>
+                                <path d="M15.79,.93c-.13-.41-.44-.73-.83-.86h0c-.52-.16-1.01-.03-1.42,.38l-1.91,1.91c-1.23,1.23-2.46,2.46-3.69,3.69L2.37,.49c-.07-.07-.14-.13-.23-.21-.47-.38-1.15-.38-1.63,0C.19,.53,.07,.87,0,1.11v.03s0,.38,0,.38c.09,.42,.34,.7,.58,.94l2.04,2.04c1.43,1.43,2.85,2.85,4.28,4.28,.1,.1,.21,.21,.35,.28,.21,.13,.44,.19,.67,.19,.35,0,.71-.15,1-.45L15.41,2.32c.06-.07,.12-.13,.18-.2,.25-.33,.33-.77,.2-1.18Z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.85 9.25">
+                            <g>
+                                <path d="M15.79,.93c-.13-.41-.44-.73-.83-.86h0c-.52-.16-1.01-.03-1.42,.38l-1.91,1.91c-1.23,1.23-2.46,2.46-3.69,3.69L2.37,.49c-.07-.07-.14-.13-.23-.21-.47-.38-1.15-.38-1.63,0C.19,.53,.07,.87,0,1.11v.03s0,.38,0,.38c.09,.42,.34,.7,.58,.94l2.04,2.04c1.43,1.43,2.85,2.85,4.28,4.28,.1,.1,.21,.21,.35,.28,.21,.13,.44,.19,.67,.19,.35,0,.71-.15,1-.45L15.41,2.32c.06-.07,.12-.13,.18-.2,.25-.33,.33-.77,.2-1.18Z"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-deco">
+                <div class="image-mini-slider swiper-container">
+                    <div class="image-mini-slider__wrapper swiper-wrapper">
+                        <div class="image-mini-slider__slide swiper-slide">
+                            <div class="image-mini-slider__image">
+                                <img src="{{ review_image.url }}" alt="{{ alt }}"/>
+                            </div>
+                        </div>
+                        {% for photo in item_photos %}
+                        <div class="image-mini-slider__slide swiper-slide">
+                            <div class="image-mini-slider__image">
+                                <img src="{{ photo.image.url }}"/>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% for video in item_videos %}
+                        <div class="image-mini-slider__slide swiper-slide">
+                            <div class="image-mini-slider__image">
+                                <img src="{% static 'hanbild/icons/play.svg' %}"/>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 x="0" y="0" viewBox="0 0 348.333 348.334" style="enable-background:new 0 0 512 512"
+                 xml:space="preserve" class="">
+              <g>
+                <path d="M336.559 68.611 231.016 174.165l105.543 105.549c15.699 15.705 15.699 41.145 0 56.85-7.844 7.844-18.128 11.769-28.407 11.769-10.296 0-20.581-3.919-28.419-11.769L174.167 231.003 68.609 336.563c-7.843 7.844-18.128 11.769-28.416 11.769-10.285 0-20.563-3.919-28.413-11.769-15.699-15.698-15.699-41.139 0-56.85l105.54-105.549L11.774 68.611c-15.699-15.699-15.699-41.145 0-56.844 15.696-15.687 41.127-15.687 56.829 0l105.563 105.554L279.721 11.767c15.705-15.687 41.139-15.687 56.832 0 15.705 15.699 15.705 41.145.006 56.844z"
+                      fill="#ffffff" opacity="1" data-original="#000000" class=""></path>
+              </g>
+            </svg>
+        </div>
+    </div>
+</div>

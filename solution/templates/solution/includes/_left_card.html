@@ -1,0 +1,18 @@
+{% load i18n %}
+
+<div class="service-card" data-aos="fade-right" data-aos-duration="500" data-aos-easing="easy-in-sine" style="background: url({{ solution.review_image.url }}) no-repeat center/cover">
+  <div class="left-container" style="background: url({{ solution.review_image.url }}) no-repeat center/cover"></div>
+  <div class="img-cont">
+    <img src="{{ solution.review_image.url }}" alt="" />
+  </div>
+  <div class="right-container">
+    <div class="info">
+      <h2>{{ solution.solution_title }}</h2>
+      {{ solution.review_content }}
+      <div class="service-card-buttons">
+        <a href="#">{% translate 'Замовити' %}</a>
+        <a href="{% url 'solution:solution_page' solution.slug %}">{% translate 'Детальніше' %}</a>
+      </div>
+    </div>
+  </div>
+</div>

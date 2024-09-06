@@ -5,6 +5,7 @@ charset-normalizer==3.3.2
 deep-translator==1.11.4
 Django==4.2.10
 django-autoslug==1.9.9
+django-ckeditor-5==0.2.13
 django-embed-video==1.4.9
 django-modeltranslation==0.18.11
 idna==3.6

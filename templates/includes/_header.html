@@ -3,29 +3,19 @@
 {% load catalog_tags %}
 {% load carts_tags %}
 {% load product_tags %}
+{% load solution_tags %}
 
 {% length_user_carts request as cart_count %}
 
 <header class="header">
   <div class="up-section">
     <div class="logo-tagline">
-      <a href="{% url 'main:index' %}">
-        <img id="black-logo" src="{% static 'hanbild/icons/hb-black.svg' %}"
-             alt="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
-             title="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
-        />
-      </a>
+      <a href="{% url 'main:index' %}"><img id="black-logo" src="{% static 'hanbild/icons/hb-black.svg' %}" alt="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}" title="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}" /></a>
       <div class="logo-wrap">
         <a href="{% url 'main:index' %}">
           <div class="logo">
-            <img class="logotype" src="{% static 'hanbild/icons/logo_dv.svg' %}"
-                 alt="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
-                 title="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
-            />
-            <img src="{% static 'hanbild/icons/logobg_dv.svg' %}"
-                 alt="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
-                 title="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}"
-            />
+            <img class="logotype" src="{% static 'hanbild/icons/logo_dv.svg' %}" alt="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}" title="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}" />
+            <img src="{% static 'hanbild/icons/logobg_dv.svg' %}" alt="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}" title="{% translate 'HanBild - виробництво напівпричепів та автозапчастин' %}" />
           </div>
         </a>
       </div>
@@ -135,12 +125,12 @@
               </div>
               <ul id="services" class="burgermenu">
                 <li>
-                  <a href="{% url 'main:services' %}">{% translate 'Всі послуги' %}</a>
+                  <a href="{% url 'solution:solution' %}">{% translate 'Всі послуги' %}</a>
                 </li>
                 {% get_services as services %}
                 {% for service in services %}
                   <li>
-                    <a class="service-link" href="{% url 'main:services' %}#{{ service.index_on_page }}">{{ service.service_name }}</a>
+                    <a class="service-link" href="{% url 'solution:solution_page' service.slug %}">{{ service.solution_title }}</a>
                   </li>
                 {% endfor %}
               </ul>
@@ -242,7 +232,7 @@
           <a href="{% url 'main:index' %}">{% translate 'Про нас' %}</a>
         </li>
         <li class="drop-menu">
-          <a href="{% url 'main:services' %}">{% translate 'Послуги' %}</a>
+          <a href="{% url 'solution:solution' %}">{% translate 'Послуги' %}</a>
           <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.85 9.25">
             <g>
               <path d="M15.79,.93c-.13-.41-.44-.73-.83-.86h0c-.52-.16-1.01-.03-1.42,.38l-1.91,1.91c-1.23,1.23-2.46,2.46-3.69,3.69L2.37,.49c-.07-.07-.14-.13-.23-.21-.47-.38-1.15-.38-1.63,0C.19,.53,.07,.87,0,1.11v.03s0,.38,0,.38c.09,.42,.34,.7,.58,.94l2.04,2.04c1.43,1.43,2.85,2.85,4.28,4.28,.1,.1,.21,.21,.35,.28,.21,.13,.44,.19,.67,.19,.35,0,.71-.15,1-.45L15.41,2.32c.06-.07,.12-.13,.18-.2,.25-.33,.33-.77,.2-1.18Z" />
@@ -251,7 +241,7 @@
           <ul id="submenu-services-special" class="submenu">
             {% for service in services %}
               <li>
-                <a href="{% url 'main:services' %}#{{ service.index_on_page }}">{{ service.service_name }}</a>
+                <a href="{% url 'solution:solution_page' service.slug %}">{{ service.solution_title }}</a>
               </li>
             {% endfor %}
           </ul>
