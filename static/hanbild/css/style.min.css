@@ -374,7 +374,7 @@ header button svg {
 }
 
 .down-section .drop-menu #submenu-services-special li {
-    min-width: 133px
+    min-width: 250px;
 }
 
 .down-section .right-part {
@@ -1269,7 +1269,7 @@ select {
 }
 
 .photo-block .left-container .info h1 {
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 800;
     color: #f0500a
 }
@@ -3012,7 +3012,7 @@ thead tr th:last-child svg {
 .product-card {
     height: 70vh;
     min-height: 430px;
-    max-height: 750px;
+    max-height: 800px;
     max-width: 1800px;
 }
 
@@ -4325,7 +4325,7 @@ thead tr th:last-child svg {
     }
 
     .photo-block .left-container .info h1 {
-        font-size: 56px
+        font-size: 36px
     }
 
     .photo-block .left-container {
@@ -4920,7 +4920,7 @@ thead tr th:last-child svg {
     }
 
     .photo-block .left-container .info h1 {
-        font-size: 50px
+        font-size: 30px
     }
 
     .product-card .right-container h2,
@@ -5761,7 +5761,7 @@ thead tr th:last-child svg {
     }
 
     .photo-block .left-container .info h1 {
-        font-size: 45px
+        font-size: 24px
     }
 
     .photo-block .left-container {
@@ -7910,13 +7910,13 @@ main .breadcrumbs ul li:before {
 
 .service-blog-container ul {
     list-style: disc;
-    padding: 0 0 10px 60px;
+    padding: 10px 0 10px 30px;
 }
 
 .service-blog-container ol {
     display: flex;
     flex-direction: column;
-    padding: 0px 0px 10px 100px;
+    padding: 10px 0px 10px 30px;
 }
 
 .service-blog-container ul,
@@ -7948,14 +7948,6 @@ main .breadcrumbs ul li:before {
     .service-blog-container {
         padding: 30px;
     }
-
-    .service-blog-container ul {
-        padding: 0 0 0 30px;
-    }
-
-    .service-blog-container ol {
-        padding: 0 0 0 50px;
-    }
 }
 
 @media (max-width: 500px) {
@@ -7981,6 +7973,12 @@ main .breadcrumbs ul li:before {
     .service-blog-container ol {
         font-size: 15px;
     }
+
+    .service-blog-container ul,
+    .service-blog-container ol {
+        padding: 10px 0 10px 20px;
+    }
+
 }
 
 /* END SPECIFIC SOLUTION */

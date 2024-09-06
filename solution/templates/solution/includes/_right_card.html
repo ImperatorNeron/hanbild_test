@@ -10,7 +10,7 @@
       <h2>{{ solution.solution_title }}</h2>
       {{ solution.review_content }}
       <div class="service-card-buttons">
-        <a href="#">{% translate 'Замовити' %}</a>
+        <a href="tel:+380951515315">{% translate 'Замовити' %}</a>
         <a href="{% url 'solution:solution_page' solution.slug %}">{% translate 'Детальніше' %}</a>
       </div>
     </div>

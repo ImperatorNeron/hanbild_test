@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-06 20:05+0300\n"
+"POT-Creation-Date: 2024-09-07 00:57+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -174,7 +174,7 @@ msgstr "Apply"
 #: .\main\templates\main\privacy_policy.html:22
 #: .\product\templates\product\product.html:24
 #: .\product\templates\product\product_page.html:27
-#: .\solution\templates\solution\solution_page.html:20
+#: .\solution\templates\solution\solution_page.html:26
 #: .\solution\templates\solution\solutions.html:24
 #: .\vacancy\templates\vacancy\vacancy_page.html:22
 msgid "Головна сторінка"
@@ -203,8 +203,8 @@ msgid "Ціна договірна"
 msgstr "Negotiated price"
 
 #: .\catalog\templates\catalog\catalog.html:349
-#: .\product\templates\product\product.html:57
-#: .\product\templates\product\product.html:73
+#: .\product\templates\product\product.html:58
+#: .\product\templates\product\product.html:75
 #: .\solution\templates\solution\includes\_left_card.html:14
 #: .\solution\templates\solution\includes\_right_card.html:14
 msgid "Детальніше"
@@ -433,68 +433,68 @@ msgid "м. Дніпро, вул. Орловська, 21"
 msgstr "Dnipro, ul. Orlovskaya, 21"
 
 #: .\main\templates\main\contact_us.html:117
-#: .\solution\templates\solution\solution_page.html:43
+#: .\solution\templates\solution\solution_page.html:49
 #: .\vacancy\templates\vacancy\vacancy_page.html:170
 msgid "Форма зворотнього зв'язку"
 msgstr "Feedback form"
 
 #: .\main\templates\main\contact_us.html:120
-#: .\solution\templates\solution\solution_page.html:46
+#: .\solution\templates\solution\solution_page.html:52
 #: .\templates\includes\_feedback_form.html:23
 #: .\vacancy\templates\vacancy\vacancy_page.html:173
 msgid "Як до вас звертатися:"
 msgstr "How to contact you"
 
 #: .\main\templates\main\contact_us.html:121
-#: .\solution\templates\solution\solution_page.html:47
+#: .\solution\templates\solution\solution_page.html:53
 #: .\templates\includes\_feedback_form.html:24
 #: .\vacancy\templates\vacancy\vacancy_page.html:174
 msgid "Ваше ім`я"
 msgstr "Your name"
 
 #: .\main\templates\main\contact_us.html:125
-#: .\solution\templates\solution\solution_page.html:51
+#: .\solution\templates\solution\solution_page.html:57
 #: .\templates\includes\_feedback_form.html:28
 #: .\vacancy\templates\vacancy\vacancy_page.html:178
 msgid "Номер телефону або e-mail:"
 msgstr "Phone number or email"
 
 #: .\main\templates\main\contact_us.html:126
-#: .\solution\templates\solution\solution_page.html:52
+#: .\solution\templates\solution\solution_page.html:58
 #: .\templates\includes\_feedback_form.html:29
 #: .\vacancy\templates\vacancy\vacancy_page.html:179
 msgid "Залиште контакт для зв`язку"
 msgstr "Leave a contact for communication"
 
 #: .\main\templates\main\contact_us.html:130
-#: .\solution\templates\solution\solution_page.html:56
+#: .\solution\templates\solution\solution_page.html:62
 #: .\templates\includes\_feedback_form.html:33
 #: .\vacancy\templates\vacancy\vacancy_page.html:183
 msgid "Повідомлення:"
 msgstr "Message:"
 
 #: .\main\templates\main\contact_us.html:131
-#: .\solution\templates\solution\solution_page.html:57
+#: .\solution\templates\solution\solution_page.html:63
 #: .\templates\includes\_feedback_form.html:34
 msgid "Напишіть, що саме вас цікавить"
 msgstr "Write what interests you"
 
 #: .\main\templates\main\contact_us.html:135
-#: .\solution\templates\solution\solution_page.html:61
+#: .\solution\templates\solution\solution_page.html:67
 #: .\templates\includes\_feedback_form.html:38
 #: .\vacancy\templates\vacancy\vacancy_page.html:188
 msgid "Натискаючи кнопку \"Надіслати\" я погоджуюсь з умовами"
 msgstr "By clicking \"Submit\" I agree to the terms"
 
 #: .\main\templates\main\contact_us.html:135
-#: .\solution\templates\solution\solution_page.html:61
+#: .\solution\templates\solution\solution_page.html:67
 #: .\templates\includes\_feedback_form.html:38
 #: .\vacancy\templates\vacancy\vacancy_page.html:188
 msgid "політики конфіденційності"
 msgstr "privacy policy"
 
 #: .\main\templates\main\contact_us.html:138
-#: .\solution\templates\solution\solution_page.html:64
+#: .\solution\templates\solution\solution_page.html:70
 #: .\templates\includes\_feedback_form.html:41
 #: .\vacancy\templates\vacancy\vacancy_page.html:191
 msgid "Надіслати"
@@ -796,7 +796,7 @@ msgstr ""
 "suggestions."
 
 #: .\main\templates\main\index.html:158
-#: .\solution\templates\solution\solution_page.html:23
+#: .\solution\templates\solution\solution_page.html:29
 #: .\solution\templates\solution\solutions.html:27
 #: .\templates\includes\_footer.html:203 .\templates\includes\_header.html:235
 msgid "Послуги"
@@ -1164,7 +1164,14 @@ msgstr ""
 "needs of the clien. Our products meet the highest standards quality and is "
 "reliable in operation."
 
-#: .\product\templates\product\product.html:83
+#: .\product\templates\product\product.html:57
+#: .\product\templates\product\product.html:74
+#: .\solution\templates\solution\includes\_left_card.html:13
+#: .\solution\templates\solution\includes\_right_card.html:13
+msgid "Замовити"
+msgstr "Order"
+
+#: .\product\templates\product\product.html:85
 #: .\solution\templates\solution\solutions.html:57
 msgid ""
 "Якщо ви хочете отримати більш детальну інформацію або задати питання ви "
@@ -1194,11 +1201,6 @@ msgstr ""
 #: .\product\views.py:38
 msgid "Продукція від компанії HanBild | HanBild.com.ua"
 msgstr "Products from HanBild | HanBild.com.ua"
-
-#: .\solution\templates\solution\includes\_left_card.html:13
-#: .\solution\templates\solution\includes\_right_card.html:13
-msgid "Замовити"
-msgstr "Order"
 
 #: .\solution\templates\solution\solutions.html:5
 #: .\solution\templates\solution\solutions.html:7
