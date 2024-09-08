@@ -3,9 +3,9 @@
 {% load static %}
 
 {% block meta %}
-<meta name="description" content="{% translate 'Контактна інформація компанії HanBild: телефони, електронна пошта та адреса офісу. Контакти для звʼязку з нами для обговорення співпраці чи отримання інформації про наші продукти. Ми завжди на звʼязку!' %}">
-<meta property="og:title" content="{{ title }}" />
-<meta property="og:description" content="{% translate 'Контактна інформація компанії HanBild: телефони, електронна пошта та адреса офісу. Контакти для звʼязку з нами для обговорення співпраці чи отримання інформації про наші продукти. Ми завжди на звʼязку!' %}" />
+  <meta name="description" content="{% translate 'Контактна інформація компанії HanBild: телефони, електронна пошта та адреса офісу. Контакти для звʼязку з нами для обговорення співпраці чи отримання інформації про наші продукти. Ми завжди на звʼязку!' %}" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{% translate 'Контактна інформація компанії HanBild: телефони, електронна пошта та адреса офісу. Контакти для звʼязку з нами для обговорення співпраці чи отримання інформації про наші продукти. Ми завжди на звʼязку!' %}" />
 {% endblock %}
 
 {% block title %}
@@ -15,16 +15,9 @@
 {% block content %}
   <main class="background-off main">
     <div class="up-main-section">
-      <div class="breadcrumbs" id="breadcrumbs-main">
-        <ul>
-          <li>
-            <a href="{% url 'main:index' %}">{% translate 'Головна сторінка' %}</a>
-          </li>
-          <li>
-            {% translate 'Контакти' %}
-          </li>
-        </ul>
-      </div>
+      {% url 'main:contacts' as current_url %}
+      {% translate 'Контакти' as current_title %}
+      {% include 'includes/_breadcrumbs.html' with current_url=current_url current_title=current_title %}
     </div>
     <div class="contact-page">
       <div class="photo-block">
@@ -39,7 +32,7 @@
         <div class="right-container"></div>
       </div>
       <div class="contacts-info">
-        <div class="all-info">
+        <div class="all-info" itemscope itemtype="https://schema.org/Organization">
           <div class="right-section">
             <div class="contact-block">
               <div class="contact-heading">
@@ -53,7 +46,7 @@
 
               <ul>
                 <li>
-                  <a href="tel:+380951515315">+38 095 151 5315</a>
+                  <a href="tel:+380951515315" itemprop="telephone">+38 095 151 5315</a>
                 </li>
               </ul>
             </div>
@@ -69,7 +62,7 @@
                 </svg>
                 <h3>{% translate 'Електронна адреса' %}</h3>
               </div>
-              <a id="contact-mail" href="mailto:hanbild@ukr.net">hanbild@ukr.net</a>
+              <a id="contact-mail" href="mailto:hanbild@ukr.net" itemprop="email">hanbild@ukr.net</a>
             </div>
             <div class="contact-block">
               <div class="contact-heading">
@@ -83,8 +76,15 @@
               </div>
               <ul>
                 <li>
-                  <p>
+                  <p itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
                     <span>{% translate 'Пн-Пт:' %}</span> {% translate 'з 9.00 по 20.00' %}
+                    <meta itemprop="dayOfWeek" content="http://schema.org/Monday" />
+                    <meta itemprop="dayOfWeek" content="http://schema.org/Tuesday" />
+                    <meta itemprop="dayOfWeek" content="http://schema.org/Wednesday" />
+                    <meta itemprop="dayOfWeek" content="http://schema.org/Thursday" />
+                    <meta itemprop="dayOfWeek" content="http://schema.org/Friday" />
+                    <meta itemprop="opens" content="09:00" />
+                    <meta itemprop="closes" content="20:00" />
                   </p>
                 </li>
                 <li>
@@ -105,7 +105,13 @@
                 </svg>
                 <h3>{% translate 'Адреса' %}</h3>
               </div>
-              <a href="">{% translate 'м. Дніпро, вул. Орловська, 21' %}</a>
+              <a href="{% url 'main:contacts' %}" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="streetAddress">{% translate 'вул. Орловська, 21' %}</span>,
+                <span itemprop="addressLocality">{% translate 'Дніпро' %}</span>,
+                <br />
+                <span itemprop="addressRegion">{% translate 'Дніпропетровська область' %}</span>,
+                <span itemprop="postalCode">49052</span>
+              </a>
               <div class="map">
                 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7482.482902032453!2d34.980356634301124!3d48.4669433540116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe3ae293de9a5%3A0x7383d13eacdca40!2sOrlovs&#39;ka%20St%2C%2021%2C%20Dnipro%2C%20Dnipropetrovs&#39;ka%20oblast%2C%2049000!5e0!3m2!1sen!2sua!4v1711323025259!5m2!1sen!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>

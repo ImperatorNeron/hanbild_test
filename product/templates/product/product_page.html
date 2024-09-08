@@ -21,17 +21,9 @@
 {% block content %}
   <main class="main">
     <div class="up-main-section">
-      <div class="breadcrumbs" id="breadcrumbs-main">
-        <ul>
-          <li>
-            <a href="{% url 'main:index' %}">{% translate 'Головна сторінка' %}</a>
-          </li>
-          <li>
-            <a href="{% url 'product:product' %}">{% translate 'Продукція' %}</a>
-          </li>
-          <li>{{ product.category.name|truncatechars:10 }}</li>
-        </ul>
-      </div>
+      {% url 'product:product' as previus_url %}
+      {% translate 'Продукція' as previus_title %}
+      {% include 'includes/_breadcrumbs.html' with current_url=product.category.slug current_title=product.category.name|truncatechars:10 previus_url=previus_url previus_title=previus_title %}
     </div>
     <div class="product-info-card">
       <div class="product-header">

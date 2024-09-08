@@ -14,17 +14,9 @@
 {% block content %}
   <main class="main">
     <div class="up-main-section">
-      <div class="breadcrumbs" id="breadcrumbs-main">
-        <ul>
-          <li>
-            <a href="{% url 'main:index' %}">{% translate 'Головна сторінка' %}</a>
-          </li>
-          <li>
-            <a href="{% url 'catalog:catalog' %}">{% translate 'Каталог' %}</a>
-          </li>
-          <li>{{ item.name|truncatechars:10 }}</li>
-        </ul>
-      </div>
+      {% url 'catalog:catalog' as previus_url %}
+      {% translate 'Каталог' as previus_title %}
+      {% include 'includes/_breadcrumbs.html' with current_url=item.slug current_title=item.name|truncatechars:10 previus_url=previus_url previus_title=previus_title %}
     </div>
     <div class="single-card catalog-single-card">
       <div class="single-card-left catalog-item-card">
@@ -105,8 +97,7 @@
         </div>
       </div>
       <div class="single-card-part hdr" id="sc1">
-        <h2>{{ item.name }}</h2>
-
+        <h1>{{ item.name }}</h1>
         <p class="price">
           {% if item.price %}
             {{ item.price }} {% translate 'грн.' %}

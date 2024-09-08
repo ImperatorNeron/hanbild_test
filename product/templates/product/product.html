@@ -18,16 +18,9 @@
 {% block content %}
   <main class="main" id="margin-bt">
     <div class="up-main-section">
-      <div class="breadcrumbs" id="breadcrumbs-main">
-        <ul>
-          <li>
-            <a href="{% url 'main:index' %}">{% translate 'Головна сторінка' %}</a>
-          </li>
-          <li>
-            {% translate 'Продукція' %}
-          </li>
-        </ul>
-      </div>
+      {% url 'product:product' as current_url %}
+      {% translate 'Продукція' as current_title %}
+      {% include 'includes/_breadcrumbs.html' with current_url=current_url current_title=current_title %}
     </div>
     <div class="product-page">
       <div class="photo-block">

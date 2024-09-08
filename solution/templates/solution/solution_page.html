@@ -20,17 +20,9 @@
 {% block content %}
   <main class="main">
     <div class="up-main-section">
-      <div class="breadcrumbs" id="breadcrumbs-main">
-        <ul>
-          <li>
-            <a href="{% url 'main:index' %}">{% translate 'Головна сторінка' %}</a>
-          </li>
-          <li>
-            <a href="{% url 'solution:solution' %}">{% translate 'Послуги' %}</a>
-          </li>
-          <li>{{ solution.solution_title|truncatechars:10 }}</li>
-        </ul>
-      </div>
+      {% url 'solution:solution' as previus_url %}
+      {% translate 'Послуги' as previus_title %}
+      {% include 'includes/_breadcrumbs.html' with current_url=solution.slug current_title=solution.solution_title|truncatechars:10 previus_url=previus_url previus_title=previus_title %}
     </div>
     <div class="product-page solution-page">
       <div class="photo-block">

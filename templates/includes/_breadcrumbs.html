@@ -1,0 +1,24 @@
+{% load i18n %}
+
+<div class="breadcrumbs" id="breadcrumbs-main">
+  <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="{% url 'main:index' %}"><span itemprop="name">{% translate 'Головна сторінка' %}</span></a>
+      <meta itemprop="position" content="1" />
+    </li>
+    {% if previus_title %}
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="{{ previus_url }}"><span itemprop="name">{{ previus_title }}</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+    {% endif %}
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="{{ current_url }}"><span itemprop="name">{{ current_title }}</span></a>
+      {% if previus_title %}
+        <meta itemprop="position" content="3" />
+      {% else %}
+        <meta itemprop="position" content="2" />
+      {% endif %}
+    </li>
+  </ul>
+</div>

@@ -7612,6 +7612,11 @@ main .breadcrumbs ul li:before {
     align-items: center;
 }
 
+.hdr h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
 @media(max-width: 1024px) {
 
     .catalog-item-card .image-slider,
@@ -7635,9 +7640,10 @@ main .breadcrumbs ul li:before {
             "char char";
     }
 
-    .hdr h2 {
+    .hdr h1 {
         grid-area: h2hdr;
         font-size: 20px;
+        text-align: left;
     }
 
     .hdr .price {
@@ -7684,7 +7690,7 @@ main .breadcrumbs ul li:before {
 
 @media(max-width: 800px) {
 
-    .hdr h2 {
+    .hdr h1 {
         font-size: 18px;
     }
 
@@ -7761,7 +7767,7 @@ main .breadcrumbs ul li:before {
         text-align: start;
     }
 
-    .hdr h2 {
+    .hdr h1 {
         text-align: center;
     }
 

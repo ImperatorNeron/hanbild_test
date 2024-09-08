@@ -15,16 +15,9 @@
 {% block content %}
   <main class="main">
     <div class="up-main-section">
-      <div class="breadcrumbs" id="breadcrumbs-main">
-        <ul>
-          <li>
-            <a href="{% url 'main:index' %}">{% translate 'Головна сторінка' %}</a>
-          </li>
-          <li>
-            {% translate 'Доставка' %}
-          </li>
-        </ul>
-      </div>
+      {% url 'main:delivery' as current_url %}
+      {% translate 'Доставка' as current_title %}
+      {% include 'includes/_breadcrumbs.html' with current_url=current_url current_title=current_title %}
     </div>
     <div class="delivery-page">
       <div class="photo-block">

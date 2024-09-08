@@ -142,17 +142,10 @@
   </div>
 
   <main class="main" id="margin_bt">
-    <div class="up-main-section">
-      <div class="breadcrumbs" id="breadcrumbs-main">
-        <ul>
-          <li>
-            <a href="{% url 'main:index' %}">{% translate 'Головна сторінка' %}</a>
-          </li>
-          <li>
-            {% translate 'Каталог' %}
-          </li>
-        </ul>
-      </div>
+    <div class="up-main-section"> 
+      {% url 'catalog:catalog' as current_url %}
+      {% translate 'Каталог' as current_title %}
+      {% include 'includes/_breadcrumbs.html' with current_url=current_url current_title=current_title %}
       <div class="search-line">
         {% if request.GET.q %}
           <p>
@@ -162,7 +155,7 @@
         {% endif %}
       </div>
     </div>
-
+    
     <div class="content">
       <aside>
         <div class="filter-heading">
