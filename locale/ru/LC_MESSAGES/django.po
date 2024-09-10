@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-09 02:26+0300\n"
+"POT-Creation-Date: 2024-09-11 01:38+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -216,12 +216,12 @@ msgid "Додати у кошик"
 msgstr "Добавить в корзину"
 
 #: .\catalog\templates\catalog\item.html:123
-#: .\product\templates\product\product_page.html:122
+#: .\product\templates\product\product_page.html:118
 msgid "Опис"
 msgstr "Описание"
 
 #: .\catalog\templates\catalog\item.html:125
-#: .\product\templates\product\product_page.html:130
+#: .\product\templates\product\product_page.html:126
 msgid "Характеристики"
 msgstr "Характеристики"
 
@@ -230,8 +230,8 @@ msgid "Артикул"
 msgstr "Артикул"
 
 #: .\catalog\templates\catalog\item.html:155
-#: .\product\templates\product\product_page.html:135
-#: .\product\templates\product\product_page.html:170
+#: .\product\templates\product\product_page.html:131
+#: .\product\templates\product\product_page.html:166
 msgid "Категорія"
 msgstr "Категория"
 
@@ -1180,13 +1180,18 @@ msgstr ""
 "Если вы хотите получить более подробную информацию или задать вопрос вы "
 "можете позвонить или написать нам. Мы будем рады вам помочь!"
 
-#: .\product\templates\product\product_page.html:139
-#: .\product\templates\product\product_page.html:176
+#: .\product\templates\product\product_page.html:34
+#: .\vacancy\templates\vacancy\vacancy_page.html:130
+msgid "Написати нам"
+msgstr "Написать нам"
+
+#: .\product\templates\product\product_page.html:135
+#: .\product\templates\product\product_page.html:172
 msgid "Виготовлення під замовлення"
 msgstr "Изготовление под заказ"
 
-#: .\product\templates\product\product_page.html:142
-#: .\product\templates\product\product_page.html:179
+#: .\product\templates\product\product_page.html:138
+#: .\product\templates\product\product_page.html:175
 msgid "Так"
 msgstr "Да"
 
@@ -1368,10 +1373,6 @@ msgstr "грн"
 #: .\vacancy\templates\vacancy\vacancy_page.html:87
 msgid "Обов`язки"
 msgstr "Обязанности"
-
-#: .\vacancy\templates\vacancy\vacancy_page.html:130
-msgid "Написати нам"
-msgstr "Написать нам"
 
 #: .\vacancy\templates\vacancy\vacancy_page.html:149
 msgid "Інфомація відсутня"

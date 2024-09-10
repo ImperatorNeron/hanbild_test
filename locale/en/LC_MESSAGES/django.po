@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-09 02:26+0300\n"
+"POT-Creation-Date: 2024-09-11 01:38+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,12 +214,12 @@ msgid "Додати у кошик"
 msgstr "Add to cart"
 
 #: .\catalog\templates\catalog\item.html:123
-#: .\product\templates\product\product_page.html:122
+#: .\product\templates\product\product_page.html:118
 msgid "Опис"
 msgstr "Description"
 
 #: .\catalog\templates\catalog\item.html:125
-#: .\product\templates\product\product_page.html:130
+#: .\product\templates\product\product_page.html:126
 msgid "Характеристики"
 msgstr "Characteristics"
 
@@ -228,8 +228,8 @@ msgid "Артикул"
 msgstr "Item no."
 
 #: .\catalog\templates\catalog\item.html:155
-#: .\product\templates\product\product_page.html:135
-#: .\product\templates\product\product_page.html:170
+#: .\product\templates\product\product_page.html:131
+#: .\product\templates\product\product_page.html:166
 msgid "Категорія"
 msgstr "Category"
 
@@ -1174,13 +1174,18 @@ msgstr ""
 "If you want more information or ask a question you can call or write to us. "
 "We will be happy to help you!"
 
-#: .\product\templates\product\product_page.html:139
-#: .\product\templates\product\product_page.html:176
+#: .\product\templates\product\product_page.html:34
+#: .\vacancy\templates\vacancy\vacancy_page.html:130
+msgid "Написати нам"
+msgstr "Contact us"
+
+#: .\product\templates\product\product_page.html:135
+#: .\product\templates\product\product_page.html:172
 msgid "Виготовлення під замовлення"
 msgstr "Custom-made"
 
-#: .\product\templates\product\product_page.html:142
-#: .\product\templates\product\product_page.html:179
+#: .\product\templates\product\product_page.html:138
+#: .\product\templates\product\product_page.html:175
 msgid "Так"
 msgstr "Yes"
 
@@ -1364,10 +1369,6 @@ msgstr "UAH"
 #: .\vacancy\templates\vacancy\vacancy_page.html:87
 msgid "Обов`язки"
 msgstr "Duties"
-
-#: .\vacancy\templates\vacancy\vacancy_page.html:130
-msgid "Написати нам"
-msgstr "Contact us"
 
 #: .\vacancy\templates\vacancy\vacancy_page.html:149
 msgid "Інфомація відсутня"
