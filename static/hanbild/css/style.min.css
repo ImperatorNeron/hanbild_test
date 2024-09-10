@@ -7313,12 +7313,25 @@ main .breadcrumbs ul li:before {
     align-items: center;
 }
 
-.form-buttons {
-    align-self: center;
+.product-description-buttons{
+    display: flex;
+    gap: 15px;
 }
 
-.product-info-card .form-buttons a:first-child {
-    width: 210px;
+.product-description-buttons a{
+    padding: 13px 20px;
+    margin: 10px 0;
+    background-color: #f0500a;
+    border-radius: 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: "Raleway", Sans-serif;
+}
+
+.product-description-buttons a:last-child{
+    background-color: #37cbf0;
+    cursor: pointer;
 }
 
 .product-info-card .product-header h1 {
@@ -7392,9 +7405,25 @@ main .breadcrumbs ul li:before {
         font-size: 20px;
     }
 
-    .product-info-card .form-buttons a:first-child {
-        width: 180px;
-        font-size: 13px;
+    .product-description-buttons{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .product-description-buttons a{
+        margin: 0;
+        padding: 7px 10px;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+
+    .product-description-buttons a:first-child{
+        margin-top: 5px;
+    }
+
+    .product-description-buttons a:last-child{
+        margin-bottom: 5px;
     }
 }
 
@@ -7425,29 +7454,6 @@ main .breadcrumbs ul li:before {
     .image-slider .button-next,
     .image-slider .button-prev {
         top: 45%;
-    }
-
-    .product-info-card .form-buttons {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .product-info-card .form-buttons a:first-child {
-        height: 30px;
-        width: 130px;
-        border-radius: 5px;
-    }
-
-    .product-info-card .form-buttons a:last-child {
-        border-radius: 5px;
-        padding: 7px 0;
-        margin: 0 0 7px 0;
-        height: 30px;
-        width: 130px;
-    }
-
-    .product-info-card .form-buttons a:first-child {
-        margin: 7px 0 0 0;
     }
 
     .two-columns {
@@ -7483,15 +7489,6 @@ main .breadcrumbs ul li:before {
 
     .product-info-card .product-header h1 {
         font-size: 15px;
-    }
-
-    .product-info-card .form-buttons a:first-child {
-        font-size: 11px;
-        width: 110px;
-    }
-
-    .product-info-card .form-buttons a:last-child {
-        width: 110px;
     }
 
     .single-card-product .swiper-container .image-slider__image {
