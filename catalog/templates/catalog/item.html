@@ -106,7 +106,7 @@
         <h1>{{ item.name }}</h1>
         <p class="price">
           {% if item.price %}
-            {{ item.price }} {{ item.currency }}
+            {{ item.price }} $
           {% else %}
             {% translate 'Ціна договірна' %}
           {% endif %}
@@ -146,7 +146,7 @@
               </td>
               <td>
                 {% if item.price %}
-                  {{ item.price }} {{ item.currency }}
+                  {{ item.price }} $
                 {% else %}
                   {% translate 'Ціна договірна' %}
                 {% endif %}

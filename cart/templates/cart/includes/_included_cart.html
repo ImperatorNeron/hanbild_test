@@ -57,7 +57,7 @@
           {% if cart.goods_price == 0 %}
             {% translate 'Договірна' %}
           {% else %}
-            {{ cart.goods_price|floatformat:'0' }} {% translate 'грн.' %}
+            {{ cart.goods_price|floatformat:'0' }} $
           {% endif %}
         </td>
         <td>
@@ -75,7 +75,7 @@
             {% if carts.total_price == 0 %}
               <span>{% translate 'Договірна' %}</span>
             {% else %}
-              <span>{{ carts.total_price }} {% translate 'грн.' %}</span>
+              <span>{{ carts.total_price }} $</span>
             {% endif %}
           </p>
         </div>
@@ -112,7 +112,7 @@
           {% endif %}
         </td>
         <td>
-          <a href="{% url "catalog:item" cart.item.slug %}">{{ cart.item.name }}</a>
+          <a href="{% url 'catalog:item' cart.item.slug %}">{{ cart.item.name }}</a>
         </td>
         <td>
           <div class="quantity">
@@ -120,7 +120,7 @@
               {% if cart.goods_price == 0 %}
                 {% translate 'Договірна' %}
               {% else %}
-                {{ cart.goods_price|floatformat:'0' }} {% translate 'грн.' %}
+                {{ cart.goods_price|floatformat:'0' }} $
               {% endif %} <b>x</b><b class="quantity_displayer">{{ cart.quantity }}</b>
             </p>
             <div class="num-but">
@@ -141,7 +141,7 @@
             {% translate 'Всього:' %}
           </p>
           <p>
-            <span>{{ carts.total_price }} {% translate 'грн.' %}</span>
+            <span>{{ carts.total_price }} $</span>
           </p>
         </div>
       </td>

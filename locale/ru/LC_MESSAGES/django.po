@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-11 01:38+0300\n"
+"POT-Creation-Date: 2024-09-13 02:40+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgid "Фото"
 msgstr "Фото"
 
 #: .\cart\templates\cart\includes\_included_cart.html:12
-#: .\catalog\templates\catalog\item.html:131
+#: .\catalog\templates\catalog\item.html:139
 msgid "Назва"
 msgstr "Название"
 
@@ -61,7 +61,7 @@ msgstr "Кол-во"
 
 #: .\cart\templates\cart\includes\_included_cart.html:21
 #: .\cart\templates\cart\includes\_included_cart.html:97
-#: .\catalog\templates\catalog\item.html:137
+#: .\catalog\templates\catalog\item.html:145
 msgid "Ціна"
 msgstr "Цена"
 
@@ -71,18 +71,6 @@ msgstr "Цена"
 #: .\main\templates\email_letters\cart_message.html:274
 msgid "Договірна"
 msgstr "Договорная"
-
-#: .\cart\templates\cart\includes\_included_cart.html:60
-#: .\cart\templates\cart\includes\_included_cart.html:78
-#: .\cart\templates\cart\includes\_included_cart.html:123
-#: .\cart\templates\cart\includes\_included_cart.html:144
-#: .\catalog\templates\catalog\catalog.html:329
-#: .\catalog\templates\catalog\item.html:103
-#: .\catalog\templates\catalog\item.html:141
-#: .\main\templates\email_letters\cart_message.html:244
-#: .\main\templates\email_letters\cart_message.html:276
-msgid "грн."
-msgstr "грн."
 
 #: .\cart\templates\cart\includes\_included_cart.html:72
 #: .\cart\templates\cart\includes\_included_cart.html:141
@@ -170,7 +158,7 @@ msgid "Застосувати"
 msgstr "Применить"
 
 #: .\catalog\templates\catalog\catalog.html:147
-#: .\catalog\templates\catalog\item.html:18
+#: .\catalog\templates\catalog\item.html:24
 #: .\templates\includes\_footer.html:209 .\templates\includes\_footer.html:232
 #: .\templates\includes\_header.html:161 .\templates\includes\_header.html:265
 msgid "Каталог"
@@ -185,8 +173,8 @@ msgid "Товарів на сторінці:"
 msgstr "Товаров на странице:"
 
 #: .\catalog\templates\catalog\catalog.html:333
-#: .\catalog\templates\catalog\item.html:105
-#: .\catalog\templates\catalog\item.html:143
+#: .\catalog\templates\catalog\item.html:111
+#: .\catalog\templates\catalog\item.html:151
 #: .\main\templates\email_letters\cart_message.html:242
 msgid "Ціна договірна"
 msgstr "Цена договорная"
@@ -207,29 +195,29 @@ msgstr "К сожалению, по вашему запросу ничего н�
 msgid "Повернутися до каталогу."
 msgstr "Вернуться в каталог."
 
-#: .\catalog\templates\catalog\item.html:109
+#: .\catalog\templates\catalog\item.html:115
 msgid "арт."
 msgstr "арт."
 
-#: .\catalog\templates\catalog\item.html:113
+#: .\catalog\templates\catalog\item.html:119
 msgid "Додати у кошик"
 msgstr "Добавить в корзину"
 
-#: .\catalog\templates\catalog\item.html:123
+#: .\catalog\templates\catalog\item.html:130
 #: .\product\templates\product\product_page.html:118
 msgid "Опис"
 msgstr "Описание"
 
-#: .\catalog\templates\catalog\item.html:125
+#: .\catalog\templates\catalog\item.html:133
 #: .\product\templates\product\product_page.html:126
 msgid "Характеристики"
 msgstr "Характеристики"
 
-#: .\catalog\templates\catalog\item.html:149
+#: .\catalog\templates\catalog\item.html:157
 msgid "Артикул"
 msgstr "Артикул"
 
-#: .\catalog\templates\catalog\item.html:155
+#: .\catalog\templates\catalog\item.html:163
 #: .\product\templates\product\product_page.html:131
 #: .\product\templates\product\product_page.html:166
 msgid "Категорія"
@@ -1393,3 +1381,6 @@ msgid ""
 msgstr ""
 "Актуальные вакансии: работа в компании по производству прицепов и "
 "полуприцепов HanBild"
+
+#~ msgid "грн."
+#~ msgstr "грн."

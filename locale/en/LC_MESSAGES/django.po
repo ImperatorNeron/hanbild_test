@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-11 01:38+0300\n"
+"POT-Creation-Date: 2024-09-13 02:40+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgid "Фото"
 msgstr "Photo"
 
 #: .\cart\templates\cart\includes\_included_cart.html:12
-#: .\catalog\templates\catalog\item.html:131
+#: .\catalog\templates\catalog\item.html:139
 msgid "Назва"
 msgstr "Name"
 
@@ -59,7 +59,7 @@ msgstr "Total"
 
 #: .\cart\templates\cart\includes\_included_cart.html:21
 #: .\cart\templates\cart\includes\_included_cart.html:97
-#: .\catalog\templates\catalog\item.html:137
+#: .\catalog\templates\catalog\item.html:145
 msgid "Ціна"
 msgstr "Price"
 
@@ -69,18 +69,6 @@ msgstr "Price"
 #: .\main\templates\email_letters\cart_message.html:274
 msgid "Договірна"
 msgstr "Negotiated"
-
-#: .\cart\templates\cart\includes\_included_cart.html:60
-#: .\cart\templates\cart\includes\_included_cart.html:78
-#: .\cart\templates\cart\includes\_included_cart.html:123
-#: .\cart\templates\cart\includes\_included_cart.html:144
-#: .\catalog\templates\catalog\catalog.html:329
-#: .\catalog\templates\catalog\item.html:103
-#: .\catalog\templates\catalog\item.html:141
-#: .\main\templates\email_letters\cart_message.html:244
-#: .\main\templates\email_letters\cart_message.html:276
-msgid "грн."
-msgstr "UAH"
 
 #: .\cart\templates\cart\includes\_included_cart.html:72
 #: .\cart\templates\cart\includes\_included_cart.html:141
@@ -168,7 +156,7 @@ msgid "Застосувати"
 msgstr "Apply"
 
 #: .\catalog\templates\catalog\catalog.html:147
-#: .\catalog\templates\catalog\item.html:18
+#: .\catalog\templates\catalog\item.html:24
 #: .\templates\includes\_footer.html:209 .\templates\includes\_footer.html:232
 #: .\templates\includes\_header.html:161 .\templates\includes\_header.html:265
 msgid "Каталог"
@@ -183,8 +171,8 @@ msgid "Товарів на сторінці:"
 msgstr "Products on the page:"
 
 #: .\catalog\templates\catalog\catalog.html:333
-#: .\catalog\templates\catalog\item.html:105
-#: .\catalog\templates\catalog\item.html:143
+#: .\catalog\templates\catalog\item.html:111
+#: .\catalog\templates\catalog\item.html:151
 #: .\main\templates\email_letters\cart_message.html:242
 msgid "Ціна договірна"
 msgstr "Negotiated price"
@@ -205,29 +193,29 @@ msgstr "Unfortunately, nothing was found for your request."
 msgid "Повернутися до каталогу."
 msgstr "To catalog."
 
-#: .\catalog\templates\catalog\item.html:109
+#: .\catalog\templates\catalog\item.html:115
 msgid "арт."
 msgstr "no."
 
-#: .\catalog\templates\catalog\item.html:113
+#: .\catalog\templates\catalog\item.html:119
 msgid "Додати у кошик"
 msgstr "Add to cart"
 
-#: .\catalog\templates\catalog\item.html:123
+#: .\catalog\templates\catalog\item.html:130
 #: .\product\templates\product\product_page.html:118
 msgid "Опис"
 msgstr "Description"
 
-#: .\catalog\templates\catalog\item.html:125
+#: .\catalog\templates\catalog\item.html:133
 #: .\product\templates\product\product_page.html:126
 msgid "Характеристики"
 msgstr "Characteristics"
 
-#: .\catalog\templates\catalog\item.html:149
+#: .\catalog\templates\catalog\item.html:157
 msgid "Артикул"
 msgstr "Item no."
 
-#: .\catalog\templates\catalog\item.html:155
+#: .\catalog\templates\catalog\item.html:163
 #: .\product\templates\product\product_page.html:131
 #: .\product\templates\product\product_page.html:166
 msgid "Категорія"
@@ -1389,3 +1377,6 @@ msgid ""
 msgstr ""
 "Current vacancies: work at the trailer and semi-trailer manufacturing "
 "company HanBild"
+
+#~ msgid "грн."
+#~ msgstr "UAH"

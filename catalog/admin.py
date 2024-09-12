@@ -49,19 +49,16 @@ class GoodsTabularAdmin(admin.TabularInline):
     readonly_fields = (
         "name",
         "price",
-        "currency",
         "upload_time",
     )
     fields = (
         "name",
         "price",
-        "currency",
         "upload_time",
     )
     search_fields = (
         "name",
         "price",
-        "currency",
     )
     extra = 0
 
@@ -96,7 +93,6 @@ class GoodsAdmin(TranslationAdmin):
         "name",
         "category",
         "price",
-        "currency",
         "upload_time",
     )
     list_display_links = (
@@ -111,7 +107,6 @@ class GoodsAdmin(TranslationAdmin):
         "name_ru",
         "name_en",
         "price",
-        "currency",
         "preview_image",
         "preview_alt_uk",
         "preview_alt_en",

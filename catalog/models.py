@@ -73,16 +73,6 @@ class Goods(models.Model):
         verbose_name="Ціна товару",
         default=0,
     )
-    currency = models.CharField(
-        max_length=1,
-        choices=[
-            ("$", "Долар"),
-            ("€", "Євро"),
-            ("₴", "Гривня"),
-        ],
-        default="$",
-        verbose_name="Валюта",
-    )
     upload_time = models.DateTimeField(
         auto_now_add=True,
         verbose_name="Дата завантаження",
