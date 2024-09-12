@@ -50,7 +50,6 @@ class ItemView(BaseApplicationFormView):
                 "item_photos": item_photos,
                 "item_videos": item_videos,
                 "item_characteristics": item_characteristics,
-                "title": f"{item.name} | HanBild.com.ua",
             },
         )
 
