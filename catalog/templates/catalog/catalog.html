@@ -312,11 +312,11 @@
               <div class="card">
                 {% if item.preview_image %}
                   <div class="normalization-img">
-                    <img src="{{ item.preview_image.url }}" alt="{{ item.name }}" />
+                    <img src="{{ item.preview_image.url }}" alt="{{ item.preview_alt }}" />
                   </div>
                 {% else %}
                   <div class="normalization-img">
-                    <img src="{% static 'hanbild/images/image_not_fount.png' %}" alt="{{ item.name }}" />
+                    <img src="{% static 'hanbild/images/image_not_fount.png' %}" alt="{{ item.preview_alt }}" />
                   </div>
                 {% endif %}
 
@@ -325,7 +325,7 @@
                   <div class="price-art">
                     {% if item.price %}
                       <p>
-                        {{ item.price|floatformat:0 }} {% translate 'грн.' %}
+                        {{ item.price|floatformat:0 }} {{ item.currency }}
                       </p>
                     {% else %}
                       <p id="specify-price">

@@ -4,7 +4,13 @@
 {% load i18n %}
 
 {% block title %}
-  {{ item.name }} | Hanbild.com.ua
+  {{ item.meta_title }}
+{% endblock %}
+
+{% block meta %}
+<meta name="description" content="{{ item.meta_description }}">
+<meta property="og:title" content="{{ item.meta_title }}" />
+<meta property="og:description" content="{{ item.meta_description }}" />
 {% endblock %}
 
 {% block css %}
@@ -26,13 +32,13 @@
               <div class="image-slider__wrapper swiper-wrapper">
                 <div class="image-slider__slide swiper-slide">
                   <div class="image-slider__image">
-                    <img src="{{ item.preview_image.url }}" alt="" />
+                    <img src="{{ item.preview_image.url }}" alt="{{ item.preview_alt }}" />
                   </div>
                 </div>
                 {% for photo in item_photos %}
                   <div class="image-slider__slide swiper-slide">
                     <div class="image-slider__image">
-                      <img src="{{ photo.image.url }}" alt="" />
+                      <img src="{{ photo.image.url }}" alt="{{ photo.alt }}" />
                     </div>
                   </div>
                 {% endfor %}
@@ -67,13 +73,13 @@
               <div class="image-mini-slider__wrapper swiper-wrapper">
                 <div class="image-mini-slider__slide swiper-slide">
                   <div class="image-mini-slider__image">
-                    <img src="{{ item.preview_image.url }}" alt="" />
+                    <img src="{{ item.preview_image.url }}" alt="{{ item.preview_alt }}" />
                   </div>
                 </div>
                 {% for photo in item_photos %}
                   <div class="image-mini-slider__slide swiper-slide">
                     <div class="image-mini-slider__image">
-                      <img src="{{ photo.image.url }}" alt="" />
+                      <img src="{{ photo.image.url }}" alt="{{ photo.alt }}" />
                     </div>
                   </div>
                 {% endfor %}
@@ -100,7 +106,7 @@
         <h1>{{ item.name }}</h1>
         <p class="price">
           {% if item.price %}
-            {{ item.price }} {% translate 'грн.' %}
+            {{ item.price }} {{ item.currency }}
           {% else %}
             {% translate 'Ціна договірна' %}
           {% endif %}
@@ -120,8 +126,10 @@
           </a>
         </div>
       </div>
+      {% if item.description %}
       <h3 class="desc-title">{% translate 'Опис' %}</h3>
       <div class="single-card-part desc">{{ item.description|linebreaks }}</div>
+      {% endif %}
       <h3 class="char-title">{% translate 'Характеристики' %}</h3>
       <div class="single-card-part chars single-card-right">
         <table class="s-p-t-g s-p-t">
@@ -138,7 +146,7 @@
               </td>
               <td>
                 {% if item.price %}
-                  {{ item.price }} {% translate 'грн.' %}
+                  {{ item.price }} {{ item.currency }}
                 {% else %}
                   {% translate 'Ціна договірна' %}
                 {% endif %}

@@ -9,19 +9,25 @@ from catalog.models import (
 )
 
 
-class GoodsImagesTabulareAdmin(admin.TabularInline):
+class GoodsImagesTabularAdmin(admin.TabularInline):
     model = GoodsImage
-    fields = ("good", "image")
+    fields = (
+        "good",
+        "image",
+        "alt_uk",
+        "alt_en",
+        "alt_ru",
+    )
     search_fields = ("good",)
 
 
-class GoodsVideosTabulareAdmin(admin.TabularInline):
+class GoodsVideosTabularAdmin(admin.TabularInline):
     model = GoodsVideo
     fields = ("good", "video")
     search_fields = ("good",)
 
 
-class GoodsCharacteristicTabulareAdmin(admin.TabularInline):
+class GoodsCharacteristicTabularAdmin(admin.TabularInline):
     model = GoodsCharacteristic
     fields = (
         "good",
@@ -38,11 +44,25 @@ class GoodsCharacteristicTabulareAdmin(admin.TabularInline):
     )
 
 
-class GoodsTabulareAdmin(admin.TabularInline):
+class GoodsTabularAdmin(admin.TabularInline):
     model = Goods
-    readonly_fields = ("name", "price", "upload_time")
-    fields = ("name", "price", "upload_time")
-    search_fields = ("name", "price")
+    readonly_fields = (
+        "name",
+        "price",
+        "currency",
+        "upload_time",
+    )
+    fields = (
+        "name",
+        "price",
+        "currency",
+        "upload_time",
+    )
+    search_fields = (
+        "name",
+        "price",
+        "currency",
+    )
     extra = 0
 
 
@@ -55,20 +75,35 @@ class CategoriesAdmin(TranslationAdmin):
         "name_ru",
         "name_en",
     )
-    list_display = ("id", "index_on_page", "name_uk", "slug")
+    list_display = (
+        "id",
+        "index_on_page",
+        "name_uk",
+        "slug",
+    )
     list_display_links = (
         "id",
         "name_uk",
     )
     list_editable = ("index_on_page", "slug")
-    inlines = (GoodsTabulareAdmin,)
+    inlines = (GoodsTabularAdmin,)
 
 
 @admin.register(Goods)
 class GoodsAdmin(TranslationAdmin):
     exclude = ("slug",)
-    list_display = ("name", "category", "price", "upload_time")
-    list_display_links = ("name", "price", "upload_time")
+    list_display = (
+        "name",
+        "category",
+        "price",
+        "currency",
+        "upload_time",
+    )
+    list_display_links = (
+        "name",
+        "price",
+        "upload_time",
+    )
     list_editable = ("category",)
     fields = (
         "category",
@@ -76,14 +111,24 @@ class GoodsAdmin(TranslationAdmin):
         "name_ru",
         "name_en",
         "price",
+        "currency",
         "preview_image",
+        "preview_alt_uk",
+        "preview_alt_en",
+        "preview_alt_ru",
         "description_uk",
         "description_ru",
         "description_en",
+        "meta_title_uk",
+        "meta_title_en",
+        "meta_title_ru",
+        "meta_description_uk",
+        "meta_description_en",
+        "meta_description_ru",
     )
     inlines = (
-        GoodsCharacteristicTabulareAdmin,
-        GoodsImagesTabulareAdmin,
-        GoodsVideosTabulareAdmin,
+        GoodsCharacteristicTabularAdmin,
+        GoodsImagesTabularAdmin,
+        GoodsVideosTabularAdmin,
     )
     list_filter = ("upload_time", "category")
