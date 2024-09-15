@@ -1116,22 +1116,22 @@ select {
     margin: 6px 0
 }
 
-.price-art p {
+.price-art .price-part {
     font-size: 20px;
     font-weight: 900
 }
 
-.price-art span {
+.price-art .art-part span {
     color: gray;
     font-size: 14px;
     font-weight: normal
 }
 
-.price-art span::-moz-selection {
+.price-art .art-part span::-moz-selection {
     color: #fff
 }
 
-.price-art span::selection {
+.price-art .art-part span::selection {
     color: #fff
 }
 
@@ -4214,7 +4214,7 @@ thead tr th:last-child svg {
         font-size: 17px
     }
 
-    .cards .price-art p {
+    .cards .price-art .price-part {
         font-size: 18px
     }
 
@@ -4465,7 +4465,7 @@ thead tr th:last-child svg {
         font-size: 16px
     }
 
-    .cards .price-art p {
+    .cards .price-art .price-part {
         font-size: 17px
     }
 

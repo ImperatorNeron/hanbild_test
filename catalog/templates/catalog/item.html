@@ -24,7 +24,7 @@
       {% translate 'Каталог' as previus_title %}
       {% include 'includes/_breadcrumbs.html' with current_url=item.slug current_title=item.name|truncatechars:10 previus_url=previus_url previus_title=previus_title %}
     </div>
-    <div class="single-card catalog-single-card">
+    <div class="single-card catalog-single-card" itemscope itemtype="https://schema.org/Product">
       <div class="single-card-left catalog-item-card">
         <div class="slider catalog-slider">
           <div class="slider-deco">
@@ -32,7 +32,7 @@
               <div class="image-slider__wrapper swiper-wrapper">
                 <div class="image-slider__slide swiper-slide">
                   <div class="image-slider__image">
-                    <img src="{{ item.preview_image.url }}" alt="{{ item.preview_alt }}" />
+                    <img src="{{ item.preview_image.url }}" alt="{{ item.preview_alt }}" itemprop="image"/>
                   </div>
                 </div>
                 {% for photo in item_photos %}
@@ -103,10 +103,11 @@
         </div>
       </div>
       <div class="single-card-part hdr" id="sc1">
-        <h1>{{ item.name }}</h1>
-        <p class="price">
+        <h1 itemprop="name">{{ item.name }}</h1>
+        <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
           {% if item.price %}
-            {{ item.price }} $
+            <span itemprop="price">{{ item.price }}</span> $
+            <meta itemprop="priceCurrency" content="USD" />
           {% else %}
             {% translate 'Ціна договірна' %}
           {% endif %}
@@ -128,7 +129,7 @@
       </div>
       {% if item.description %}
       <h3 class="desc-title">{% translate 'Опис' %}</h3>
-      <div class="single-card-part desc">{{ item.description|linebreaks }}</div>
+      <div class="single-card-part desc" itemprop="description">{{ item.description|linebreaks }}</div>
       {% endif %}
       <h3 class="char-title">{% translate 'Характеристики' %}</h3>
       <div class="single-card-part chars single-card-right">

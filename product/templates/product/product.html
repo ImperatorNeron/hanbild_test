@@ -37,35 +37,35 @@
       <div class="product-cards">
         {% for prod in product %}
           {% if forloop.counter0|divisibleby:2 %}
-            <div class="product-card" data-aos="fade-right" data-aos-duration="500" data-aos-easing="easy-in-sine" style="background: url({{ prod.paragraph_image.url }}) no-repeat center/cover; @media(max-width: 500px){.product-card{background: none;}}">
+            <div class="product-card" itemscope itemtype="https://schema.org/Product" data-aos="fade-right" data-aos-duration="500" data-aos-easing="easy-in-sine" style="background: url({{ prod.paragraph_image.url }}) no-repeat center/cover; @media(max-width: 500px){.product-card{background: none;}}">
               <div class="left-container" style="background: url({{ prod.paragraph_image.url }}) no-repeat center/cover"></div>
               <div class="img-cont">
-                <img src="{{ prod.paragraph_image.url }}" alt="" />
+                <img src="{{ prod.paragraph_image.url }}" alt="" itemprop="image"/>
               </div>
               <div class="right-container">
                 <div class="info">
-                  <h2>{{ prod.category.name }}</h2>
-                  <p>{{ prod.paragraph|truncatechars:350 }}</p>
+                  <h2 itemprop="name">{{ prod.category.name }}</h2>
+                  <p itemprop="description">{{ prod.paragraph|truncatechars:350 }}</p>
                   <div class="service-card-buttons">
                     <a href="tel:+380951515315">{% translate 'Замовити' %}</a>
-                    <a href="{{ prod.category.slug }}">{% translate 'Детальніше' %}</a>
+                    <a href="{{ prod.category.slug }}" itemprop="url">{% translate 'Детальніше' %}</a>
                   </div>
                 </div>
               </div>
             </div>
           {% else %}
-            <div class="product-card" data-aos="fade-left" data-aos-duration="500" data-aos-easing="easy-in-sine" style="background: url({{ prod.paragraph_image.url }}) no-repeat center/cover">
+            <div class="product-card" itemscope itemtype="https://schema.org/Product" data-aos="fade-left" data-aos-duration="500" data-aos-easing="easy-in-sine" style="background: url({{ prod.paragraph_image.url }}) no-repeat center/cover">
               <div class="left-container" style="background: url({{ prod.paragraph_image.url }}) no-repeat center/cover"></div>
               <div class="img-cont">
-                <img src="{{ prod.paragraph_image.url }}" alt="" />
+                <img src="{{ prod.paragraph_image.url }}" alt="" itemprop="image"/>
               </div>
               <div class="right-container">
                 <div class="info">
-                  <h2>{{ prod.category.name }}</h2>
-                  <p>{{ prod.paragraph|truncatechars:350 }}</p>
+                  <h2 itemprop="name">{{ prod.category.name }}</h2>
+                  <p itemprop="description">{{ prod.paragraph|truncatechars:350 }}</p>
                   <div class="service-card-buttons">
                     <a href="tel:+380951515315">{% translate 'Замовити' %}</a>
-                    <a href="{{ prod.category.slug }}">{% translate 'Детальніше' %}</a>
+                    <a href="{{ prod.category.slug }}" itemprop="url">{% translate 'Детальніше' %}</a>
                   </div>
                 </div>
               </div>

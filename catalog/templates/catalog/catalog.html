@@ -309,10 +309,10 @@
           <div class="cards">
             {% for item in goods %}
               {% comment %}CARD TEMPLATE{% endcomment %}
-              <div class="card">
+              <div class="card" itemscope itemtype="https://schema.org/Product">
                 {% if item.preview_image %}
                   <div class="normalization-img">
-                    <img src="{{ item.preview_image.url }}" alt="{{ item.preview_alt }}" />
+                    <img src="{{ item.preview_image.url }}" alt="{{ item.preview_alt }}" itemprop="image" />
                   </div>
                 {% else %}
                   <div class="normalization-img">
@@ -321,24 +321,25 @@
                 {% endif %}
 
                 <div class="card-info-block">
-                  <a class="card-title" href="{% url 'catalog:item' item.slug %}">{{ item.name }}</a>
+                  <a class="card-title" href="{% url 'catalog:item' item.slug %}" itemprop="name">{{ item.name }}</a>
                   <div class="price-art">
                     {% if item.price %}
-                      <p>
-                        {{ item.price|floatformat:0 }} $
-                      </p>
+                    <p class="price-part" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                      <span itemprop="price">{{ item.price|floatformat:0 }} $</span>
+                      <meta itemprop="priceCurrency" content="USD" />
+                    </p>
                     {% else %}
                       <p id="specify-price">
                         {% translate 'Ціна договірна' %}
                       </p>
                     {% endif %}
-                    <p>
+                    <p class="art-part">
                       <span>{% translate 'Арт.' %} {{ item.pk|stringformat:'05d' }}</span>
                     </p>
                   </div>
 
                   <div class="card-buttons">
-                    <a href="{% url 'catalog:item' item.slug %}">{% translate 'Детальніше' %}</a>
+                    <a itemprop="url" href="{% url 'catalog:item' item.slug %}">{% translate 'Детальніше' %}</a>
                     <a class="catalog-message">
                       <?xml version="1.0" encoding="UTF-8"?><svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.15 30.95">
                         <g id="_Слой_1-2" data-name="Слой 1">
