@@ -699,7 +699,7 @@ main aside ul {
 }
 
 main .catalog-bar {
-    width: 78%
+    width: 78%;
 }
 
 #margin_bt {
@@ -1136,7 +1136,8 @@ select {
 }
 
 .price-art #specify-price {
-    color: #2c9ab6
+    color: #2c9ab6;
+    font-weight: 900;
 }
 
 .price-art #specify-price::-moz-selection {
@@ -7662,7 +7663,7 @@ main .breadcrumbs ul li:before {
     }
 
     .hdr .form-buttons a {
-        width: 180px;
+        width: 190px;
         border-radius: 5px;
         margin: 0;
         height: 40px;
@@ -7700,7 +7701,7 @@ main .breadcrumbs ul li:before {
     }
 
     .hdr .form-buttons a {
-        width: 150px;
+        width: 160px;
         font-size: 12px;
     }
 
